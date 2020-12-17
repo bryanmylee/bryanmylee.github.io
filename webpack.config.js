@@ -41,7 +41,8 @@ module.exports = {
             }
           }
         },
-        fileLoaderRule
+        fileLoaderRule,
+        svgLoaderRule,
       ]
     },
     mode,
@@ -81,7 +82,8 @@ module.exports = {
             }
           }
         },
-        fileLoaderRule
+        fileLoaderRule,
+        svgLoaderRule,
       ]
     },
     mode,
