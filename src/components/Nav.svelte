@@ -2,8 +2,14 @@
   export let segment: string;
 </script>
 
-<nav>
-  <span class="inline-block p-2 text-base font-bold align-middle bg-accent">
-    Bryan Lee (bryanmylee)
-  </span>
+<nav class="flex justify-center bg-red-400">
+  <div class="flex justify-between w-full max-w-4xl">
+    <span class="p-2 text-base font-bold bg-accent">
+      Bryan Lee (bryanmylee)
+    </span>
+    <span class="p-2 text-base font-bold bg-accent">
+      [] [] []
+    </span>
+  </div>
 </nav>
+
