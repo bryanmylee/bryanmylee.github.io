@@ -1,4 +1,6 @@
 <script lang="ts">
+  import NavContactLinks from './NavContactLinks.svelte';
+
   export let segment: string;
 </script>
 
@@ -8,7 +10,7 @@
       Bryan Lee (bryanmylee)
     </span>
     <span class="p-2 text-base font-bold bg-accent">
-      [] [] []
+      <NavContactLinks/>
     </span>
   </div>
 </nav>
