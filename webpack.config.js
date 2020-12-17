@@ -3,8 +3,7 @@ const WebpackModules = require('webpack-modules');
 const path = require('path');
 const config = require('sapper/config/webpack.js');
 const pkg = require('./package.json');
-const sveltePreprocess = require('svelte-preprocess');
-const { preprocessOptions } = require('./svelte.config.js');
+const { getPreprocess } = require('./svelte.config.js');
 
 const mode = process.env.NODE_ENV;
 const dev = mode === 'development';
@@ -31,16 +30,13 @@ module.exports = {
           loader: 'ts-loader'
         },
         {
-          test: /\.(svelte|html)$/,
+          test: /\.(svelte|html|svx)$/,
           use: {
             loader: 'svelte-loader',
             options: {
               dev,
               hydratable: true,
-              preprocess: sveltePreprocess({
-                sourceMap: dev,
-                ...preprocessOptions,
-              }),
+              preprocess: getPreprocess(dev),
               hotReload: false // pending https://github.com/sveltejs/svelte/issues/2377
             }
           }
@@ -73,17 +69,14 @@ module.exports = {
           loader: 'ts-loader'
         },
         {
-          test: /\.(svelte|html)$/,
+          test: /\.(svelte|html|svx)$/,
           use: {
             loader: 'svelte-loader',
             options: {
               css: false,
               generate: 'ssr',
               hydratable: true,
-              preprocess: sveltePreprocess({
-                sourceMap: dev,
-                ...preprocessOptions,
-              }),
+              preprocess: getPreprocess(dev),
               dev
             }
           }

@@ -1,4 +1,5 @@
 const sveltePreprocess = require('svelte-preprocess');
+const { mdsvex } = require('mdsvex');
 
 const preprocessOptions = {
   postcss: {
@@ -9,8 +10,20 @@ const preprocessOptions = {
   },
 };
 
+function getPreprocess(dev) {
+  return [
+    mdsvex({
+      extension: '.svx',
+    }),
+    sveltePreprocess({
+      sourceMap: dev,
+      ...preprocessOptions
+    }),
+  ];
+}
+
 module.exports = {
-  preprocess: sveltePreprocess(preprocessOptions),
-  preprocessOptions,
+  preprocess: getPreprocess(false),
+  getPreprocess,
 };
 
