@@ -17,6 +17,15 @@ const fileLoaderRule = {
     'file-loader',
   ]
 };
+const svgLoaderRule = {
+  test: /\.svg$/,
+  use: {
+    loader: 'svg-url-loader',
+    options: {
+      encoding: 'base64',
+    },
+  },
+};
 
 module.exports = {
   client: {
@@ -42,6 +51,7 @@ module.exports = {
           }
         },
         fileLoaderRule,
+        svgLoaderRule,
       ]
     },
     mode,
@@ -82,6 +92,7 @@ module.exports = {
           }
         },
         fileLoaderRule,
+        svgLoaderRule,
       ]
     },
     mode,
