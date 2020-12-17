@@ -3,8 +3,7 @@ const ghpages = require('gh-pages');
 ghpages.publish(
   '__sapper__/export',
   {
-    branch: 'master',
-    dest: 'docs',
+    branch: 'dist',
     repo: 'git@github.com:bryanmylee/website.git',
     user: {
       name: 'bryanmylee',
