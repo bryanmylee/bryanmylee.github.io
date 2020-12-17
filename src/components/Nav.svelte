@@ -1,23 +1,12 @@
 <script lang="ts">
   import NavContactLinks from './NavContactLinks.svelte';
-  import navBarBg from 'assets/nav-bar-bg.svg';
+  import NavBg from './NavBg.svelte';
 
   export let segment: string;
 </script>
 
 <div class="relative">
-  <div
-      class="absolute inset-0 bg-accent"
-      style={`
-        z-index: -1;
-        -webkit-mask-image: url("${navBarBg}");
-        mask-image: url("${navBarBg}");
-        -webkit-mask-size: 12px 4px;
-        mask-size: 12px 4px;
-        -webkit-mask-repeat: repeat;
-        mask-repeat: repeat;
-      `}
-      />
+  <NavBg class="absolute inset-0 bg-accent -z-1"/>
   <nav class="flex justify-center">
     <div class="flex items-stretch justify-between w-full max-w-4xl">
       <div class="flex items-center bg-accent">

@@ -19,6 +19,9 @@ module.exports = {
         accent: colors.yellow,
         base: colors.solargreen,
       },
+      zIndex: {
+        '-1': '-1',
+      },
     },
   },
   variants: {
