@@ -12,7 +12,9 @@
     "export": "run-s build:css export:sapper",
     "export:sapper": "sapper export",
     "start": "node __sapper__/build",
-    "validate": "svelte-check --ignore src/node_modules/@sapper"
+    "validate": "svelte-check --ignore src/node_modules/@sapper",
+    "deploy": "run-s export deploy:gh",
+    "deploy:gh": "node ./scripts/deploy.js"
   },
   "dependencies": {
     "compression": "^1.7.1",
