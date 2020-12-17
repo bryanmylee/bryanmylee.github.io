@@ -42,7 +42,6 @@ module.exports = {
           }
         },
         fileLoaderRule,
-        svgLoaderRule,
       ]
     },
     mode,
@@ -83,7 +82,6 @@ module.exports = {
           }
         },
         fileLoaderRule,
-        svgLoaderRule,
       ]
     },
     mode,
