@@ -12,8 +12,8 @@
 </script>
 
 <div class={className}>
-  <Github class={iconStyle}/>
-  <LinkedIn class={iconStyle}/>
-  <Email class={iconStyle}/>
+  <a href="https://github.com/bryanmylee"><Github class={iconStyle}/></a>
+  <a href="https://www.linkedin.com/in/bryan-lee-min-yuan"><LinkedIn class={iconStyle}/></a>
+  <a href="mailto:bryanmylee@gmail.com"><Email class={iconStyle}/></a>
 </div>
 
