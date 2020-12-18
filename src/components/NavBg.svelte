@@ -1,14 +1,21 @@
 <script lang="ts">
+  import { onMount } from 'svelte';
+  import { fade } from 'svelte/transition';
   import navBarBg from 'assets/nav-bar-bg.svg';
 
   export { className as class };
   let className = "";
+
+  let ready = false;
+  onMount(() => ready = true);
 </script>
 
-<div class={className} style={`
-  -webkit-mask-image: url("${navBarBg}");
-  mask-image: url("${navBarBg}");`}
-/>
+{#if ready}
+  <div class={className} in:fade style={`
+    -webkit-mask-image: url("${navBarBg}");
+    mask-image: url("${navBarBg}");`}
+  />
+{/if}
 
 <style>
   div {
