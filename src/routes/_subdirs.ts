@@ -3,7 +3,7 @@
  */
 import type Link from '@my/models/Link';
 
-const links: Link[] = [
+const subdirs: Link[] = [
   { name: 'blog', href: 'blog' },
   { name: 'projects', href: 'projects' },
   { name: 'skills', href: 'skills' },
@@ -11,5 +11,5 @@ const links: Link[] = [
   { name: 'contact', href: 'contact' },
 ];
 
-export default links;
+export default subdirs;
 
