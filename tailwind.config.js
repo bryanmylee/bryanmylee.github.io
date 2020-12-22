@@ -22,6 +22,7 @@ module.exports = {
       fontFamily: {
         ...fontFamily,
         mono: ['IBM Plex Mono', ...fontFamily.mono],
+        sans: ['IBM Plex Sans', ...fontFamily.sans],
       },
       colors: {
         ...colors,
