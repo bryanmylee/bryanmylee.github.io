@@ -14,7 +14,7 @@
 
 <IntroHeader descriptions={introDescriptions} class="px-3 mt-2 text-xl"/>
 
-<div class="mx-3 mt-4 space-y-2">
+<div class="mx-3 mt-4 space-y-3">
   <p class="p-3 card leading-8">
     Talk to me about all things tech! I am a computer geek first and foremost,
     with a passion for software development. In my free time, I enjoy building
