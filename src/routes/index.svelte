@@ -4,7 +4,13 @@
 
 <script lang="ts">
   import IntroHeader from '@my/components/IntroHeader';
+
+  const introDescriptions = [
+    'computer science student',
+    'vim enthusiast',
+    'web developer',
+  ];
 </script>
 
-<IntroHeader class="px-3"/>
+<IntroHeader descriptions={introDescriptions} class="px-3"/>
 
