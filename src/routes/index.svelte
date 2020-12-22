@@ -13,11 +13,25 @@
   ];
 </script>
 
-<IntroHeader descriptions={introDescriptions} class="px-3 mt-2 text-lg"/>
+<IntroHeader descriptions={introDescriptions} class="px-3 mt-2 text-xl"/>
 
 <div class="mx-3 mt-4 space-y-2">
-  <Card class="p-3">
-    Talk to me about all things tech!
+  <Card class="p-3 leading-8">
+    Talk to me about all things tech! I am a computer geek first and foremost,
+    with a passion for software development. In my free time, I enjoy building
+    tools and writing scripts that solve real-world problems.
+  </Card>
+  <Card class="p-3 leading-8">
+    I am currently pursuing a computer science degree from Singapore Management
+    University, but I also enjoy learning outside of class and keeping up with
+    the industry. I am especially interested in software architecture and design
+    patterns, and I always strive to write beautiful code.
+  </Card>
+  <Card class="p-3 leading-8">
+    To learn more about me, check out my <a href="/projects">projects</a> and
+    <a href="/experience" class="a">experience</a>. You can also read my
+    <a href="/blog">blog</a> where I share interesting lessons that I have
+    learnt.
   </Card>
 </div>
 
