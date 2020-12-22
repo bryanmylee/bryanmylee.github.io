@@ -12,7 +12,7 @@
   ];
 </script>
 
-<IntroHeader descriptions={introDescriptions} class="px-3 mt-2 text-xl"/>
+<IntroHeader descriptions={introDescriptions} class="px-3 mt-2 font-mono text-xl"/>
 
 <div class="mx-3 mt-4 space-y-3">
   <p class="p-3 card leading-8">

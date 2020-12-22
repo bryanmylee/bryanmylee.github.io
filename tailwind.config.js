@@ -1,3 +1,8 @@
+const fontFamily = {
+  sans: ['ui-sans-serif', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI' ,'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans', 'sans-serif', 'Apple Color Emoji','Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'],
+  mono: ['ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', 'monospace'],
+};
+
 const colors = {
   'texas-rose': {
     DEFAULT: 'rgba(255, 177, 85, 1)',
@@ -15,7 +20,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'mono': ['IBM Plex Mono', 'ui-monospace'],
+        ...fontFamily,
+        mono: ['IBM Plex Mono', ...fontFamily.mono],
       },
       colors: {
         ...colors,
