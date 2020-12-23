@@ -25,7 +25,11 @@ const colors = {
 };
 
 module.exports = {
-  purge: ['./src/**/*.svelte'],
+  purge: [
+    './src/**/*.svelte',
+    './src/**/*.html',
+    './src/**/*.svg'
+  ],
   theme: {
     aspectRatio: {
       'square': [1, 1],
