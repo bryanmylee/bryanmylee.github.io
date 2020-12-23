@@ -14,7 +14,7 @@
   ];
 </script>
 
-<IntroHeader descriptions={introDescriptions} class="px-3 mt-2 font-mono text-xl"/>
+<IntroHeader descriptions={introDescriptions} class="px-3 mt-2"/>
 
 <div class="
     flex flex-col mt-3 space-y-3
