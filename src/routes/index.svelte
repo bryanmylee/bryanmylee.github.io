@@ -5,6 +5,7 @@
 <script lang="ts">
   import { fade } from 'svelte/transition';
   import IntroHeader from '@my/components/IntroHeader';
+  import PreviewBadge from '@my/components/PreviewBadge';
   import profilePhoto from '@my/assets/profile.jpg';
 
   const introDescriptions = [
@@ -41,4 +42,6 @@
   </div>
   <img src={profilePhoto} alt="profile" in:fade class="md:max-h-96">
 </div>
+
+<PreviewBadge/>
 
