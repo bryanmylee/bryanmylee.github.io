@@ -28,7 +28,7 @@
   </p>
   <p class="p-3 card leading-8">
     To learn more about me, check out my <a href="/projects">projects</a> and
-    <a href="/experience" class="a">experience</a>. You can also read my
+    <a href="/experience">experience</a>. You can also read my
     <a href="/blog">blog</a> where I share interesting lessons that I have
     learnt.
   </p>
