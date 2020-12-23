@@ -7,6 +7,7 @@
   import IntroHeader from '@my/components/IntroHeader';
   import PreviewBadge from '@my/components/PreviewBadge';
   import profilePhoto from '@my/assets/profile.jpg';
+  import whitehatsLogo from '@my/assets/whitehats-logo.png';
 
   const introDescriptions = [
     'computer science student',
@@ -21,7 +22,7 @@
     flex flex-col mt-3 space-y-3
     md:flex-row md:space-x-3 md:space-y-0"
     >
-  <div class="space-y-3 para">
+  <div class="space-y-3">
     <p class="p-3 card leading-8">
       Talk to me about all things tech! I am a computer geek first and foremost,
       with a passion for software development. In my free time, I enjoy building
@@ -43,5 +44,14 @@
   <img src={profilePhoto} alt="profile" in:fade class="md:max-h-96">
 </div>
 
-<PreviewBadge/>
+<h2 class="font-bold text-accent">Experience</h2>
+
+<div class="flex">
+  <PreviewBadge
+    imgSrc={whitehatsLogo}
+    imgAlt="whitehats"
+    title="Whitehat Society"
+    subtitle="President"
+    />
+</div>
 
