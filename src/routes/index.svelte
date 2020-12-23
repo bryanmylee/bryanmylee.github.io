@@ -5,7 +5,6 @@
 <script lang="ts">
   import { fade } from 'svelte/transition';
   import IntroHeader from '@my/components/IntroHeader';
-  import SsrMounted from '@my/components/SsrMounted';
   import profilePhoto from '@my/assets/profile.jpg';
 
   const introDescriptions = [
@@ -40,8 +39,6 @@
       learnt.
     </p>
   </div>
-  <SsrMounted>
-    <img src={profilePhoto} alt="profile" in:fade class="md:max-h-96">
-  </SsrMounted>
+  <img src={profilePhoto} alt="profile" in:fade class="md:max-h-96">
 </div>
 
