@@ -14,11 +14,11 @@
   ];
 </script>
 
-<IntroHeader descriptions={introDescriptions} class="px-3 mt-2"/>
+<IntroHeader descriptions={introDescriptions}/>
 
 <div class="
     flex flex-col mt-3 space-y-3
-    md:flex-row md:mx-3 md:space-x-3 md:space-y-0"
+    md:flex-row md:space-x-3 md:space-y-0"
     >
   <div class="space-y-3 para">
     <p class="p-3 card leading-8">

@@ -13,7 +13,7 @@
 <Nav/>
 <SubNav {segment} links={subdirs}/>
 <PageTransitions refresh={segment} transition={quickFade}>
-  <main class="max-w-5xl mx-auto my-0 mt-4">
+  <main class="max-w-5xl p-3 mx-auto my-0 mt-6">
     <slot/>
   </main>
 </PageTransitions>
