@@ -8,7 +8,7 @@
 
 <Nav/>
 <SubNav {segment} links={subdirs} />
-<main class="max-w-4xl mx-auto my-0 mt-4">
+<main class="max-w-5xl mx-auto my-0 mt-4">
   <slot/>
 </main>
 
