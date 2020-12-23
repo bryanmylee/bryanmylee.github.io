@@ -28,7 +28,6 @@ module.exports = {
         ...colors,
         accent: colors['texas-rose'],
         base: colors['shark'],
-        'card-base': colors['outer-space'],
       },
       zIndex: {
         '-1': '-1',
