@@ -23,3 +23,7 @@ h3 {
   @apply font-mono text-lg;
 }
 
+h4 {
+  @apply font-mono;
+}
+
