@@ -3,6 +3,7 @@
 </svelte:head>
 
 <script lang="ts">
+  import ExperienceProject from '@my/components/ExperienceProject';
   import whitehatsLogo from '@my/assets/logos/whitehats-logo.png';
 </script>
 
@@ -36,16 +37,11 @@
 
         <h3 class="font-bold">Projects</h3>
 
-        <div class="
-          relative card p-3 pl-6 leading-8 prose
-          before:empty-content before:absolute before:bg-accent
-          before:w-3 before:left-0 before:top-0 before:bottom-0"
-          >
-          <h4>Cyber Hacking Fundamentals</h4>
+        <ExperienceProject projectTitle="Cyber Hacking Fundamentals">
           <ul>
-            <li>initiated and conducted a beginner-oriented workshop that teaches the basics of cybersecurity.</li>
+            <li>Initiated and conducted a beginner-oriented workshop that teaches the basics of cybersecurity.</li>
           </ul>
-        </div>
+        </ExperienceProject>
 
       </div>
 

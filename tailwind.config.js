@@ -54,6 +54,9 @@ module.exports = {
             strong: {
               color: theme('colors.accent.DEFAULT'),
             },
+            li: {
+              marginBottom: '0',
+            },
           },
         },
       }),
