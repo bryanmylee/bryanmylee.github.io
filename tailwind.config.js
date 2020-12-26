@@ -44,6 +44,10 @@ module.exports = {
             h2: { color: 'white' },
             h3: { color: 'white' },
             h4: { color: 'white' },
+            p: {
+              marginTop: theme('spacing.3'),
+              marginBottom: theme('spacing.3'),
+            },
             a: {
               color: theme('colors.accent.DEFAULT'),
             },
