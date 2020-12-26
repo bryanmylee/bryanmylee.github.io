@@ -46,6 +46,34 @@
           </ul>
         </ExperienceProject>
 
+        <ExperienceProject projectTitle="Bonding Day CTF">
+          <ul>
+            <li>
+              Organised a day of orientation and games for Whitehat members.
+            </li>
+            <li>
+              Developed and hosted a capture-the-flag (CTF) competition for the
+              event.
+            </li>
+          </ul>
+        </ExperienceProject>
+
+        <ExperienceProject projectTitle="Whitehacks 2021">
+          <ul>
+            <li>
+              Executed a Junior College (JC) outreach programme comprising
+              training workshops, a CTF competition, and networking
+              opportunities with industry partners.
+            </li>
+            <li>
+              Liaised with partners to secure funding and support.
+            </li>
+            <li>
+              Recruited and managed an organising committee.
+            </li>
+          </ul>
+        </ExperienceProject>
+
       </div>
 
     </div>
