@@ -11,6 +11,10 @@
   @apply text-accent underline;
 }
 
+.card > strong {
+  @apply text-accent;
+}
+
 h1 {
   @apply font-mono text-2xl;
 }

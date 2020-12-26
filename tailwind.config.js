@@ -40,9 +40,13 @@ module.exports = {
   },
   variants: {
     extend: {
-      display: ['before', 'responsive'],
+      backgroundColor: ['before'],
+      display: ['before'],
+      inset: ['before'],
+      position: ['before'],
+      width: ['before'],
     },
-    aspectRatio: ['before', 'responsive'],
+    aspectRatio: ['before'],
   },
   plugins: [
     require('tailwindcss-pseudo-elements'),
