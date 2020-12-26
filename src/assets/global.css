@@ -7,27 +7,3 @@
   @apply bg-outer-space;
 }
 
-.card > a {
-  @apply text-accent underline;
-}
-
-.card > strong {
-  @apply text-accent;
-}
-
-h1 {
-  @apply font-mono text-2xl;
-}
-
-h2 {
-  @apply font-mono text-xl;
-}
-
-h3 {
-  @apply font-mono text-lg;
-}
-
-h4 {
-  @apply font-mono;
-}
-

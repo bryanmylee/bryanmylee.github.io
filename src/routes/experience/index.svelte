@@ -21,7 +21,7 @@
 
   <div class="space-y-3">
     <h2 class="font-bold">Whitehat Society</h2>
-    <div class="card p-3 leading-8">
+    <div class="card p-3 leading-8 prose">
       I am the <strong>President of the Whitehat Society</strong> &mdash; a
       cybersecurity interest group &mdash; in 2021. We believe in open knowledge, and
       strive to empower future generations of programmers and cybersecurity
@@ -33,7 +33,7 @@
     <h3 class="font-bold">Projects</h3>
 
     <div class="
-      relative card p-3 pl-6 leading-8
+      relative card p-3 pl-6 leading-8 prose
       before:empty-content before:absolute before:bg-accent
       before:w-3 before:left-0 before:top-0 before:bottom-0"
       >
@@ -47,9 +47,3 @@
 
 </div>
 
-<style>
-  li:before {
-    content: "–";
-    margin-right: 0.5rem;
-  }
-</style>

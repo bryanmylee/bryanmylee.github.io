@@ -36,6 +36,23 @@ module.exports = {
         '-1': '-1',
       },
       minWidth: theme => theme('width'),
+      typography: theme => ({
+        DEFAULT: {
+          css: {
+            color: 'white',
+            h1: { color: 'white' },
+            h2: { color: 'white' },
+            h3: { color: 'white' },
+            h4: { color: 'white' },
+            a: {
+              color: theme('colors.accent.DEFAULT'),
+            },
+            strong: {
+              color: theme('colors.accent.DEFAULT'),
+            },
+          },
+        },
+      }),
     },
   },
   variants: {
@@ -49,6 +66,7 @@ module.exports = {
     aspectRatio: ['before'],
   },
   plugins: [
+    require('@tailwindcss/typography'),
     require('tailwindcss-pseudo-elements'),
     require('tailwindcss-aspect-ratio'),
     plugin(({ addUtilities }) => {
