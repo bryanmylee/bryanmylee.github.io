@@ -3,15 +3,29 @@
 </svelte:head>
 
 <script lang="ts">
-  import ExperienceProject from '@my/components/ExperienceProject';
+  import Logo from '@my/components/Logo';
   import whitehatsLogo from '@my/assets/logos/whitehats-logo.png';
   import garudaLogo from '@my/assets/logos/garuda-robotics-logo.png';
   import codeGakkoLogo from '@my/assets/logos/code-gakko-logo.png';
+
+  let companies = [
+    { logo: whitehatsLogo, title: "Whitehat Society" },
+    { logo: garudaLogo, title: "Garuda Robotics" },
+    { logo: codeGakkoLogo, title: "Code Gakko" },
+  ];
+  let selected = 0;
 </script>
 
 <div class="flex">
-  <div class="w-48 h-full min-w-24 bg-accent">
-
+  <div class="flex flex-col items-center space-y-3 w-32">
+    {#each companies as { logo, title }, index (title)}
+      <button
+        class={`transition-all ${selected === index ? 'w-32' : 'w-16'}`}
+        on:click={() => selected = index}
+        >
+        <Logo src={logo} alt={title}/>
+      </button>
+    {/each}
   </div>
 </div>
 
