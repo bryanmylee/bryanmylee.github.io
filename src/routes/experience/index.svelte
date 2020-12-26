@@ -5,10 +5,17 @@
 <script lang="ts">
   import ExperienceProject from '@my/components/ExperienceProject';
   import whitehatsLogo from '@my/assets/logos/whitehats-logo.png';
+  import garudaLogo from '@my/assets/logos/garuda-robotics-logo.png';
+  import codeGakkoLogo from '@my/assets/logos/code-gakko-logo.png';
 </script>
 
+<div class="flex">
+  <div class="w-48 h-full min-w-24 bg-accent">
 
-<div class="flex flex-col items-center">
+  </div>
+</div>
+
+<!--div class="flex flex-col items-center">
   <div>
     <h2 class="font-bold mb-3">Whitehat Society</h2>
 
@@ -82,5 +89,5 @@
 
 <div class="flex justify-center mt-3 space-x-3">
 
-</div>
+</div-->
 
