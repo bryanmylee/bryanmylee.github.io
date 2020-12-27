@@ -35,14 +35,18 @@
   $: selected = experiences[selectedKey];
 
   const getSummary = async (key: string) => {
-    return (await import(`./_summary/${key}.svx`)).default;
+    return (await import(`./_summary/${key}.mdx`)).default;
   }
 </script>
 
-<div class="flex">
+<div class="flex space-x-3">
   <ExperienceSelector bind:selectedKey {experiences}/>
   {#await getSummary(selectedKey) then Summary}
     <ExperienceBody companyName={selected.companyName} {Summary}/>
+  {:catch}
+    <p>
+      No summary found.
+    </p>
   {/await}
 </div>
 

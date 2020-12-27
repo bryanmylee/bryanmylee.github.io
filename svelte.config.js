@@ -13,7 +13,7 @@ const preprocessOptions = {
 function getPreprocess(dev) {
   return [
     mdsvex({
-      extension: '.svx',
+      extension: '.mdx',
     }),
     sveltePreprocess({
       sourceMap: dev,

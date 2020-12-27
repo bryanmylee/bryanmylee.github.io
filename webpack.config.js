@@ -39,7 +39,7 @@ module.exports = {
           loader: 'ts-loader'
         },
         {
-          test: /\.(svelte|html|svx)$/,
+          test: /\.(svelte|html|mdx)$/,
           use: {
             loader: 'svelte-loader',
             options: {
@@ -79,7 +79,7 @@ module.exports = {
           loader: 'ts-loader'
         },
         {
-          test: /\.(svelte|html|svx)$/,
+          test: /\.(svelte|html|mdx)$/,
           use: {
             loader: 'svelte-loader',
             options: {
