@@ -13,6 +13,7 @@ const preprocessOptions = {
 function getPreprocess(dev) {
   return [
     mdsvex({
+      layout: './src/layouts/blogpost.svelte',
       extension: '.mdx',
     }),
     sveltePreprocess({
