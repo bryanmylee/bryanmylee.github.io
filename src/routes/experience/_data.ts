@@ -85,8 +85,8 @@ export default {
       position: 'Educator',
       logo: codeGakkoLogo,
       summary: `
-        I worked with Code Gakko to promote programming education among young
-        students.
+        I worked with Code Gakko as an <strong>Educator</strong> to promote
+        programming education among young students.
       `,
       projects: [
       ],
