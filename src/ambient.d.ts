@@ -1,3 +1,5 @@
+import type {SvelteComponentDev} from "svelte/internal";
+
 /**
  * These declarations tell TypeScript that we allow import of images, e.g.
  * ```
@@ -35,5 +37,10 @@ declare module "*.svg" {
 
 declare module "*.webp" {
   const value: string;
+  export = value;
+}
+
+declare module "*.svx" {
+  const value: SvelteComponentDev;
   export = value;
 }
