@@ -3,6 +3,7 @@
 </svelte:head>
 
 <script lang="ts">
+  import dayjs from 'dayjs';
   import ExperienceBody from '@my/components/ExperienceBody';
   import ExperienceProjects from '@my/components/ExperienceProjects';
   import ExperienceSelector from '@my/components/ExperienceSelector';
@@ -29,7 +30,12 @@
   }
 
   $: selected = experiences[key];
-  $: ({ companyName, summary, projects } = selected);
+  $: ({ companyName, summary, projects, start, end } = selected);
+
+  const parseFormat = 'YYYY-MM-DD';
+  const displayFormat = 'MMM YYYY'
+  $: displayStart = dayjs(start, parseFormat).format(displayFormat);
+  $: displayEnd = end ? dayjs(end, parseFormat).format(displayFormat) : 'present';
 </script>
 
 <div class="
@@ -38,7 +44,8 @@
   >
   <ExperienceSelector bind:selectedKey={key} {experiences}/>
   <div class="space-y-3 prose">
-    <h2 class="font-mono mb-3">{companyName}</h2>
+    <h2 class="font-mono">{companyName}</h2>
+    <span class="font-mono">{displayStart} &mdash; {displayEnd}</span>
     <ExperienceBody {summary}/>
     <ExperienceProjects {projects}/>
   </div>

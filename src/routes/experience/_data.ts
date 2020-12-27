@@ -9,6 +9,7 @@ const page: IExperiencePage = {
       companyName: 'Whitehat Society',
       position: 'President',
       logo: whitehatsLogo,
+      start: '2020-07-01',
       summary: `
         I am the <strong>President of the Whitehat Society</strong> &mdash; a
         cybersecurity interest group &mdash; in 2021. We believe in open
@@ -49,6 +50,8 @@ const page: IExperiencePage = {
       companyName: 'Garuda Robotics',
       position: 'Full-Stack Intern',
       logo: garudaRoboticsLogo,
+      start: '2020-05-11',
+      end: '2020-08-08',
       summary: `
         As an <strong>Engineering Intern at Garuda Robotics</strong>, I worked
         on a variety of projects spanning multiple domains.
@@ -79,6 +82,8 @@ const page: IExperiencePage = {
       companyName: 'Code Gakko',
       position: 'Educator',
       logo: codeGakkoLogo,
+      start: '2018-11-17',
+      end: '2019-08-19',
       summary: `
         I worked with Code Gakko as an <strong>Educator</strong> to promote
         programming education among young students.
