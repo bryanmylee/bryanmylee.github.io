@@ -3,33 +3,33 @@
 </svelte:head>
 
 <script lang="ts">
-  import { onMount } from 'svelte';
   import ExperienceBody from '@my/components/ExperienceBody';
   import ExperienceProjects from '@my/components/ExperienceProjects';
   import ExperienceSelector from '@my/components/ExperienceSelector';
+  import { useHash } from '@my/utils/useHash';
   import data from './_data';
   const { experiences } = data;
 
-  export let key = 'whitehats';
-  $: selected = experiences[key];
-  $: ({ companyName, summary, projects } = selected);
+  let key = 'whitehats';
+  const hash = useHash();
 
   let loaded = false;
-  $: updateKey(key);
-  function updateKey(value: string) {
-    if (loaded && typeof window !== 'undefined') {
-      history.replaceState(history.state, null, `experience#${value}`);
+  $: setHash(key);
+  function setHash(value: string) {
+    if (loaded) {
+      $hash = value;
     };
     loaded = true;
   }
 
-  onMount(() => {
-    if (typeof window === 'undefined') return;
-    if (window.location.hash.length === 0) return;
-    const hashKey = window.location.hash.slice(1);
-    if (!Object.keys(experiences).includes(hashKey)) return;
-    key = hashKey;
-  });
+  $: setKey($hash);
+  function setKey(value: string) {
+    if (!Object.keys(experiences).includes(value)) return;
+    key = value;
+  }
+
+  $: selected = experiences[key];
+  $: ({ companyName, summary, projects } = selected);
 </script>
 
 <div class="flex space-x-3">
