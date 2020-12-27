@@ -2,28 +2,50 @@
   <title>Bryan Lee - experience </title>
 </svelte:head>
 
-<script lang="ts">
-  import Logo from '@my/components/Logo';
+<script lang="ts" context="module">
   import whitehatsLogo from '@my/assets/logos/whitehats-logo.png';
-  import garudaLogo from '@my/assets/logos/garuda-robotics-logo.png';
+  import garudaRoboticsLogo from '@my/assets/logos/garuda-robotics-logo.png';
   import codeGakkoLogo from '@my/assets/logos/code-gakko-logo.png';
 
-  let companies = [
-    { logo: whitehatsLogo, title: "Whitehat Society" },
-    { logo: garudaLogo, title: "Garuda Robotics" },
-    { logo: codeGakkoLogo, title: "Code Gakko" },
-  ];
-  let selected = 0;
+  export interface Experience {
+    companyName: string;
+    position: string;
+    logo: string;
+  }
+
+  export const companies: Record<string, Experience> = {
+    'whitehats': {
+      companyName: 'Whitehat Society',
+      position: 'President',
+      logo: whitehatsLogo,
+    },
+    'garuda': {
+      companyName: 'Garuda Robotics',
+      position: 'Full-Stack Intern',
+      logo: garudaRoboticsLogo,
+    },
+    'gakko': {
+      companyName: 'Code Gakko',
+      position: 'Educator',
+      logo: codeGakkoLogo,
+    },
+  }
+</script>
+
+<script lang="ts">
+  import Logo from '@my/components/Logo';
+
+  let selected = 'whitehats';
 </script>
 
 <div class="flex">
   <div class="flex flex-col items-center space-y-3 w-32">
-    {#each companies as { logo, title }, index (title)}
+    {#each Object.entries(companies) as [key, { companyName, logo }] (key)}
       <button
-        class={`transition-all ${selected === index ? 'w-32' : 'w-16'}`}
-        on:click={() => selected = index}
+        class={`transition-all ${selected === key ? 'w-32' : 'w-16'}`}
+        on:click={() => selected = key}
         >
-        <Logo src={logo} alt={title}/>
+        <Logo src={logo} alt={companyName}/>
       </button>
     {/each}
   </div>

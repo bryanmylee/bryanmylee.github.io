@@ -5,5 +5,13 @@
 
 .card {
   @apply bg-outer-space;
+  button & {
+    &:hover, &:focus {
+      @apply bg-outer-space-lighter;
+    }
+    &:active {
+      @apply bg-outer-space-darker;
+    }
+  }
 }
 

@@ -1,5 +1,13 @@
 const defaultTheme = require('tailwindcss/defaultTheme');
 const plugin = require('tailwindcss/plugin');
+const chroma = require('chroma-js');
+
+const color = (base) => ({
+  DEFAULT: base,
+  lighter: chroma(base).brighten().css(),
+  darker: chroma(base).darken(0.5).css(),
+  '75': chroma(base).alpha(0.75).css(),
+});
 
 module.exports = {
   purge: [
@@ -16,15 +24,9 @@ module.exports = {
         sans: ['IBM Plex Sans', ...defaultTheme.fontFamily.sans],
       },
       colors: {
-        'texas-rose': {
-          DEFAULT: 'rgba(255, 177, 85, 1)',
-        },
-        shark: {
-          DEFAULT: 'rgba(26, 39, 40, 1)',
-        },
-        'outer-space': {
-          DEFAULT: 'rgba(36, 50, 51, 1)',
-        },
+        'texas-rose': color('rgba(255, 177, 85, 1)'),
+        shark: color('rgba(26, 39, 40, 1)'),
+        'outer-space': color('rgba(36, 50, 51, 1)'),
         get accent() {
           return this['texas-rose'];
         },
