@@ -1,11 +1,4 @@
-export interface IIndexPage {
-  headers: string[];
-  body: IBody;
-}
-
-export interface IBody {
-  paragraphs: string[];
-}
+import type { IIndexPage } from '@my/models/IndexPage';
 
 const page: IIndexPage = {
   headers: [

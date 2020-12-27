@@ -1,23 +1,7 @@
 import whitehatsLogo from '@my/assets/logos/whitehats-logo.png';
 import garudaRoboticsLogo from '@my/assets/logos/garuda-robotics-logo.png';
 import codeGakkoLogo from '@my/assets/logos/code-gakko-logo.png';
-
-export interface IExperiencePage {
-  experiences: Record<string, IExperience>;
-}
-
-export interface IExperience {
-  companyName: string;
-  position: string;
-  logo: string;
-  summary: string;
-  projects: IProject[];
-}
-
-export interface IProject {
-  projectName: string;
-  tasks: string[];
-}
+import type { IExperiencePage } from '@my/models/ExperiencePage';
 
 const page: IExperiencePage = {
   experiences: {
