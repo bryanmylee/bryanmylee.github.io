@@ -32,7 +32,7 @@
   $: ({ companyName, summary, projects } = selected);
 </script>
 
-<div class="flex space-x-3">
+<div class="flex justify-center space-x-3">
   <ExperienceSelector bind:selectedKey={key} {experiences}/>
   <div class="space-y-3">
     <h2 class="mb-3">{companyName}</h2>
