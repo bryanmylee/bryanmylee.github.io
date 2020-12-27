@@ -19,17 +19,12 @@
   import IntroBody from '@my/components/IntroBody';
   import IntroExperience from '@my/components/IntroExperience';
   import IntroProjects from '@my/components/IntroProjects';
+  import data from './_data';
   import { experiences } from './experience/index.svelte';
-
-  const introDescriptions = [
-    'computer science student',
-    'vim enthusiast',
-    'web developer',
-  ];
 </script>
 
-<IntroHeader descriptions={introDescriptions}/>
-<IntroBody class="mt-3"/>
+<IntroHeader descriptions={data.headers}/>
+<IntroBody paragraphs={data.body.paragraphs} class="mt-3"/>
 <IntroExperience {experiences} class="mt-10"/>
 <IntroProjects class="mt-10"/>
 
