@@ -33,12 +33,12 @@
 </script>
 
 <div class="
-  flex flex-col justify-center space-y-3 items-center
-  lg:flex-row lg:space-x-3 lg:items-start"
+  flex flex-col justify-center space-y-6 items-center
+  lg:flex-row lg:space-x-6 lg:space-y-0 lg:items-start"
   >
   <ExperienceSelector bind:selectedKey={key} {experiences}/>
-  <div class="space-y-3">
-    <h2 class="mb-3">{companyName}</h2>
+  <div class="space-y-3 prose">
+    <h2 class="font-mono mb-3">{companyName}</h2>
     <ExperienceBody {summary}/>
     <ExperienceProjects {projects}/>
   </div>
