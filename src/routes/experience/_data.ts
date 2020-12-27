@@ -46,7 +46,7 @@ const page: IExperiencePage = {
           tasks: [
             'Organised a day of orientation and games for Whitehat members.',
             `Developed and hosted a capture-the-flag (CTF) competition for the
-             event.`,
+            event.`,
           ],
         },
         {
@@ -71,28 +71,22 @@ const page: IExperiencePage = {
       `,
       projects: [
         {
-          projectName: 'Cyber Hacking Fundamentals',
+          projectName: 'Garuda Copilot',
           tasks: [
-            `Initiated and conducted a beginner-oriented workshop that teaches
-            the basics of cybersecurity.`,
+            `Developed a warning system for beyond-visual-line-of-sight drone
+            flight systems.`,
+            `Contributed to the development of a scalable cloud architecture
+            backing the messaging pipeline of managed drones using CouchDB and
+            RabbitMQ.`,
           ],
         },
         {
-          projectName: 'Bonding Day CTF',
+          projectName: 'Garuda Plex',
           tasks: [
-            'Organised a day of orientation and games for Whitehat members.',
-            `Developed and hosted a capture-the-flag (CTF) competition for the
-             event.`,
-          ],
-        },
-        {
-          projectName: 'Whitehacks 2021',
-          tasks: [
-            `Executed a Junior College (JC) outreach programme comprising
-            training workshops, a CTF competition, and networking opportunities
-            with industry partners.`,
-            'Liaised with partners to secure funding and support.',
-            'Recruited and managed an organising committee.',
+            `Designed a maintainable architecture for an in-house React/Redux
+            application.`,
+            `Utilise the OpenStreetMap API and Leaflet to upgrade legacy React
+            components designed for the Google Maps API.`,
           ],
         },
       ],
@@ -106,8 +100,22 @@ const page: IExperiencePage = {
         programming education among young students.
       `,
       projects: [
+        {
+          projectName: 'Stamford American International School Instructor',
+          tasks: [
+            `Engage the interest of young students in programming by delivering
+            course materials in an interesting and understandable way.`,
+          ],
+        },
+        {
+          projectName: 'Coba Curriculum Development',
+          tasks: [
+            `Develop a fully-online curriculum on programing for future
+            teaching projects.`,
+          ],
+        },
       ],
-    }
+    },
   },
 };
 
