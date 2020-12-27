@@ -38,6 +38,7 @@ module.exports = {
         '-1': '-1',
       },
       minWidth: theme => theme('width'),
+      minHeight: theme => theme('height'),
       typography: theme => ({
         DEFAULT: {
           css: {
