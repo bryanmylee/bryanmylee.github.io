@@ -19,6 +19,7 @@
   import IntroBody from '@my/components/IntroBody';
   import IntroExperience from '@my/components/IntroExperience';
   import IntroProjects from '@my/components/IntroProjects';
+  import { experience } from './experience/index.svelte';
 
   const introDescriptions = [
     'computer science student',
@@ -29,6 +30,6 @@
 
 <IntroHeader descriptions={introDescriptions}/>
 <IntroBody class="mt-3"/>
-<IntroExperience class="mt-10"/>
+<IntroExperience {experience} class="mt-10"/>
 <IntroProjects class="mt-10"/>
 

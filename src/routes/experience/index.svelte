@@ -8,7 +8,7 @@
   import codeGakkoLogo from '@my/assets/logos/code-gakko-logo.png';
   import type Experience from '@my/models/Experience';
 
-  export const companies: Record<string, Experience> = {
+  export const experience: Record<string, Experience> = {
     'whitehats': {
       companyName: 'Whitehat Society',
       position: 'President',
@@ -34,6 +34,6 @@
 </script>
 
 <div class="flex">
-  <ExperienceSelector bind:selectedKey={selected} {companies}/>
+  <ExperienceSelector bind:selectedKey={selected} {experience}/>
 </div>
 
