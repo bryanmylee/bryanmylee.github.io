@@ -1,4 +1,13 @@
-export default {
+export interface IIndexPage {
+  headers: string[];
+  body: IBody;
+}
+
+export interface IBody {
+  paragraphs: string[];
+}
+
+const page: IIndexPage = {
   headers: [
     'computer science student',
     'vim enthusiast',
@@ -21,4 +30,6 @@ export default {
     ],
   },
 };
+
+export default page;
 
