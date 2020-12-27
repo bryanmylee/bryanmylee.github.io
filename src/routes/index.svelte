@@ -21,10 +21,13 @@
   import IntroProjects from '@my/components/IntroProjects';
   import data from './_data';
   import experienceData from './experience/_data';
+  const { headers } = data;
+  const { paragraphs } = data.body;
+  const { experiences } = experienceData;
 </script>
 
-<IntroHeader descriptions={data.headers}/>
-<IntroBody paragraphs={data.body.paragraphs} class="mt-3"/>
-<IntroExperience experiences={experienceData.experiences} class="mt-10"/>
+<IntroHeader descriptions={headers}/>
+<IntroBody {paragraphs} class="mt-3"/>
+<IntroExperience {experiences} class="mt-10"/>
 <IntroProjects class="mt-10"/>
 
