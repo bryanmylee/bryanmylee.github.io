@@ -3,7 +3,7 @@
   import Nav from '@my/components/Nav';
   import PageTransitions from '@my/components/PageTransitions';
   import SubNav from '@my/components/SubNav';
-  import subdirs from './_subdirs';
+  import { subdirs } from './index.svelte';
 
   export let segment: string;
 

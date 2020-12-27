@@ -2,6 +2,18 @@
   <title>Bryan Lee</title>
 </svelte:head>
 
+<script lang="ts" context="module">
+  import type Link from '@my/models/Link';
+
+  export const subdirs: Link[] = [
+    { name: 'blog', href: 'blog' },
+    { name: 'projects', href: 'projects' },
+    { name: 'skills', href: 'skills' },
+    { name: 'experience', href: 'experience' },
+    { name: 'contact', href: 'contact' },
+  ];
+</script>
+
 <script lang="ts">
   import IntroHeader from '@my/components/IntroHeader';
   import IntroBody from '@my/components/IntroBody';
