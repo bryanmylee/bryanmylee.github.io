@@ -5,7 +5,7 @@
 
 .card {
   @apply bg-outer-space;
-  button & {
+  button &, a & {
     &:hover, &:focus {
       @apply bg-outer-space-lighter;
     }
