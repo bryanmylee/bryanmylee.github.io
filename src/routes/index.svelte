@@ -20,11 +20,11 @@
   import IntroExperience from '@my/components/IntroExperience';
   import IntroProjects from '@my/components/IntroProjects';
   import data from './_data';
-  import { experiences } from './experience/index.svelte';
+  import experienceData from './experience/_data';
 </script>
 
 <IntroHeader descriptions={data.headers}/>
 <IntroBody paragraphs={data.body.paragraphs} class="mt-3"/>
-<IntroExperience {experiences} class="mt-10"/>
+<IntroExperience experiences={experienceData.experiences} class="mt-10"/>
 <IntroProjects class="mt-10"/>
 
