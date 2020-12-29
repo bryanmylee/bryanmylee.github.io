@@ -4,13 +4,13 @@
 @tailwind utilities;
 
 .card {
-  @apply bg-outer-space;
+  @apply bg-charade;
   button &, a & {
     &:hover, &:focus {
-      @apply bg-outer-space-lighter;
+      @apply bg-charade-lighter;
     }
     &:active {
-      @apply bg-outer-space-darker;
+      @apply bg-charade-darker;
     }
   }
 }

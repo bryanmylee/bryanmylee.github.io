@@ -24,11 +24,13 @@ module.exports = {
         sans: ['IBM Plex Sans', ...defaultTheme.fontFamily.sans],
       },
       colors: {
-        'texas-rose': color('rgba(255, 177, 85, 1)'),
-        shark: color('rgba(26, 39, 40, 1)'),
-        'outer-space': color('rgba(36, 50, 51, 1)'),
+        'cranberry': color('#D86079'),
+        'downy': color('#61BFCD'),
+        'gold-sand': color('#EBAE89'),
+        'charade': color('#242730'),
+        'shark': color('#1C1E25'),
         get accent() {
-          return this['texas-rose'];
+          return this['gold-sand'];
         },
         get base() {
           return this['shark'];
