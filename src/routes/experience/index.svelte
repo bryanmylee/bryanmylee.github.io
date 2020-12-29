@@ -19,7 +19,7 @@
   function setHash(value: string) {
     if (loaded) {
       $hash = value;
-    };
+    }
     loaded = true;
   }
 
@@ -33,7 +33,7 @@
   $: ({ companyName, summary, projects, start, end } = selected);
 
   const parseFormat = 'YYYY-MM-DD';
-  const displayFormat = 'MMM YYYY'
+  const displayFormat = 'MMM YYYY';
   $: displayStart = dayjs(start, parseFormat).format(displayFormat);
   $: displayEnd = end ? dayjs(end, parseFormat).format(displayFormat) : 'present';
 </script>
