@@ -22,14 +22,14 @@
   import data from './_data';
   import experienceData from './experience/_data';
   import projectsData from './projects/_data';
-  const { headers } = data;
-  const { paragraphs } = data.body;
+  const { headers, body, quote } = data;
+  const { paragraphs } = body;
   const { experiences } = experienceData;
   const { projects } = projectsData;
 </script>
 
 <IntroHeader descriptions={headers}/>
-<IntroBody {paragraphs} class="mt-3"/>
+<IntroBody {paragraphs} {quote} class="mt-3"/>
 <IntroExperience {experiences} class="mt-10"/>
 <IntroProjects {projects} class="mt-10"/>
 

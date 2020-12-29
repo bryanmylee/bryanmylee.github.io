@@ -4,24 +4,24 @@ const page: IIndexPage = {
   headers: [
     'computer science student',
     'vim enthusiast',
-    'web developer',
+    'software developer',
+    'tech geek',
+    'cybersecurity advocate',
   ],
   body: {
     paragraphs: [
-      `Talk to me about all things tech! I am a computer geek first and
-      foremost, with a passion for software development. In my free time, I
-      enjoy building tools and writing scripts that solve real-world problems.`,
-      `I am currently pursuing a computer science degree from Singapore
-      Management University, but I also enjoy learning outside of class and
-      keeping up with the industry. I am especially interested in software
-      architecture and design patterns, and I always strive to write beautiful
-      code.`,
-      `To learn more about me, check out my <a href="/projects">projects</a> and
-      <a href="/experience">experience</a>. You can also read my
-      <a href="/blog">blog</a> where I share interesting lessons that I have
-      learnt.`,
+      `I build web applications that solve <strong>real-world
+      problems</strong>, and participate in cybersecurity capture-the-flag
+      competitions!`,
+      `I am interested in <strong>software architecture</strong>, <strong>
+      design patterns</strong>, and the <strong>static analysis of
+      programs</strong>. I strive to write clean and efficient code.`,
+      `I am currently pursuing a Computer Science degree from Singapore
+      Management University, majoring in <strong>Cybersecurity</strong> with a
+      second major in <strong>Quantitative Finance</strong>.`,
     ],
   },
+  quote: 'Talk to me about all things tech!',
 };
 
 export default page;
