@@ -1,5 +1,5 @@
 <svelte:head>
-  <title>Bryan Lee - experience </title>
+  <title>Bryan Lee - experience</title>
 </svelte:head>
 
 <script lang="ts">
