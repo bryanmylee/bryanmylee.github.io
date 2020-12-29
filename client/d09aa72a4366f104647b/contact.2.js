@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[2],{20:function(s,n,t){"use strict";t.r(n);var c=t(0);class e extends c.a{constructor(s){super(),Object(c.G)(this,s,null,null,c.R,{})}}n.default=e}}]);
