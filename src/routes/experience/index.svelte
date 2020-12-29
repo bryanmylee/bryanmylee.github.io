@@ -29,8 +29,7 @@
     key = value;
   }
 
-  $: selected = experiences[key];
-  $: ({ companyName, summary, projects, start, end } = selected);
+  $: ({ companyName, summary, projects, start, end } = experiences[key]);
 
   const parseFormat = 'YYYY-MM-DD';
   const displayFormat = 'MMM YYYY';
