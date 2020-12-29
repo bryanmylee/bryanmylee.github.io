@@ -35,6 +35,12 @@ module.exports = {
         get base() {
           return this['shark'];
         },
+        get red() {
+          return this['cranberry'];
+        },
+        get cyan() {
+          return this['downy'];
+        },
       },
       zIndex: {
         '-1': '-1',
