@@ -13,9 +13,9 @@
 
 <svelte:window bind:scrollY/>
 <nav class={`
-  fixed top-0 left-0 right-0 z-10 pb-3
-  border-b ${scrollY > 0 ? 'border-white' : 'border-transparent'}
+  fixed top-0 left-0 right-0 z-10 pb-3 border-b border-transparent
   lg:pt-3 transition-all bg-base`}
+  class:border-white={scrollY > 0}
   >
   <Nav/>
   <SubNav {segment} links={subdirs}/>
