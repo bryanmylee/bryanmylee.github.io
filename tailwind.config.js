@@ -29,8 +29,11 @@ module.exports = {
         'gold-sand': color('#EBAE89'),
         'charade': color('#242730'),
         'shark': color('#1C1E25'),
-        get accent() {
+        get primary() {
           return this['gold-sand'];
+        },
+        get secondary() {
+          return this['downy'];
         },
         get base() {
           return this['shark'];
@@ -60,10 +63,10 @@ module.exports = {
               marginBottom: theme('spacing.3'),
             },
             a: {
-              color: theme('colors.accent.DEFAULT'),
+              color: theme('colors.primary.DEFAULT'),
             },
             strong: {
-              color: theme('colors.accent.DEFAULT'),
+              color: theme('colors.primary.DEFAULT'),
             },
             li: {
               marginBottom: '0',
