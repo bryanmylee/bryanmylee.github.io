@@ -9,9 +9,12 @@ const color = (base) => ({
   '75': chroma(base).alpha(0.75).css(),
 });
 
+const mode = process.env.NODE_ENV;
+const dev = mode === 'development';
+
 module.exports = {
   purge: {
-    enabled: true,
+    enabled: !dev,
     content: [
       './src/**/*.svelte',
       './src/**/*.html',
