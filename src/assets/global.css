@@ -15,3 +15,13 @@
   }
 }
 
+.cta-button {
+  @apply text-base border-4 bg-primary border-primary;
+  &:hover, &:focus {
+    @apply bg-base text-primary;
+  }
+  &:active {
+    @apply border-base;
+  }
+}
+
