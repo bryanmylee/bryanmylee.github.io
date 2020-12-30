@@ -10,7 +10,7 @@
   const quickFade = (node: Element) => fade(node, { duration: 200 });
 </script>
 
-<nav class="sticky top-0 pb-3 lg:pt-3 transition-all">
+<nav class="sticky top-0 z-10 pb-3 lg:pt-3 transition-all bg-base">
   <Nav/>
   <SubNav {segment} links={subdirs}/>
 </nav>
