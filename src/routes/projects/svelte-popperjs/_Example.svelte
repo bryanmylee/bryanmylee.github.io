@@ -15,20 +15,22 @@
 </script>
 
 <SsrMounted>
-  <button
-    use:ref
-    on:click={() => show = !show}
-    class="p-3 font-mono text-base italic font-bold rounded-full focus:outline-none alt-button"
-    >
-    {show ? 'hide tooltip' : 'show tooltip'}
-  </button>
-  {#if show}
-    <div
-      transition:fade={{duration:200, delay:150}}
-      use:content={options}
-      class="p-3 font-mono rounded-lg card transition-all raised-secondary">
-      scroll up to reposition me!
-    </div>
-  {/if}
+  <div class="flex justify-center">
+    <button
+      use:ref
+      on:click={() => show = !show}
+      class="p-3 mx-auto font-mono text-base italic font-bold rounded-full focus:outline-none alt-button"
+      >
+      {show ? 'hide tooltip' : 'show tooltip'}
+    </button>
+    {#if show}
+      <div
+        transition:fade={{duration:200, delay:150}}
+        use:content={options}
+        class="p-3 font-mono rounded-lg card transition-all raised-secondary">
+        scroll up to reposition me!
+      </div>
+    {/if}
+  </div>
 </SsrMounted>
 
