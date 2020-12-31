@@ -44,15 +44,18 @@
   ```html
   <script>
     const [ref, content] = createPopperActions();
-    const options = { placement: 'bottom' };
-    let show;
+    const options = {
+      placement: 'bottom',
+      modifiers: [{ name: 'offset', options: { offset: [0, 20] } }],
+    };
+    let show = false;
   </script>
 
   <button use:ref on:click={() => show = !show}>
     {show ? 'hide tooltip' : 'show tooltip'}
   </button>
   {#if show}
-    <div use:content>
+    <div use:content={options}>
       scroll up to reposition me!
     </div>
   {/if}
