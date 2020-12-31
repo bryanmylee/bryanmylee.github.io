@@ -12,8 +12,8 @@
   <div class="font-mono text-center">
     ## {projectName}
   </div>
-  <div class="text-center">
-    *Svelte Stores that remember previous values!*
+  <div class="text-center italic">
+    Svelte Stores that remember previous values!
   </div>
   <img src={logo} alt={projectName} class="mx-auto max-h-48">
 
