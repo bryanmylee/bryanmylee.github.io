@@ -10,7 +10,7 @@ const page: IProjectsPage = {
   projects: {
     'svelte-previous': {
       projectName: 'svelte-previous',
-      tech: ['svelte', 'typescript'],
+      tech: ['typescript', 'svelte'],
       logo: sveltePreviousLogo,
       github: 'https://github.com/bryanmylee/svelte-previous',
     },
@@ -28,13 +28,13 @@ const page: IProjectsPage = {
     },
     'meetwhen': {
       projectName: 'meetwhen.io',
-      tech: ['svelte', 'typescript'],
+      tech: ['typescript', 'svelte'],
       logo: meetwhenLogo,
       github: 'https://github.com/bryanmylee/meetwhen',
     },
     'svelte-popperjs': {
       projectName: 'svelte-popperjs',
-      tech: ['svelte', 'typescript'],
+      tech: ['typescript', 'svelte'],
       logo: sveltePopperjsLogo,
       github: 'https://github.com/bryanmylee/svelte-popperjs',
     },
