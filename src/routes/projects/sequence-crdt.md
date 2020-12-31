@@ -31,6 +31,8 @@
     inserting and deleting multiple characters at the same time.
   </div>
 
+  <TechList {tech} class="flex justify-center h-12"/>
+
   <div class="px-3 py-1 card leading-8">
     Our course required that the project was written in **Java**. However, we
     did notice some performance issues and a large memory footprint when the
@@ -38,8 +40,6 @@
     **C** during my Winter break, with the main goal of optimizing the largest
     performance bottlenecks we observed in Java.
   </div>
-
-  <TechList {tech} class="flex justify-center h-12"/>
 
 </div>
 
