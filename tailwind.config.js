@@ -2,15 +2,15 @@ const defaultTheme = require('tailwindcss/defaultTheme');
 const plugin = require('tailwindcss/plugin');
 const chroma = require('chroma-js');
 
+const mode = process.env.NODE_ENV;
+const dev = mode === 'development';
+
 const color = (base) => ({
   DEFAULT: base,
   lighter: chroma(base).brighten().css(),
   darker: chroma(base).darken(0.5).css(),
   '75': chroma(base).alpha(0.75).css(),
 });
-
-const mode = process.env.NODE_ENV;
-const dev = mode === 'development';
 
 module.exports = {
   purge: {
@@ -119,6 +119,14 @@ module.exports = {
           content: "''",
         },
       }, ['before']);
+    }),
+    plugin(({ addUtilities, theme }) => {
+      const colors = Object.entries(theme('colors'));
+      const raisedEntries = colors.map(([name, variants]) => {
+        const color = variants.DEFAULT ?? variants['400'] ?? variants;
+        return [`.raised-${name}`, { boxShadow: `5px 5px ${color}` }];
+      });
+      addUtilities(Object.fromEntries(raisedEntries));
     }),
   ],
 };
