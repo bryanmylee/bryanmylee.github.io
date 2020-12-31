@@ -20,21 +20,20 @@
   <img src={logo} alt={projectName} class="mx-auto max-h-48">
 
   <div class="px-3 py-1 card leading-8">
-    Popper is a positioning library that accounts for the viewport, and
-    adjusts the position in an efficient and simple way. Popper is commonly
-    used for **tooltips** and **popups**, but it can also be used for any
-    dynamic container that needs to adjust its position on screen.
+    Popper is a positioning tool that floats UI elements near any target
+    element.  It is commonly used for **tooltips**, but can also be used for
+    **popovers**, **drop-downs**, and more.
   </div>
 
   <div class="px-3 py-1 card leading-8">
-    When trying to integrate Popper with Svelte, I noticed that the existing
-    solutions were quite lacking. The official wrapper used a wrapper component
-    and many element bindings &mdash; `bind:this`, which pollutes the
-    component's `script` tag with element references.
+    I noticed that the existing integrations between Popper and Svelte were
+    quite lacking.  The official wrapper uses wrapper components and many
+    element bindings, which pollutes the component's `script` tag with element
+    references.
   </div>
 
   <div class="px-3 py-1 card leading-8">
-    I realized that it could be done better, with [Svelte
+    I realized that it could be done better with [Svelte
     Actions](https://svelte.dev/tutorial/actions)! With `svelte-popperjs`,
     using Popper becomes clean and concise.
   </div>
@@ -56,7 +55,7 @@
   </button>
   {#if show}
     <div use:content={options}>
-      scroll up to reposition me!
+      scroll to reposition me!
     </div>
   {/if}
   ```
