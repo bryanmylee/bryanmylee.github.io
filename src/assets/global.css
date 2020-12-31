@@ -26,3 +26,13 @@
   }
 }
 
+.alt-button {
+  @apply text-base border-4 bg-secondary border-secondary;
+  &:hover, &:focus {
+    @apply bg-base text-secondary;
+  }
+  &:active {
+    @apply border-base;
+  }
+}
+
