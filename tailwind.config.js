@@ -18,6 +18,7 @@ module.exports = {
     content: [
       './src/**/*.svelte',
       './src/**/*.html',
+      './src/**/*.md',
     ],
     options: {
       defaultExtractor: content => {
