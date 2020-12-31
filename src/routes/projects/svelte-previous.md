@@ -3,7 +3,7 @@
 </svelte:head>
 
 <script lang="ts">
-  import LanguageList from '@my/components/LanguageList';
+  import TechList from '@my/components/TechList';
   import data from './_data';
   const { projectName, tech, logo, github } = data.projects['svelte-previous'];
 </script>
@@ -86,7 +86,7 @@
   <div class="font-mono text-center">
     ### Lessons learnt
   </div>
-  <LanguageList {tech} class="flex min-h-12"/>
+  <TechList {tech} class="flex min-h-12"/>
 
   <div class="px-3 py-1 card leading-8">
     This project was written in **Typescript**, as I truly enjoy the powerful

@@ -3,7 +3,7 @@
 </svelte:head>
 
 <script lang="ts">
-  import LanguageList from '@my/components/LanguageList';
+  import TechList from '@my/components/TechList';
   import { useHash } from '@my/utils/useHash';
   import data from './_data';
   const { projects } = data;
@@ -32,7 +32,7 @@
 
 <div class="prose">
   <h2>{projectName}</h2>
-  <LanguageList {tech} class="flex"/>
+  <TechList {tech} class="flex"/>
   <img src={logo} alt={projectName}>
   <a href={github}>{projectName}</a>
 </div>
