@@ -107,7 +107,7 @@
 
   ```ts
     $name = 'adam';
-    console.log($name); current: 'adam', previous: 'bryan'
+    console.log($name); // { current: 'adam', previous: 'bryan' }
   ```
 
   <div class="px-3 py-1 card leading-8">
