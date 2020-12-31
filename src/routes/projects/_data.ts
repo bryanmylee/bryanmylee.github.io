@@ -16,7 +16,7 @@ const page: IProjectsPage = {
     },
     'sequence-crdt': {
       projectName: 'sequence-crdt',
-      tech: ['c'],
+      tech: ['java', 'c'],
       logo: crdtLogo,
       github: 'https://github.com/bryanmylee/sequence-crdt',
     },
