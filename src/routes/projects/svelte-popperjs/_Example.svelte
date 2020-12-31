@@ -19,7 +19,8 @@
     <button
       use:ref
       on:click={() => show = !show}
-      class="p-3 mx-auto font-mono text-base italic font-bold rounded-full focus:outline-none alt-button"
+      class="p-3 mx-auto font-mono text-base italic font-bold rounded-full
+      focus:outline-none alt-button"
       >
       {show ? 'hide tooltip' : 'show tooltip'}
     </button>
@@ -27,7 +28,9 @@
       <div
         transition:fade={{duration:200, delay:150}}
         use:content={options}
-        class="p-3 font-mono rounded-lg card transition-all raised-secondary">
+        class="p-3 font-mono rounded-lg border-4 border-secondary
+        card transition-all raised-secondary"
+        >
         scroll up to reposition me!
       </div>
     {/if}
