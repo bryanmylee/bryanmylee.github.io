@@ -90,6 +90,9 @@ module.exports = {
             li: {
               marginBottom: '0',
             },
+            code: {
+              color: 'white',
+            },
           },
         },
       }),
