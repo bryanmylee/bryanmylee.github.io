@@ -86,13 +86,14 @@
   <div class="font-mono text-center">
     ### Lessons learnt
   </div>
-  <TechList {tech} class="flex min-h-12"/>
 
   <div class="px-3 py-1 card leading-8">
     This project was written in **Typescript**, as I truly enjoy the powerful
     type system. It also gave me another chance to brush up on my understanding
-    of **Svelte** and the Svelte Stores state management functionality.
+    of **Svelte** and the state management functionality provided by stores.
   </div>
+
+  <TechList {tech} class="flex justify-center h-12"/>
 
   <div class="px-3 py-1 card leading-8">
     More importantly, this project reminded me that the most crucial step in
