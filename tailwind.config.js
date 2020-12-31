@@ -124,7 +124,9 @@ module.exports = {
       const colors = Object.entries(theme('colors'));
       const raisedEntries = colors.map(([name, variants]) => {
         const color = variants.DEFAULT ?? variants['400'] ?? variants;
-        return [`.raised-${name}`, { boxShadow: `5px 5px ${color}` }];
+        return [`.raised-${name}`, {
+          boxShadow: `2.5px 2.5px ${color}, 5px 5px ${color}`
+        }];
       });
       addUtilities(Object.fromEntries(raisedEntries));
     }),
