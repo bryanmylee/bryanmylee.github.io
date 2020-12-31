@@ -3,13 +3,10 @@
 </svelte:head>
 
 <script lang="ts">
-  import { createPopperActions } from 'svelte-popperjs';
   import TechList from '@my/components/TechList';
-  import data from './_data';
-  const { projectName, tech, logo, github } =
-  data.projects['svelte-popperjs'];
-  const { ref, content } = createPopperActions();
-  let show = false;
+  import Example from './_Example.svelte';
+  import data from '../_data';
+  const { projectName, tech, logo, github } = data.projects['svelte-popperjs'];
 </script>
 
 <div class="mx-auto my-10 prose space-y-3">
@@ -42,33 +39,26 @@
     using Popper becomes clean and concise.
   </div>
 
+  <Example/>
+
   ```html
   <script>
     const [ref, content] = createPopperActions();
-    const options = { placement: 'top' };
+    const options = { placement: 'bottom' };
     let show;
   </script>
 
   <button use:ref on:click={() => show = !show}>
-    toggle tooltip
+    {show ? 'hide tooltip' : 'show tooltip'}
   </button>
   {#if show}
     <div use:content>
-      click the button!
+      scroll up to reposition me!
     </div>
   {/if}
   ```
 
 </div>
-
-<button use:ref on:click={() => show = !show}>
-  toggle tooltip
-</button>
-{#if show}
-  <div use:content>
-    click the button!
-  </div>
-{/if}
 
 <div class="flex justify-center my-10">
   <a href={github} class="p-3 italic font-bold cta-button">
