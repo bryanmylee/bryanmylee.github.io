@@ -18,8 +18,8 @@
   <img src={logo} alt={projectName} class="mx-auto max-h-48">
 
   <div class="px-3 py-1 card leading-8">
-    Some time back, I was trying to re-create a fancy animation I
-    had seen from Cyberpunk 2077:
+    Some time back, I was trying to re-create a **fancy** animation I had seen
+    from Cyberpunk 2077:
   </div>
 
   <div class="px-3 py-1 card leading-8">
