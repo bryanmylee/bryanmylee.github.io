@@ -28,8 +28,8 @@
   <div class="px-3 py-1 card leading-8">
     I noticed that the existing integrations between Popper and Svelte were
     quite lacking.  The official wrapper uses wrapper components and many
-    element bindings, which pollutes the component's `script` tag with element
-    references.
+    element bindings. This pollutes the component's `script` tag with element
+    references, and makes code harder to read.
   </div>
 
   <div class="px-3 py-1 card leading-8">
