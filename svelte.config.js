@@ -1,5 +1,4 @@
 const sveltePreprocess = require('svelte-preprocess');
-const { mdsvex } = require('mdsvex');
 const { markdown } = require('svelte-preprocess-markdown');
 
 const preprocessOptions = {
