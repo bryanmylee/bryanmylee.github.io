@@ -1,8 +1,3 @@
----
-title: Svelte, Sapper, and Tailwind CSS
-
----
-
 ## Why Tailwind CSS?
 
 ### A constrained design system is a good thing

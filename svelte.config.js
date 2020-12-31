@@ -1,5 +1,6 @@
 const sveltePreprocess = require('svelte-preprocess');
 const { mdsvex } = require('mdsvex');
+const { markdown } = require('svelte-preprocess-markdown');
 
 const preprocessOptions = {
   postcss: {
@@ -12,10 +13,7 @@ const preprocessOptions = {
 
 function getPreprocess(dev) {
   return [
-    mdsvex({
-      layout: './src/layouts/blogpost.svelte',
-      extension: '.mdx',
-    }),
+    markdown(),
     sveltePreprocess({
       sourceMap: dev,
       ...preprocessOptions
