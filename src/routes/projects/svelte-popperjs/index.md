@@ -21,13 +21,13 @@
 
   <div class="px-3 py-1 card leading-8">
     Popper is a positioning tool that floats UI elements near any target
-    element.  It is commonly used for **tooltips**, but can also be used for
+    element. It is commonly used for **tooltips**, but can also be used for
     **popovers**, **drop-downs**, and more.
   </div>
 
   <div class="px-3 py-1 card leading-8">
     I noticed that the existing integrations between Popper and Svelte were
-    quite lacking.  The official wrapper uses wrapper components and many
+    quite lacking. The official wrapper uses wrapper components and many
     element bindings. This pollutes the component's `script` tag with element
     references, and makes code harder to read.
   </div>
