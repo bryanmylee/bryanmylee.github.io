@@ -16,9 +16,11 @@
   });
 </script>
 
-{#key $currentItem}
-  <div in:backspaceAndType={{from: $previousItem}}>
-    {$currentItem}
-  </div>
-{/key}
+<div class="flex items-center justify-center h-12 font-mono">
+  {#key $currentItem}
+    <div in:backspaceAndType={{from: $previousItem}}>
+      {$currentItem}
+    </div>
+  {/key}
+</div>
 
