@@ -4,6 +4,7 @@
 
 <script lang="ts">
   import TechList from '@my/components/TechList';
+  import Example from './_Example.svelte';
   import data from '../_data';
   const { projectName, tech, logo, github } = data.projects['svelte-previous'];
 </script>
@@ -19,23 +20,30 @@
 
   <div class="px-3 py-1 card leading-8">
     Some time back, I was trying to re-create a **fancy** animation I had seen
-    from Cyberpunk 2077:
+    online.
   </div>
 
   <div class="px-3 py-1 card leading-8">
     When doing so, I found myself needing the previous value of the text
-    property when creating the transition. In fact, I realized that it would be
-    quite common to need a reference to the old value of a newly changed
-    property in Svelte. However, there was no simple or clean solution at the
-    time.
+    property when creating the transition. In fact, I realized that it was
+    common to reference the old value of a property. However, there was no
+    simple or clean solution at the time.
   </div>
 
   <div class="px-3 py-1 card leading-8">
-    In Svelte, when we need custom behaviour from our data, we should use
-    [Svelte Stores](https://svelte.dev/tutorial/writable-stores)! Therefore, I
-    developed this package to provide the most Svelte-like way of handling such
-    behaviour.
+    I attempted to develop a package that provided that functionality in the
+    most Svelte-like way! In Svelte, when we need custom behaviour from our
+    data, we should use [Svelte
+    Stores](https://svelte.dev/tutorial/writable-stores)!
   </div>
+
+  <Example/>
+
+  ```html
+  <script>
+  </script>
+  ```
+
 </div>
 
 <div class="flex justify-center my-10">
