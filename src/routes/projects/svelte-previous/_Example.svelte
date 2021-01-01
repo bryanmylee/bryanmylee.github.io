@@ -11,7 +11,7 @@
       index = (index + 1) % items.length;
     }, 3000);
     return () => clearInterval(timer);
-  })
+  });
 </script>
 
 {$currentItem} and {$previousItem}
