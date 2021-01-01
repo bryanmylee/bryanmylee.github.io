@@ -4,7 +4,7 @@
 
 <script lang="ts">
   import TechList from '@my/components/TechList';
-  import data from './_data';
+  import data from '../_data';
   const { projectName, tech, logo, github } = data.projects['svelte-previous'];
 </script>
 
