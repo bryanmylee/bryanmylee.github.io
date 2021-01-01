@@ -3,37 +3,10 @@
 </svelte:head>
 
 <script lang="ts">
-  import TechList from '@my/components/TechList';
-  import { useHash } from '@my/utils/useHash';
+  import IntroProjects from '@my/components/IntroProjects';
   import data from './_data';
   const { projects } = data;
-
-  let key = 'svelte-previous';
-  const hash = useHash();
-
-  let loaded = false;
-  $: setHash(key);
-  function setHash(value: string) {
-    if (loaded) {
-      $hash = value;
-    }
-    loaded = true;
-  }
-
-  $: setKey($hash);
-  function setKey(value: string) {
-    if (!Object.keys(projects).includes(value)) return;
-    key = value;
-  }
-
-  $: selected = projects[key];
-  $: ({ projectName, tech, logo, github } = selected);
 </script>
 
-<div class="prose">
-  <h2>{projectName}</h2>
-  <TechList {tech} class="flex"/>
-  <img src={logo} alt={projectName}>
-  <a href={github}>{projectName}</a>
-</div>
+<IntroProjects {projects}/>
 
