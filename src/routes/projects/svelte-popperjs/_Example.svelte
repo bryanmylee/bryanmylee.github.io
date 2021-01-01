@@ -31,7 +31,7 @@
         class="p-3 font-mono rounded-lg border-4 border-secondary
         card transition-all raised-secondary"
         >
-        scroll up to reposition me!
+        scroll to reposition me!
       </div>
     {/if}
   </div>
