@@ -41,7 +41,15 @@
 
   ```html
   <script>
+    const [currentItem, previousItem] = usePrevious('tech geek');
+    setInterval(() => $currentItem = getNextItem(), 3000);
   </script>
+
+  {#key $currentItem}
+    <div in:backspaceAndType={{from: $previousItem}}>
+      {$currentItem}
+    </div>
+  {/key}
   ```
 
 </div>
