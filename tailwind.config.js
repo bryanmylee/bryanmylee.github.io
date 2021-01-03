@@ -83,7 +83,7 @@ module.exports = {
               marginBottom: theme('spacing.3'),
             },
             a: {
-              color: theme('colors.primary.DEFAULT'),
+              color: theme('colors.secondary.DEFAULT'),
             },
             strong: {
               color: theme('colors.primary.DEFAULT'),
