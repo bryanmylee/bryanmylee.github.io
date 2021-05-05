@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { glitchTransition } from '$lib/actions';
+  import { glitchTransition } from '$lib/actions/glitchTransition';
 
   export let texts: string[] = [];
 
