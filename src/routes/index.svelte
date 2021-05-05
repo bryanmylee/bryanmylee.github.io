@@ -2,7 +2,9 @@
   import GlitchMarquee from '$lib/components/GlitchMarquee.svelte';
   import Hero from '$lib/components/Hero.svelte';
   import ProjectItem from '$lib/components/ProjectItem.svelte';
+  import SkillCloud from '$lib/components/SkillCloud.svelte';
   import { projects } from '$lib/db/projects';
+  import { skills } from '$lib/db/skills';
 
   let descriptions = ['computer science student.', 'web developer.'];
 </script>
@@ -23,8 +25,11 @@
   {/each}
 </ul>
 
+<h1 id="skills">Skills</h1>
+<SkillCloud {skills} />
+
 <style lang="postcss">
   h1 {
-    @apply font-mono font-bold text-yellow text-2xl text-center my-8;
+    @apply font-mono font-bold text-yellow text-2xl text-center my-10;
   }
 </style>
