@@ -48,6 +48,6 @@
 
 <style lang="postcss">
   h1 {
-    @apply font-mono font-bold text-yellow text-2xl text-center my-10;
+    @apply font-mono font-bold text-yellow text-3xl text-center my-10;
   }
 </style>

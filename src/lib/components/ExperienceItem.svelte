@@ -7,14 +7,16 @@
   export let details: Record<string, string[]> = {};
 </script>
 
-<li class="flex p-4 space-x-4 bg-base-lighter">
+<li class="flex p-6 space-x-6 bg-base-lighter">
   <img src={imageSrc} alt={name} class="flex-shrink-0 w-32 h-32" />
-  <div class="space-y-2 leading-8">
-    <h2 class="font-mono text-xl font-bold">{name}</h2>
-    <p class="font-mono italic">{start} – {end}</p>
+  <div class="space-y-4 leading-7">
+    <div>
+      <h2 class="font-mono text-xl font-bold">{name}</h2>
+      <p class="font-mono italic text-gray-400">{start} – {end}</p>
+    </div>
     <p>{description}</p>
     {#each Object.entries(details) as [header, items]}
-      <h3 class="font-mono font-bold text-yellow">{header}</h3>
+      <h3 class="font-mono text-xl font-bold text-yellow">{header}</h3>
       <ul>
         {#each items as item}
           <li class="mb-2 list-disc list-inside">{@html item}</li>

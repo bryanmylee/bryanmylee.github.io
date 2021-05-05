@@ -11,10 +11,10 @@
       <img src={imageSrc} alt={name} class="w-full h-full" />
     </div>
     <div class="space-y-2">
-      <h2 class="font-mono text-lg font-bold">
+      <h2 class="font-mono text-xl font-bold">
         {name}
       </h2>
-      <p class="text-sm leading-6">
+      <p class="leading-7">
         {description}
       </p>
     </div>

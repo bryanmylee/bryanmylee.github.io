@@ -15,7 +15,7 @@
 {#if showPopper}
   <div use:tooltip class="fixed z-10 p-4 space-y-2 w-80 bg-base-lighter">
     <h2 class="font-mono text-xl font-bold text-yellow">{name}</h2>
-    <p class="text-sm leading-6">
+    <p class="leading-7">
       {description}
     </p>
     <div data-popper-arrow class="absolute border border-white w-0 h-[50px]" />
