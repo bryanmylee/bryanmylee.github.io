@@ -6,7 +6,13 @@
   import { projects } from '$lib/db/projects';
   import { skills } from '$lib/db/skills';
 
-  let descriptions = ['computer science student.', 'web developer.'];
+  let descriptions = [
+    'computer science student.',
+    'software developer.',
+    'tech geek.',
+    'vim enthusiast.',
+    'cybersecurity researcher.'
+  ];
 </script>
 
 <svelte:head>
@@ -14,7 +20,7 @@
 </svelte:head>
 
 <p class="mt-12 font-mono text-3xl">
-  I am a <GlitchMarquee texts={descriptions} class="font-bold text-cyan" />
+  I am a <GlitchMarquee interval={5000} texts={descriptions} class="font-bold text-cyan" />
 </p>
 <Hero class="mt-12" />
 
@@ -27,6 +33,8 @@
 
 <h1 id="skills">Skills</h1>
 <SkillCloud {skills} />
+
+<h1 id="experience">Experience</h1>
 
 <style lang="postcss">
   h1 {
