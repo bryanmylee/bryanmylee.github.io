@@ -9,7 +9,7 @@ export const experiences: Experience[] = [
     imageSrc: 'experiences/smu.png',
     details: {
       Achievements: [
-        'AY2019/2020 SIS Outstanding First Year Computer Science Student Awared',
+        'AY2019/2020 SIS Outstanding First Year Computer Science Student Award',
         "AY2019/2020 Dean's List"
       ]
     }
