@@ -9,7 +9,7 @@
   <title>Bryan Lee</title>
 </svelte:head>
 
-<p class="font-mono text-3xl mt-12">
+<p class="mt-12 font-mono text-3xl">
   I am a <GlitchMarquee texts={descriptions} class="font-bold text-cyan"/>
 </p>
 <Hero class="mt-12"/>
