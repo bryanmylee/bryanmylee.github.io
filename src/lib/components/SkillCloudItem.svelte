@@ -29,7 +29,7 @@
     use:ref
     on:mouseenter={() => (showPopper = true)}
     on:mouseout={() => (showPopper = false)}
-    class="z-0 w-28 h-28 min-w-28 min-h-28"
+    class="z-0 transition-colors w-28 h-28 min-w-28 min-h-28 hover:bg-base-lighter"
   />
 </CursorGravity>
 
