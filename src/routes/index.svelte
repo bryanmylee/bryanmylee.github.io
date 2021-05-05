@@ -25,6 +25,7 @@
 <Hero class="mt-12" />
 
 <h1 id="projects">Projects</h1>
+
 <ul class="grid grid-cols-2 gap-8">
   {#each projects as project}
     <ProjectItem {...project} />
@@ -32,6 +33,7 @@
 </ul>
 
 <h1 id="skills">Skills</h1>
+
 <SkillCloud {skills} />
 
 <h1 id="experience">Experience</h1>
