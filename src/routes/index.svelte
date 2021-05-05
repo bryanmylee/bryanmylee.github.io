@@ -1,8 +1,10 @@
 <script lang="ts">
+  import ExperienceItem from '$lib/components/ExperienceItem.svelte';
   import GlitchMarquee from '$lib/components/GlitchMarquee.svelte';
   import Hero from '$lib/components/Hero.svelte';
   import ProjectItem from '$lib/components/ProjectItem.svelte';
   import SkillCloud from '$lib/components/SkillCloud.svelte';
+  import { experiences } from '$lib/db/experiences';
   import { projects } from '$lib/db/projects';
   import { skills } from '$lib/db/skills';
 
@@ -37,6 +39,12 @@
 <SkillCloud {skills} />
 
 <h1 id="experience">Experience</h1>
+
+<ul class="block space-y-4">
+  {#each experiences as experience}
+    <ExperienceItem {...experience} />
+  {/each}
+</ul>
 
 <style lang="postcss">
   h1 {
