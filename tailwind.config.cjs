@@ -18,7 +18,7 @@ module.exports = {
         sans: ['Roboto', ...defaultTheme.fontFamily.sans]
       },
       minWidth: (theme) => theme('width'),
-      minWidth: (theme) => theme('height'),
+      minHeight: (theme) => theme('height'),
       zIndex: {
         '-1': '-1'
       }
