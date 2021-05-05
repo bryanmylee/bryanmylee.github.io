@@ -2,7 +2,7 @@
   import GlitchMarquee from '$lib/components/GlitchMarquee.svelte';
   import Hero from '$lib/components/Hero.svelte';
 
-  let descriptions = ['computer science student', 'web developer'];
+  let descriptions = ['computer science student.', 'web developer.'];
 </script>
 
 <svelte:head>
