@@ -1,4 +1,4 @@
-<nav class="sticky top-0">
+<nav class="sticky top-0 z-10 bg-opacity-60 bg-base">
   <div class="relative font-mono">
     <div class="absolute inset-0 bg-yellow -z-1 nav-bg" style={`--bg: url(nav-bg.svg)`} />
     <div class="flex items-stretch justify-between w-full max-w-screen-md mx-auto">

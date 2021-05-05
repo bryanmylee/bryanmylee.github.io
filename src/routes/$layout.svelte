@@ -4,6 +4,6 @@
 </script>
 
 <Nav />
-<main class="max-w-screen-md mx-auto">
+<main class="z-0 max-w-screen-md mx-auto">
   <slot />
 </main>
