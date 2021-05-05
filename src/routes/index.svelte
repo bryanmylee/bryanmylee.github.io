@@ -13,3 +13,11 @@
   I am a <GlitchMarquee texts={descriptions} class="font-bold text-cyan" />
 </p>
 <Hero class="mt-12" />
+
+<h1 id="projects">Projects</h1>
+
+<style lang="postcss">
+  h1 {
+    @apply font-mono font-bold text-yellow text-2xl text-center mt-8;
+  }
+</style>
