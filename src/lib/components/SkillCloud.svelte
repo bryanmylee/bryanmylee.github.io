@@ -9,23 +9,23 @@
     [0, 0],
     [-2, -1],
     [-2, 1],
-    [0, 2],
+    [0, 2.24],
     [2, 1],
     [2, -1],
-    [0, -2],
-    [-3.3, -2.5],
-    [-4.2, 0],
-    [-3.3, 2.5],
-    [-5.8, 1.5],
-    [3.3, -2.5],
-    [4.2, 0],
-    [5.8, -1.5]
+    [0, -2.24],
+    [-4, 0],
+    [-4, 2.24],
+    [4, 0],
+    [-6, -1],
+    [-6, 1],
+    [6, -1],
+    [6, 1]
   ];
   export let scale = 50;
   $: displacements = unitDisplacements.map(([x, y]) => [x * scale, y * scale]);
 </script>
 
-<section class="flex items-center justify-center w-full h-[500px] bg-base-lighter">
+<section class="flex items-center justify-center w-full h-[400px] bg-base-lighter">
   <div class="relative">
     {#each zip(skills, displacements) as [skill, [x, y]]}
       <div
