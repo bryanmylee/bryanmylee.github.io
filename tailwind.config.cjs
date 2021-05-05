@@ -1,8 +1,17 @@
+const defaultTheme = require('tailwindcss/defaultTheme');
+
 module.exports = {
   mode: 'jit',
   purge: ['./src/**/*.{html,js,svelte,ts}'],
   theme: {
+    fontFamily: {
+      'sans': ['']
+    },
     extend: {
+      fontFamily: {
+        mono: ['IBM Plex Mono', ...defaultTheme.fontFamily.mono],
+        sans: ['Roboto', ...defaultTheme.fontFamily.sans],
+      },
       colors: {
         cyan: '#61BFCD',
         yellow: '#EBAE89',
