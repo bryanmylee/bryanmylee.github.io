@@ -63,11 +63,11 @@ export const skills: Skill[] = [
     tags: ['database']
   },
   {
-    name: 'MySQL',
+    name: 'Swift',
     description:
-      'I am proficient in database design. I usually use an ORM with MySQL, but I can also write optimized queries and take advantage of indices.',
-    imageSrc: 'skills/mysql.svg',
-    tags: ['database']
+      'I started developing personal projects on iOS with Swift and the UIKit framework in 2017. The language has remained one of my favourites since, and I look forward to learning SwiftUI.',
+    imageSrc: 'skills/swift.svg',
+    tags: ['language', 'framework']
   },
   {
     name: 'Tailwind CSS',
@@ -77,11 +77,11 @@ export const skills: Skill[] = [
     tags: ['framework', 'frontend']
   },
   {
-    name: 'Swift',
+    name: 'MySQL',
     description:
-      'I started developing personal projects on iOS with Swift and the UIKit framework in 2017. The language has remained one of my favourites since, and I look forward to learning SwiftUI.',
-    imageSrc: 'skills/swift.svg',
-    tags: ['language', 'framework']
+      'I am proficient in database design. I usually use an ORM with MySQL, but I can also write optimized queries and take advantage of indices.',
+    imageSrc: 'skills/mysql.svg',
+    tags: ['database']
   },
   {
     name: 'Java',
