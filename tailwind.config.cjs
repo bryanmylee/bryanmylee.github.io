@@ -17,6 +17,8 @@ module.exports = {
         mono: ['IBM Plex Mono', ...defaultTheme.fontFamily.mono],
         sans: ['Roboto', ...defaultTheme.fontFamily.sans]
       },
+      minWidth: (theme) => theme('width'),
+      minWidth: (theme) => theme('height'),
       zIndex: {
         '-1': '-1'
       }
