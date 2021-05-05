@@ -21,7 +21,7 @@ const transition = (node: HTMLElement, from: string, to: string) => {
   }
   setTimeout(() => {
     node.innerText = to;
-  }, 2 * 1000 + 50)
+  }, 2 * 1000 + 50);
 };
 
 export const glitchTransition: Action<string> = (node, initText) => {

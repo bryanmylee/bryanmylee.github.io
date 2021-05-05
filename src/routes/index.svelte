@@ -10,6 +10,6 @@
 </svelte:head>
 
 <p class="mt-12 font-mono text-3xl">
-  I am a <GlitchMarquee texts={descriptions} class="font-bold text-cyan"/>
+  I am a <GlitchMarquee texts={descriptions} class="font-bold text-cyan" />
 </p>
-<Hero class="mt-12"/>
+<Hero class="mt-12" />
