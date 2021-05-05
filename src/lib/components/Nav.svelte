@@ -10,7 +10,6 @@
 </nav>
 
 <ul class="flex w-full max-w-screen-md mx-auto mt-6 space-x-4 font-mono underline">
-  <li><a href="/blog">blog</a></li>
   <li><a href="#projects">projects</a></li>
   <li><a href="#skills">skills</a></li>
   <li><a href="#experience">experience</a></li>
