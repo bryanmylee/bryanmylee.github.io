@@ -39,7 +39,7 @@ export const skills: Skill[] = [
   {
     name: 'C',
     description:
-      'I have a love hate relationship with C. The language is simple and powerful, and sometimes I enjoy working close to memory. However, the standard library and tooling could be improved.',
+      'I have a love hate relationship with C. While I think the standard library and tooling could be improved, the language is simple and powerful and I enjoy working close to memory.',
     imageSrc: 'skills/c.svg',
     tags: ['language']
   },
