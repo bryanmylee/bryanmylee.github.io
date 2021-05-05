@@ -5,6 +5,7 @@
 
   export let skills: Skill[] = [];
 
+  export let cloudScale = 60;
   const unitDisplacements = [
     [0, 0],
     [-2, -1],
@@ -21,11 +22,10 @@
     [6, -1],
     [6, 1]
   ];
-  export let scale = 50;
-  $: displacements = unitDisplacements.map(([x, y]) => [x * scale, y * scale]);
+  $: displacements = unitDisplacements.map(([x, y]) => [x * cloudScale, y * cloudScale]);
 </script>
 
-<section class="flex items-center justify-center w-full h-[400px] bg-base-lighter">
+<section class="flex items-center justify-center w-full h-[400px]">
   <div class="relative">
     {#each zip(skills, displacements) as [skill, [x, y]]}
       <div
