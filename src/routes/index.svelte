@@ -1,4 +1,5 @@
 <script lang="ts">
+  import ContactCard from '$lib/components/ContactCard.svelte';
   import ExperienceItem from '$lib/components/ExperienceItem.svelte';
   import GlitchMarquee from '$lib/components/GlitchMarquee.svelte';
   import Hero from '$lib/components/Hero.svelte';
@@ -45,6 +46,17 @@
     <ExperienceItem {...experience} />
   {/each}
 </ul>
+
+<h1 id="contact">Contact</h1>
+<section class="flex items-stretch space-x-8 justify-stretch">
+  <ContactCard title="github" subtitle="bryanmylee" href="https://github.com/bryanmylee" />
+  <ContactCard title="email" subtitle="bryanmylee@gmail.com" href="mailto:bryanmylee@gmail.com" />
+  <ContactCard
+    title="linkedin"
+    subtitle="bryan-lee-min-yuan"
+    href="https://www.linkedin.com/in/bryan-lee-min-yuan/"
+  />
+</section>
 
 <style lang="postcss">
   h1 {
