@@ -5,32 +5,38 @@ export const projects: Project[] = [
     name: 'svelte-popperjs',
     description:
       'Popper for Svelte with actions, no wrapper components or component bindings required!',
-    imageSrc: 'projects/svelte-popperjs.png'
+    imageSrc: 'projects/svelte-popperjs.png',
+    href: 'https://github.com/bryanmylee/svelte-popperjs'
   },
   {
     name: 'svelte-previous',
     description: 'A Svelte store that remembers previous values.',
-    imageSrc: 'projects/svelte-previous.png'
+    imageSrc: 'projects/svelte-previous.png',
+    href: 'https://github.com/bryanmylee/svelte-previous'
   },
   {
     name: 'vim-colorscheme-icons',
     description:
       'A simple plug-and-play Vim plugin to colorize vim-devicons with the current colorscheme.',
-    imageSrc: 'projects/vim-colorscheme-icons.png'
+    imageSrc: 'projects/vim-colorscheme-icons.png',
+    href: 'https://github.com/bryanmylee/vim-colorscheme-icons'
   },
   {
     name: 'meetwhen.io',
     description: 'A group scheduling web application built on Svelte.',
-    imageSrc: 'projects/meetwhen.png'
+    imageSrc: 'projects/meetwhen.png',
+    href: 'https://github.com/bryanmylee/meetwhen'
   },
   {
     name: 'zoo-ids',
     description: 'A seedable and predictable ID generator that uses adjectives and animal names.',
-    imageSrc: 'projects/zoo-ids.png'
+    imageSrc: 'projects/zoo-ids.png',
+    href: 'https://github.com/bryanmylee/zoo-ids'
   },
   {
     name: 'tailwindcss-extrude',
     description: 'A custom TailwindCSS plugin for an extruded style.',
-    imageSrc: 'projects/tailwindcss-extrude.png'
+    imageSrc: 'projects/tailwindcss-extrude.png',
+    href: 'https://github.com/bryanmylee/tailwindcss-extrude'
   }
 ];
