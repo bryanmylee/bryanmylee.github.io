@@ -44,17 +44,22 @@
   {/each}
 </ul>
 
-<div class="flex items-center justify-center md:justify-between">
-  <div class="w-8 hidden md:block" />
-  <h1 id="skills">Skills</h1>
-  <button on:click={() => (showSkillCloud = !showSkillCloud)} class="w-8 hidden md:block">
-    {#if showSkillCloud}
-      <ListIcon />
-    {:else}
-      <CircleIcon />
-    {/if}
-  </button>
-</div>
+<h1 id="skills">
+  <div class="flex items-center justify-center md:justify-between">
+    <div class="w-8 hidden md:block" />
+    <div>Skills</div>
+    <button
+      on:click={() => (showSkillCloud = !showSkillCloud)}
+      class="w-8 hidden md:block text-white"
+    >
+      {#if showSkillCloud}
+        <ListIcon />
+      {:else}
+        <CircleIcon />
+      {/if}
+    </button>
+  </div>
+</h1>
 
 <section class="flex flex-col items-end min-h-[400px]">
   {#if $media.md && showSkillCloud}
@@ -92,5 +97,11 @@
 <style lang="postcss">
   h1 {
     @apply font-mono font-bold text-yellow text-3xl text-center my-10;
+  }
+  h1::before {
+    display: block;
+    content: '';
+    height: 80px;
+    margin-top: -80px;
   }
 </style>
