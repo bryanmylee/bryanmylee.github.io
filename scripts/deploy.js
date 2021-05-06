@@ -1,5 +1,17 @@
+import fs from 'fs/promises';
+import replace from 'replace-in-file';
 import ghpages from 'gh-pages';
 
-ghpages.publish('build', () => {
-  console.log('Deploy complete!');
-});
+replace({
+  files: 'build/**/*',
+  from: /_app/g,
+  to: 'app'
+})
+  .then(() => {
+    return fs.rename('build/_app', 'build/app');
+  })
+  .then(() => {
+    ghpages.publish('build', () => {
+      console.log('Deploy complete!');
+    });
+  });
