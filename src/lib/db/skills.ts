@@ -18,7 +18,7 @@ export const skills: Skill[] = [
   {
     name: 'Svelte',
     description:
-      "My favourite frontend framework for the web. I've built many projects on Svelte and have also contributed to the ecosystem and tooling.",
+      "My favourite frontend framework for the web. I've built many projects on Svelte and have also contributed to its ecosystem and tooling.",
     imageSrc: 'skills/svelte.svg',
     tags: ['framework']
   },
@@ -32,33 +32,34 @@ export const skills: Skill[] = [
   {
     name: 'Vim',
     description:
-      "I'm obsessed with Vim and its philosophy of modal editing! Most of my development work is done in NeoVim with coc.nvim plugins. If I do have to use other editors, I usually reach for a comparable extension.",
+      "I'm obsessed with Vim and its philosophy of modal editing! Most of my work is done in NeoVim with coc.nvim. If I have to use other editors, I usually reach for a comparable plugin.",
     imageSrc: 'skills/vim.svg',
     tags: ['framework', 'editor']
   },
   {
     name: 'C',
     description:
-      'I have a love hate relationship with C. While I think the standard library and tooling could be improved, the language is simple and powerful and I enjoy working close to memory.',
+      'While I think the standard library and tooling could be improved, I love the simplicity of C and I enjoy working close to memory.',
     imageSrc: 'skills/c.svg',
     tags: ['language']
   },
   {
     name: 'Python',
     description:
-      "My go-to language for algorithm designa and scripting. I'm extremely proficient in Python.",
+      "I'm extremely proficient in Python. It is my go-to language for algorithm design and scripting.",
     imageSrc: 'skills/python.svg',
     tags: ['language']
   },
   {
     name: 'Node.js',
-    description: 'I am comfortable with Node.js and Express. I use Node.js for quick projects.',
+    description: 'I am comfortable with Node.js and Express, and I use it for quick projects.',
     imageSrc: 'skills/nodejs.svg',
     tags: ['framework']
   },
   {
     name: 'Firebase',
-    description: "I use Firebase for any quick projects where a relational database isn't needed.",
+    description:
+      "I use Firebase often for quick projects where a relational database isn't needed.",
     imageSrc: 'skills/firebase.svg',
     tags: ['database']
   },
@@ -79,7 +80,7 @@ export const skills: Skill[] = [
   {
     name: 'MySQL',
     description:
-      'I am proficient in database design. I usually use an ORM with MySQL, but I can also write optimized queries and take advantage of indices.',
+      'I am proficient in relational database design. I usually use an ORM with MySQL, but I can also write optimized queries and take advantage of indices.',
     imageSrc: 'skills/mysql.svg',
     tags: ['database']
   },

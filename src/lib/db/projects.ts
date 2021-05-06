@@ -17,7 +17,7 @@ export const projects: Project[] = [
   {
     name: 'vim-colorscheme-icons',
     description:
-      'A simple plug-and-play Vim plugin to colorize vim-devicons with the current colorscheme.',
+      'A simple plug-and-play Vim plugin to colorize <code>vim-devicons</code> with the current colorscheme.',
     imageSrc: 'projects/vim-colorscheme-icons.png',
     href: 'https://github.com/bryanmylee/vim-colorscheme-icons'
   },
@@ -35,7 +35,7 @@ export const projects: Project[] = [
   },
   {
     name: 'tailwindcss-extrude',
-    description: 'A custom TailwindCSS plugin for an extruded style.',
+    description: 'A custom Tailwind CSS plugin for an extruded style.',
     imageSrc: 'projects/tailwindcss-extrude.png',
     href: 'https://github.com/bryanmylee/tailwindcss-extrude'
   }

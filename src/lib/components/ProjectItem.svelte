@@ -15,8 +15,14 @@
         {name}
       </h2>
       <p class="leading-7">
-        {description}
+        {@html description}
       </p>
     </div>
   </a>
 </li>
+
+<style lang="postcss">
+  :global(p > code) {
+    @apply rounded-sm bg-dark-gray-lighter border-4 border-dark-gray-lighter;
+  }
+</style>
