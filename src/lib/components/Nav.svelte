@@ -1,5 +1,5 @@
 <nav class="sticky top-0 z-10 bg-opacity-60 bg-base">
-  <div class="relative font-mono">
+  <div class="relative">
     <div class="absolute inset-0 bg-yellow -z-1 nav-bg" />
     <div class="flex items-stretch justify-between w-full max-w-screen-md mx-auto">
       <a href="/" class="flex items-center p-2 font-mono text-base text-xl font-bold bg-yellow">
@@ -20,6 +20,6 @@
   .nav-bg {
     mask-size: 12px 4px;
     mask-repeat: repeat;
-    mask-image: url(nav-bg.svg);
+    mask-image: url(/nav-bg.svg);
   }
 </style>
