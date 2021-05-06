@@ -28,7 +28,11 @@
 </svelte:head>
 
 <p class="mx-4 md:mx-0 mt-12 font-mono text-3xl">
-  I am a <GlitchMarquee interval={5000} texts={descriptions} class="font-bold text-cyan" />
+  I am a <GlitchMarquee
+    interval={5000}
+    texts={descriptions}
+    class="font-bold text-cyan inline-block"
+  />
 </p>
 <Hero class="mt-12" />
 

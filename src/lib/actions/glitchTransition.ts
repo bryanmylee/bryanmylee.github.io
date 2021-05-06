@@ -6,8 +6,7 @@ const replacedChar = (str: string, atIndex: number, withChar: string) => {
   return str.slice(0, atIndex) + withChar + str.slice(atIndex + 1);
 };
 
-const transition = (node: HTMLElement, from: string, to: string) => {
-  const maxLength = Math.max(from.length, to.length);
+const transition = (node: HTMLElement, from: string, to: string, maxLength: number) => {
   node.innerText = node.innerText.padEnd(maxLength, ' ');
   const paddedTo = to.padEnd(maxLength, ' ');
   for (let i = 0; i < maxLength; i++) {
@@ -20,15 +19,20 @@ const transition = (node: HTMLElement, from: string, to: string) => {
     }, delay * 2);
   }
   setTimeout(() => {
-    node.innerText = to;
+    node.innerText = to.padEnd(maxLength, ' ');
   }, 2 * 1000 + 50);
 };
 
-export const glitchTransition: Action<string> = (node, initText) => {
-  node.innerText = initText;
+type GlitchTransitionParams = { text: string; maxLength: number };
+
+export const glitchTransition: Action<GlitchTransitionParams> = (
+  node,
+  { text: initText, maxLength }
+) => {
+  node.innerText = initText.padEnd(maxLength, ' ');
   return {
-    update(newText) {
-      transition(node, node.innerText, newText);
+    update({ text: newText, maxLength }) {
+      transition(node, node.innerText, newText, maxLength);
     }
   };
 };

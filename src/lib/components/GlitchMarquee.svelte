@@ -3,6 +3,7 @@
 
   export let texts: string[] = [];
   export let interval: number = 3000;
+  $: maxLength = Math.max(...texts.map((t) => t.length));
 
   let index = 0;
   let text = texts[index];
@@ -15,4 +16,4 @@
   export { className as class };
 </script>
 
-<span use:glitchTransition={text} class={className} />
+<pre use:glitchTransition={{ text, maxLength }} class={className} />
