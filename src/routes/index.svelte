@@ -42,7 +42,7 @@
 {#if $media.md}
   <SkillCloud {skills} />
 {:else}
-  <ul class="mx-4 space-y-8">
+  <ul class="grid sm:grid-cols-2 sm:p-4 gap-4">
     {#each skills as skill}
       <SkillItem {...skill} />
     {/each}

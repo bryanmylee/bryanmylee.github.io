@@ -4,16 +4,14 @@
   export let imageSrc = '';
 </script>
 
-<li class="flex space-x-6">
-  <div class="flex-shrink-0 w-32 h-32 p-2 bg-dark-gray-lighter">
-    <img src={imageSrc} alt={name} class="w-full h-full" />
-  </div>
-  <div class="space-y-2">
+<li class="p-6 space-y-4 bg-dark-gray-lighter">
+  <div class="flex items-center space-x-4">
+    <img src={imageSrc} alt={name} class="w-16 h-16" />
     <h2 class="font-mono text-xl font-bold">
       {name}
     </h2>
-    <p class="leading-7">
-      {description}
-    </p>
   </div>
+  <p class="leading-7">
+    {description}
+  </p>
 </li>
