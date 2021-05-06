@@ -73,7 +73,9 @@
 </ul>
 
 <h1 id="contact">Contact</h1>
-<section class="flex items-stretch space-x-4 md:space-x-8 justify-stretch">
+<section
+  class="flex flex-col sm:flex-row items-stretch justify-stretch space-y-4 sm:space-y-0 sm:space-x-4"
+>
   <ContactCard title="github" subtitle="bryanmylee" href="https://github.com/bryanmylee" />
   <ContactCard title="email" subtitle="bryanmylee@gmail.com" href="mailto:bryanmylee@gmail.com" />
   <ContactCard
