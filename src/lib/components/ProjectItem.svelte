@@ -7,7 +7,7 @@
 
 <li>
   <a {href} class="flex space-x-6 transition transform hover:-translate-y-4">
-    <div class="flex-shrink-0 w-32 h-32 p-2 bg-base-lighter">
+    <div class="flex-shrink-0 w-32 h-32 p-2 bg-dark-gray-lighter">
       <img src={imageSrc} alt={name} class="w-full h-full" />
     </div>
     <div class="space-y-2">

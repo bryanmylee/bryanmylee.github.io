@@ -7,7 +7,7 @@
   export let details: Record<string, string[]> = {};
 </script>
 
-<li class="flex p-6 space-x-6 bg-base-lighter">
+<li class="flex p-6 space-x-6 bg-dark-gray-lighter">
   <img src={imageSrc} alt={name} class="flex-shrink-0 w-32 h-32" />
   <div class="space-y-4 leading-7">
     <div>
