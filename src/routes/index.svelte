@@ -8,6 +8,7 @@
   import { experiences } from '$lib/db/experiences';
   import { projects } from '$lib/db/projects';
   import { skills } from '$lib/db/skills';
+  import { media } from '$lib/stores/media';
 
   let descriptions = [
     'computer science student.',
@@ -37,7 +38,9 @@
 
 <h1 id="skills">Skills</h1>
 
-<SkillCloud {skills} />
+{#if $media.md}
+  <SkillCloud {skills} />
+{/if}
 
 <h1 id="experience">Experience</h1>
 
