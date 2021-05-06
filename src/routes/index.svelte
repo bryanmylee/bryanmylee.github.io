@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { CircleIcon, ListIcon } from 'svelte-feather-icons';
   import ContactCard from '$lib/components/ContactCard.svelte';
   import ExperienceItem from '$lib/components/ExperienceItem.svelte';
   import GlitchMarquee from '$lib/components/GlitchMarquee.svelte';
@@ -18,6 +19,8 @@
     'vim enthusiast.',
     'cybersecurity researcher.'
   ];
+
+  let showSkillCloud = true;
 </script>
 
 <svelte:head>
@@ -37,17 +40,31 @@
   {/each}
 </ul>
 
-<h1 id="skills">Skills</h1>
+<div class="flex items-center justify-between">
+  <div class="w-8" />
+  <h1 id="skills">Skills</h1>
+  {#if $media.md}
+    <button on:click={() => (showSkillCloud = !showSkillCloud)} class="w-8">
+      {#if showSkillCloud}
+        <ListIcon />
+      {:else}
+        <CircleIcon />
+      {/if}
+    </button>
+  {/if}
+</div>
 
-{#if $media.md}
-  <SkillCloud {skills} />
-{:else}
-  <ul class="grid sm:grid-cols-2 sm:p-4 gap-4">
-    {#each skills as skill}
-      <SkillItem {...skill} />
-    {/each}
-  </ul>
-{/if}
+<section class="flex flex-col items-end">
+  {#if $media.md && showSkillCloud}
+    <SkillCloud {skills} />
+  {:else}
+    <ul class="grid sm:grid-cols-2 sm:px-4 md:px-0 gap-4">
+      {#each skills as skill}
+        <SkillItem {...skill} />
+      {/each}
+    </ul>
+  {/if}
+</section>
 
 <h1 id="experience">Experience</h1>
 
