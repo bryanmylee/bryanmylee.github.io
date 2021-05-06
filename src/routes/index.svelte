@@ -57,8 +57,8 @@
     <SkillCloud {skills} />
   {:else}
     <ul class="grid sm:grid-cols-2 sm:px-4 md:px-0 gap-4">
-      {#each skills as skill}
-        <SkillItem {...skill} />
+      {#each skills as skill, index}
+        <SkillItem {...skill} {index} />
       {/each}
     </ul>
   {/if}
