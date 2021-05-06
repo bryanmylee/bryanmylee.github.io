@@ -5,6 +5,7 @@
   import Hero from '$lib/components/Hero.svelte';
   import ProjectItem from '$lib/components/ProjectItem.svelte';
   import SkillCloud from '$lib/components/SkillCloud.svelte';
+  import SkillItem from '$lib/components/SkillItem.svelte';
   import { experiences } from '$lib/db/experiences';
   import { projects } from '$lib/db/projects';
   import { skills } from '$lib/db/skills';
@@ -40,6 +41,12 @@
 
 {#if $media.md}
   <SkillCloud {skills} />
+{:else}
+  <ul class="mx-4 space-y-8">
+    {#each skills as skill}
+      <SkillItem {...skill} />
+    {/each}
+  </ul>
 {/if}
 
 <h1 id="experience">Experience</h1>
