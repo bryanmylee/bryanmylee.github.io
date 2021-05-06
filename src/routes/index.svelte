@@ -40,18 +40,16 @@
   {/each}
 </ul>
 
-<div class="flex items-center justify-between">
-  <div class="w-8" />
+<div class="flex items-center justify-center md:justify-between">
+  <div class="w-8 hidden md:block" />
   <h1 id="skills">Skills</h1>
-  {#if $media.md}
-    <button on:click={() => (showSkillCloud = !showSkillCloud)} class="w-8">
-      {#if showSkillCloud}
-        <ListIcon />
-      {:else}
-        <CircleIcon />
-      {/if}
-    </button>
-  {/if}
+  <button on:click={() => (showSkillCloud = !showSkillCloud)} class="w-8 hidden md:block">
+    {#if showSkillCloud}
+      <ListIcon />
+    {:else}
+      <CircleIcon />
+    {/if}
+  </button>
 </div>
 
 <section class="flex flex-col items-end">
