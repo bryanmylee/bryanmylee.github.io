@@ -52,7 +52,7 @@
   </button>
 </div>
 
-<section class="flex flex-col items-end">
+<section class="flex flex-col items-end min-h-[400px]">
   {#if $media.md && showSkillCloud}
     <SkillCloud {skills} />
   {:else}
