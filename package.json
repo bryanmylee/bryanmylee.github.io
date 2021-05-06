@@ -7,7 +7,7 @@
     "preview": "svelte-kit preview",
     "lint": "prettier --check . && eslint --ignore-path .gitignore .",
     "format": "prettier --write .",
-    "deploy": "npm run build && npm run ghpages",
+    "deploy": "rm -rf build && npm run build && npm run ghpages",
     "ghpages": "node scripts/deploy.js"
   },
   "devDependencies": {
