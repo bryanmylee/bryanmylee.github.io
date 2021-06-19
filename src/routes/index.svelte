@@ -13,6 +13,7 @@
   import { projects } from '$lib/db/projects';
   import { skills } from '$lib/db/skills';
   import MountAtIntersection from '$lib/components/MountAtIntersection.svelte';
+  import { contacts } from '$lib/db/contacts';
 
   let descriptions = [
     'computer science student.',
@@ -80,17 +81,15 @@
   </ul>
 
   <h1 id="contact">Contact</h1>
-  <section
+
+  <MountAtIntersection
+    percent={90}
     class="flex flex-col items-stretch space-y-4 sm:flex-row justify-stretch sm:space-y-0 sm:space-x-4"
   >
-    <ContactCard title="github" subtitle="bryanmylee" href="https://github.com/bryanmylee" />
-    <ContactCard title="email" subtitle="bryanmylee@gmail.com" href="mailto:bryanmylee@gmail.com" />
-    <ContactCard
-      title="linkedin"
-      subtitle="bryan-lee-min-yuan"
-      href="https://www.linkedin.com/in/bryan-lee-min-yuan/"
-    />
-  </section>
+    {#each contacts as { type, id, href }, index}
+      <ContactCard title={type} subtitle={id} {href} {index} />
+    {/each}
+  </MountAtIntersection>
 </main>
 
 <style lang="postcss">
