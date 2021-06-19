@@ -1,5 +1,6 @@
 <script lang="ts">
   import { CircleIcon, ListIcon } from 'svelte-feather-icons';
+  import CompetitionItem from '$lib/components/CompetitionItem.svelte';
   import ContactCard from '$lib/components/ContactCard.svelte';
   import ExperienceItem from '$lib/components/ExperienceItem.svelte';
   import GlitchMarquee from '$lib/components/GlitchMarquee.svelte';
@@ -7,6 +8,7 @@
   import ProjectItem from '$lib/components/ProjectItem.svelte';
   import SkillCloud from '$lib/components/SkillCloud.svelte';
   import SkillItem from '$lib/components/SkillItem.svelte';
+  import { competitions } from '$lib/db/competitions';
   import { experiences } from '$lib/db/experiences';
   import { projects } from '$lib/db/projects';
   import { skills } from '$lib/db/skills';
@@ -34,6 +36,7 @@
     class="font-bold text-cyan inline-block"
   />
 </p>
+
 <Hero class="mt-12" />
 
 <h1 id="projects">Projects</h1>
@@ -41,6 +44,14 @@
 <ul class="grid mx-4 md:mx-0 md:grid-cols-2 gap-8">
   {#each projects as project}
     <ProjectItem {...project} />
+  {/each}
+</ul>
+
+<h1 id="competitions">Competitions</h1>
+
+<ul class="block space-y-4">
+  {#each competitions as competition}
+    <CompetitionItem {...competition} />
   {/each}
 </ul>
 
