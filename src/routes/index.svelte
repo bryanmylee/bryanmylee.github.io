@@ -1,6 +1,5 @@
 <script lang="ts">
   import '../app.postcss';
-  import { CircleIcon, ListIcon } from 'svelte-feather-icons';
   import CompetitionItem from '$lib/components/CompetitionItem.svelte';
   import ContactCard from '$lib/components/ContactCard.svelte';
   import ExperienceItem from '$lib/components/ExperienceItem.svelte';
@@ -8,7 +7,6 @@
   import Hero from '$lib/components/Hero.svelte';
   import Nav from '$lib/components/Nav.svelte';
   import ProjectItem from '$lib/components/ProjectItem.svelte';
-  import SkillCloud from '$lib/components/SkillCloud.svelte';
   import SkillItem from '$lib/components/SkillItem.svelte';
   import { competitions } from '$lib/db/competitions';
   import { experiences } from '$lib/db/experiences';
@@ -23,8 +21,6 @@
     'vim enthusiast.',
     'cybersecurity researcher.'
   ];
-
-  let showSkillCloud = true;
 </script>
 
 <svelte:head>
@@ -59,33 +55,17 @@
     {/each}
   </ul>
 
-  <h1 id="skills">
-    <div class="flex items-center justify-center md:justify-between">
-      <div class="w-8 hidden md:block" />
-      <div>Skills</div>
-      <button
-        on:click={() => (showSkillCloud = !showSkillCloud)}
-        class="w-8 hidden md:block text-white"
-      >
-        {#if showSkillCloud}
-          <ListIcon />
-        {:else}
-          <CircleIcon />
-        {/if}
-      </button>
-    </div>
-  </h1>
+  <h1 id="skills">Skills</h1>
 
-  <section class="flex flex-col items-end min-h-[400px]">
-    {#if $media.md && showSkillCloud}
-      <SkillCloud {skills} />
-    {:else}
-      <ul class="grid sm:grid-cols-2 sm:px-4 md:px-0 gap-4">
-        {#each skills as skill, index}
-          <SkillItem {...skill} {index} />
+  <section class="space-y-4">
+    {#each Object.entries(skills) as [skillCategory, categorySkills]}
+      <h2 class="font-mono font-bold text-2xl text-center">{skillCategory}</h2>
+      <ul class="grid md:grid-cols-2 gap-4">
+        {#each categorySkills as skill}
+          <SkillItem {...skill} />
         {/each}
       </ul>
-    {/if}
+    {/each}
   </section>
 
   <h1 id="experience">Experience</h1>
