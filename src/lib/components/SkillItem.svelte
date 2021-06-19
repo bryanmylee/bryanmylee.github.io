@@ -21,8 +21,8 @@
   class="p-4 space-y-4 bg-dark-gray-lighter"
 >
   <div class="flex items-center space-x-4">
-    <img src={imageSrc} alt={name} class="w-12 h-12" />
-    <h2 class="font-mono text-lg">
+    <img src={imageSrc} alt={name} class="w-8 h-8" />
+    <h2 class="font-mono">
       {name}
     </h2>
   </div>
