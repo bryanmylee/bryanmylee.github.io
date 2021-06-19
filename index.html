@@ -8,16 +8,16 @@
 
 		
 
-		<link rel="modulepreload" href="/./app/start-def3b90a.js">
-		<link rel="modulepreload" href="/./app/chunks/vendor-e2e09573.js">
-		<link rel="modulepreload" href="/./app/pages/$layout.svelte-20617b9c.js">
-		<link rel="modulepreload" href="/./app/pages/index.svelte-769d9cb2.js">
+		<link rel="modulepreload" href="/./app/start-25743cfe.js">
+		<link rel="modulepreload" href="/./app/chunks/vendor-4c0c52e6.js">
+		<link rel="modulepreload" href="/./app/pages/__layout.svelte-bf051265.js">
+		<link rel="modulepreload" href="/./app/pages/index.svelte-6383356d.js">
 		<link rel="stylesheet" href="/./app/assets/start-0826e215.css">
-		<link rel="stylesheet" href="/./app/assets/pages/$layout.svelte-b704c7b1.css">
+		<link rel="stylesheet" href="/./app/assets/pages/__layout.svelte-f3a87ff7.css">
 		<link rel="stylesheet" href="/./app/assets/pages/index.svelte-b62d0d63.css">
 
 		<script type="module">
-			import { start } from "/./app/start-def3b90a.js";
+			import { start } from "/./app/start-25743cfe.js";
 			start({
 				target: document.querySelector("#svelte"),
 				paths: {"base":"","assets":"/."},
@@ -25,12 +25,13 @@
 				host: location.host,
 				route: true,
 				spa: false,
+				trailing_slash: "never",
 				hydrate: {
 					status: 200,
 					error: null,
 					nodes: [
-						import("/./app/pages/$layout.svelte-20617b9c.js"),
-						import("/./app/pages/index.svelte-769d9cb2.js")
+						import("/./app/pages/__layout.svelte-bf051265.js"),
+						import("/./app/pages/index.svelte-6383356d.js")
 					],
 					page: {
 						host: location.host, // TODO this is redundant
@@ -58,6 +59,7 @@
 <main class="z-0 max-w-screen-md mx-auto">
 
 <p class="mx-4 md:mx-0 mt-12 font-mono text-3xl">I am a <pre class="font-bold text-cyan inline-block"></pre></p>
+
 <section class="mt-12 bg-dark-gray-lighter relative p-8 space-y-8"><h1 class="font-mono text-4xl font-bold text-yellow">Bryan Lee (bryanmylee)</h1>
   <p>I am a computer geek with a passion for software development.</p>
   <p>I build tools and scripts that solve real-world problems.</p>
@@ -85,6 +87,18 @@
     <div class="space-y-2"><h2 class="font-mono text-xl font-bold">tailwindcss-extrude</h2>
       <p class="leading-7">A custom Tailwind CSS plugin for an extruded style.</p></div></a>
 </li></ul>
+
+<h1 id="competitions" class="svelte-19jd6vw">Competitions</h1>
+
+<ul class="block space-y-4"><li class="p-6 space-y-6 bg-dark-gray-lighter"><div class="flex items-center space-x-6"><img src="competitions/code_exp.png" alt="CODE_EXP" class="flex-shrink-0 w-16 h-16">
+      <div><h2 class="font-mono text-2xl font-bold">CODE_EXP</h2>
+        <p><span class="font-mono text-xl font-bold text-yellow">1st</span>
+          ·
+          <span class="font-mono italic text-gray-400 text-sm">2021</span></p></div></div>
+    <p>A hackathon that focuses on harnessing the power of mobile app technologies to tackle some of the biggest challenges we face today!</p>
+    <h3 class="font-mono text-xl font-bold text-yellow">HelloWorld</h3>
+      <ul><li class="ml-4 mb-2 list-disc">Our team designed <strong>HelloWorld</strong>, an application that leverages AR technology to let you relive and reminiscence your travel adventures in the face of border restrictions.</li>
+      </ul></li></ul>
 
 <h1 id="skills" class="svelte-19jd6vw"><div class="flex items-center justify-center md:justify-between"><div class="w-8 hidden md:block"></div>
     <div>Skills</div>
@@ -128,7 +142,11 @@
     <p>I am currently pursuing a degree in computer science and will graduate in the Summer of 2023.</p>
     <h3 class="font-mono text-xl font-bold text-yellow">Achievements</h3>
       <ul><li class="ml-4 mb-2 list-disc">AY2019/2020 SIS Outstanding First Year Computer Science Student Award</li><li class="ml-4 mb-2 list-disc">AY2019/2020 Dean's List</li>
-      </ul></li><li class="p-6 space-y-6 bg-dark-gray-lighter"><div class="flex items-center space-x-6"><img src="experiences/whitehats.png" alt="Whitehat Society" class="flex-shrink-0 w-16 h-16">
+      </ul></li><li class="p-6 space-y-6 bg-dark-gray-lighter"><div class="flex items-center space-x-6"><img src="experiences/dso.png" alt="DSO National Laboratories" class="flex-shrink-0 w-16 h-16">
+      <div><h2 class="font-mono text-xl font-bold">DSO National Laboratories</h2>
+        <p class="font-mono italic text-gray-400 text-sm">may 2021 – today</p></div></div>
+    <p>I am a Research Intern working on Javascript-engine fuzzers.</p>
+    </li><li class="p-6 space-y-6 bg-dark-gray-lighter"><div class="flex items-center space-x-6"><img src="experiences/whitehats.png" alt="Whitehat Society" class="flex-shrink-0 w-16 h-16">
       <div><h2 class="font-mono text-xl font-bold">Whitehat Society</h2>
         <p class="font-mono italic text-gray-400 text-sm">aug 2020 – today</p></div></div>
     <p>I am the President of the Whitehat Society. We are a cybersecurity interest group with a mission to advocate for and educate on information security.</p>
