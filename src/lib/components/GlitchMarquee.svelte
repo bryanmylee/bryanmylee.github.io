@@ -17,3 +17,9 @@
 </script>
 
 <pre use:glitchTransition={{ text, maxLength }} class={className} />
+
+<style lang="postcss">
+  pre {
+    @apply whitespace-pre-wrap;
+  }
+</style>
