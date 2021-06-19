@@ -12,6 +12,7 @@
   import { experiences } from '$lib/db/experiences';
   import { projects } from '$lib/db/projects';
   import { skills } from '$lib/db/skills';
+  import MountAtIntersection from '$lib/components/MountAtIntersection.svelte';
 
   let descriptions = [
     'computer science student.',
@@ -29,11 +30,11 @@
 <Nav />
 
 <main class="z-0 max-w-screen-md mx-auto">
-  <p class="mx-4 md:mx-0 mt-12 font-mono text-3xl">
+  <p class="mx-4 mt-12 font-mono text-3xl md:mx-0">
     I am a <GlitchMarquee
       interval={5000}
       texts={descriptions}
-      class="font-bold text-cyan inline-block"
+      class="inline-block font-bold text-cyan"
     />
   </p>
 
@@ -41,7 +42,7 @@
 
   <h1 id="projects">Projects</h1>
 
-  <ul class="grid mr-4 md:mr-0 md:grid-cols-2 gap-8">
+  <ul class="grid gap-8 mr-4 md:mr-0 md:grid-cols-2">
     {#each projects as project}
       <ProjectItem {...project} />
     {/each}
@@ -59,12 +60,14 @@
 
   <section class="space-y-4">
     {#each Object.entries(skills) as [skillCategory, categorySkills]}
-      <h2 class="font-mono font-bold text-xl text-center">{skillCategory}</h2>
-      <ul class="flex flex-wrap gap-4">
-        {#each categorySkills as skill}
-          <SkillItem {...skill} />
-        {/each}
-      </ul>
+      <h2 class="font-mono text-xl font-bold text-center">{skillCategory}</h2>
+      <MountAtIntersection percent={90}>
+        <ul class="flex flex-wrap gap-4">
+          {#each categorySkills as skill, index}
+            <SkillItem {...skill} {index} />
+          {/each}
+        </ul>
+      </MountAtIntersection>
     {/each}
   </section>
 
@@ -78,7 +81,7 @@
 
   <h1 id="contact">Contact</h1>
   <section
-    class="flex flex-col sm:flex-row items-stretch justify-stretch space-y-4 sm:space-y-0 sm:space-x-4"
+    class="flex flex-col items-stretch space-y-4 sm:flex-row justify-stretch sm:space-y-0 sm:space-x-4"
   >
     <ContactCard title="github" subtitle="bryanmylee" href="https://github.com/bryanmylee" />
     <ContactCard title="email" subtitle="bryanmylee@gmail.com" href="mailto:bryanmylee@gmail.com" />

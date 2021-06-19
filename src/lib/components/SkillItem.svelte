@@ -15,7 +15,7 @@
 
 <li
   use:ref
-  in:fly={{ y: 100, delay: index * 50 }}
+  in:fly={{ y: 100, delay: index * 50 + 200 }}
   on:mouseenter={() => (showTooltip = true)}
   on:mouseleave={() => (showTooltip = false)}
   class="p-4 space-y-4 bg-dark-gray-lighter"
