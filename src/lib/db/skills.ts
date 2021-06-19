@@ -128,7 +128,7 @@ export const skills: Record<string, Skill[]> = {
     {
       name: 'C',
       description:
-        'While I think the standard library and tooling could be improved, I love the simplicity of C and I enjoy working close to memory.',
+        'I love the simplicity of C and I enjoy working close to memory for some projects.',
       imageSrc: 'skills/c.svg'
     }
   ]

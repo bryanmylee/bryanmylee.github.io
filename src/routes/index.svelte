@@ -59,7 +59,7 @@
 
   <section class="space-y-4">
     {#each Object.entries(skills) as [skillCategory, categorySkills]}
-      <h2 class="font-mono font-bold text-2xl text-center">{skillCategory}</h2>
+      <h2 class="font-mono font-bold text-xl text-center">{skillCategory}</h2>
       <ul class="flex flex-wrap gap-4">
         {#each categorySkills as skill}
           <SkillItem {...skill} />
