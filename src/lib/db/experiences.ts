@@ -15,6 +15,13 @@ export const experiences: Experience[] = [
     }
   },
   {
+    name: 'DSO National Laboratories',
+    description: 'I am a Research Intern working on Javascript-engine fuzzers.',
+    start: 'may 2021',
+    imageSrc: 'experiences/dso.png',
+    details: {}
+  },
+  {
     name: 'Whitehat Society',
     description:
       'I am the President of the Whitehat Society. We are a cybersecurity interest group with a mission to advocate for and educate on information security.',
