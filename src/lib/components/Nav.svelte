@@ -1,7 +1,8 @@
 <script lang="ts">
-  import { MenuIcon } from 'svelte-feather-icons';
   import { slide } from 'svelte/transition';
   import { media } from '$lib/stores/media';
+  import { clickOutside } from '$lib/actions/clickOutside';
+  import MenuIcon from '$lib/components/MenuIcon.svelte';
 
   let isOpen = false;
   $: $media.md, (isOpen = false);
@@ -13,7 +14,7 @@
     <div class="flex items-stretch justify-between w-full max-w-screen-md mx-auto">
       <a
         href="/"
-        class="flex items-center p-2 font-mono text-xl font-bold text-dark-gray bg-yellow"
+        class="flex items-center px-2 py-1 font-mono text-xl font-bold border-transparent border-3 text-dark-gray bg-yellow hover:bg-dark-gray hover:border-yellow hover:text-yellow"
       >
         Bryan Lee
       </a>
@@ -21,15 +22,16 @@
         {#if !$media.md}
           <button
             on:click={() => (isOpen = !isOpen)}
-            class="h-full px-2 border-transparent border-3 bg-yellow text-dark-gray hover:bg-dark-gray hover:border-yellow hover:text-yellow"
+            class="h-full px-2 border-transparent rounded-none border-3 bg-yellow text-dark-gray hover:bg-dark-gray hover:border-yellow hover:text-yellow focus:outline-none"
           >
-            <MenuIcon class="w-6 h-6" strokeWidth={3} />
+            <MenuIcon class="w-6 h-6" />
           </button>
         {/if}
         {#if $media.md || isOpen}
           <ul
             transition:slide={{ duration: $media.md ? 0 : 200 }}
             on:click={() => (isOpen = false)}
+            use:clickOutside={() => (isOpen = false)}
             class="absolute right-0 flex flex-col max-w-screen-md gap-4 p-2 font-mono underline md:py-2 md:h-full md:static md:items-center md:flex-row md:mx-auto bg-yellow text-dark-gray"
           >
             <li><a href="/#projects">projects</a></li>
@@ -49,5 +51,9 @@
     mask-size: 12px 4px;
     mask-repeat: repeat;
     mask-image: url(/nav-bg.svg);
+  }
+
+  li {
+    @apply text-right;
   }
 </style>
