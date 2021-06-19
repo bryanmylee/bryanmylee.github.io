@@ -29,7 +29,10 @@
 </li>
 
 {#if showTooltip}
-  <p use:tooltip class="fixed z-10 p-4 bg-dark-gray-lighter leading-7 max-w-lg border border-white">
+  <p
+    use:tooltip
+    class="fixed z-10 max-w-lg p-4 leading-7 border-white border-3 bg-dark-gray-lighter"
+  >
     {description}
   </p>
 {/if}
