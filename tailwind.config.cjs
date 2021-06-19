@@ -5,6 +5,9 @@ module.exports = {
   purge: ['./src/**/*.{html,js,svelte,ts}'],
   theme: {
     extend: {
+      borderWidth: {
+        3: '3px'
+      },
       colors: {
         cyan: '#61BFCD',
         yellow: '#EBAE89',

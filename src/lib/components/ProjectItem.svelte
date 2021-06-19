@@ -6,11 +6,13 @@
 </script>
 
 <li>
-  <a {href} class="flex space-x-6 transition transform hover:-translate-y-4">
-    <div class="flex-shrink-0 w-32 h-32 p-2 bg-dark-gray-lighter">
+  <a {href} class="flex space-x-6 group">
+    <div
+      class="flex-shrink-0 w-32 h-32 p-2 transition-colors border-transparent border-3 bg-dark-gray-lighter group-hover:border-cyan"
+    >
       <img src={imageSrc} alt={name} class="w-full h-full" />
     </div>
-    <div class="space-y-2">
+    <div class="space-y-2 transition-colors group-hover:text-cyan">
       <h2 class="font-mono text-xl font-bold">
         {name}
       </h2>

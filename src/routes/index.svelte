@@ -12,7 +12,6 @@
   import { experiences } from '$lib/db/experiences';
   import { projects } from '$lib/db/projects';
   import { skills } from '$lib/db/skills';
-  import { media } from '$lib/stores/media';
 
   let descriptions = [
     'computer science student.',
@@ -28,6 +27,7 @@
 </svelte:head>
 
 <Nav />
+
 <main class="z-0 max-w-screen-md mx-auto">
   <p class="mx-4 md:mx-0 mt-12 font-mono text-3xl">
     I am a <GlitchMarquee
@@ -41,7 +41,7 @@
 
   <h1 id="projects">Projects</h1>
 
-  <ul class="grid mx-4 md:mx-0 md:grid-cols-2 gap-8">
+  <ul class="grid mr-4 md:mr-0 md:grid-cols-2 gap-8">
     {#each projects as project}
       <ProjectItem {...project} />
     {/each}
