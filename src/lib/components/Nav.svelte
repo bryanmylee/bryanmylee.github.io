@@ -14,6 +14,7 @@
 
 <ul class="flex w-full max-w-screen-md mx-4 md:mx-auto mt-6 space-x-4 font-mono underline">
   <li><a href="#projects">projects</a></li>
+  <li><a href="#competitions">competitions</a></li>
   <li><a href="#skills">skills</a></li>
   <li><a href="#experience">experience</a></li>
   <li><a href="#contact">contact</a></li>
