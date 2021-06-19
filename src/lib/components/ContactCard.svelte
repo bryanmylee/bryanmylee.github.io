@@ -6,7 +6,7 @@
 
 <a
   {href}
-  class="flex flex-col items-center justify-center flex-1 p-4 sm:py-10 transition transform bg-dark-gray-lighter hover:-translate-y-6"
+  class="flex flex-col items-center justify-center flex-1 p-4 transition-colors border-transparent sm:py-10 border-3 bg-dark-gray-lighter hover:border-cyan hover:text-cyan"
 >
   <h2 class="font-mono text-xl font-bold text-cyan">{title}</h2>
   <p class="font-mono">{subtitle}</p>
