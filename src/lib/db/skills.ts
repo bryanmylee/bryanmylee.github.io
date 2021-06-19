@@ -1,42 +1,6 @@
 import type { Skill } from '$lib/models/Skill';
 
 export const skills: Record<string, Skill[]> = {
-  'Service Frameworks': [
-    {
-      name: 'Node.js',
-      description: 'I am comfortable with Node.js.',
-      imageSrc: 'skills/nodejs.svg'
-    },
-    {
-      name: 'Express',
-      description: 'I use Express for quick projects.',
-      imageSrc: 'skills/express.png'
-    },
-    {
-      name: 'Spring Boot',
-      description:
-        'One of my favourite software design frameworks. I use Spring Boot extensively and have applied the dependency injection principle to other projects.',
-      imageSrc: 'skills/springio.svg'
-    },
-    {
-      name: 'GraphQL',
-      description: 'I have been using GraphQL more recently and I enjoy the flexibility provided.',
-      imageSrc: 'skills/graphql.svg'
-    }
-  ],
-  'Database Technologies': [
-    {
-      name: 'MySQL',
-      description:
-        'I am proficient in relational database design. I usually use an ORM with MySQL, but I can also write optimized queries and take advantage of indices.',
-      imageSrc: 'skills/mysql.svg'
-    },
-    {
-      name: 'Cloud Firestore',
-      description: 'I use Firestore often for quick and cost-effective projects.',
-      imageSrc: 'skills/firebase.svg'
-    }
-  ],
   'Web Technologies': [
     {
       name: 'Svelte',
@@ -79,6 +43,55 @@ export const skills: Record<string, Skill[]> = {
       name: 'UIKit',
       description: 'I am comfortable with UIKit for native iOS application development.',
       imageSrc: 'skills/uikit.svg'
+    }
+  ],
+  'Service Frameworks': [
+    {
+      name: 'Node.js',
+      description: 'I am comfortable with Node.js.',
+      imageSrc: 'skills/nodejs.svg'
+    },
+    {
+      name: 'Express',
+      description: 'I use Express for quick projects.',
+      imageSrc: 'skills/express.png'
+    },
+    {
+      name: 'Spring Boot',
+      description:
+        'One of my favourite software design frameworks. I use Spring Boot extensively and have applied the dependency injection principle to other projects.',
+      imageSrc: 'skills/springio.svg'
+    },
+    {
+      name: 'GraphQL',
+      description: 'I have been using GraphQL more recently and I enjoy the flexibility provided.',
+      imageSrc: 'skills/graphql.svg'
+    }
+  ],
+  'Database Technologies': [
+    {
+      name: 'MySQL',
+      description:
+        'I am proficient in relational database design. I usually use an ORM with MySQL, but I can also write optimized queries and take advantage of indices.',
+      imageSrc: 'skills/mysql.svg'
+    },
+    {
+      name: 'Cloud Firestore',
+      description: 'I use Firestore often for quick and cost-effective projects.',
+      imageSrc: 'skills/firebase.svg'
+    }
+  ],
+  'System Administration': [
+    {
+      name: 'Docker',
+      description:
+        'I often setup containers when developing CTF hackathons for quick and easy target deployments.',
+      imageSrc: 'skills/docker.svg'
+    },
+    {
+      name: 'Ansible',
+      description: 'I use Ansible for easy deployment of distributed fuzzing systems.',
+      imageSrc: 'skills/ansible.svg'
     }
   ],
   'Programming Languages': [
