@@ -8,16 +8,15 @@
 
 		
 
-		<link rel="modulepreload" href="/./app/start-25743cfe.js">
-		<link rel="modulepreload" href="/./app/chunks/vendor-4c0c52e6.js">
-		<link rel="modulepreload" href="/./app/pages/__layout.svelte-bf051265.js">
-		<link rel="modulepreload" href="/./app/pages/index.svelte-6383356d.js">
+		<link rel="modulepreload" href="/./app/start-c0f38bcf.js">
+		<link rel="modulepreload" href="/./app/chunks/vendor-02cc05f4.js">
+		<link rel="modulepreload" href="/./app/layout.svelte-9c6bdbe6.js">
+		<link rel="modulepreload" href="/./app/pages/index.svelte-aeef21fb.js">
 		<link rel="stylesheet" href="/./app/assets/start-0826e215.css">
-		<link rel="stylesheet" href="/./app/assets/pages/__layout.svelte-f3a87ff7.css">
-		<link rel="stylesheet" href="/./app/assets/pages/index.svelte-b62d0d63.css">
+		<link rel="stylesheet" href="/./app/assets/pages/index.svelte-b7566b1b.css">
 
 		<script type="module">
-			import { start } from "/./app/start-25743cfe.js";
+			import { start } from "/./app/start-c0f38bcf.js";
 			start({
 				target: document.querySelector("#svelte"),
 				paths: {"base":"","assets":"/."},
@@ -30,8 +29,8 @@
 					status: 200,
 					error: null,
 					nodes: [
-						import("/./app/pages/__layout.svelte-bf051265.js"),
-						import("/./app/pages/index.svelte-6383356d.js")
+						import("/./app/layout.svelte-9c6bdbe6.js"),
+						import("/./app/pages/index.svelte-aeef21fb.js")
 					],
 					page: {
 						host: location.host, // TODO this is redundant
@@ -47,28 +46,29 @@
     <div id="svelte">
 
 
+
+
 <nav class="sticky top-0 z-10 bg-opacity-60 bg-dark-gray"><div class="relative"><div class="absolute inset-0 bg-yellow -z-1 nav-bg svelte-1igpt3d"></div>
     <div class="flex items-stretch justify-between w-full max-w-screen-md mx-auto"><a href="/" class="flex items-center p-2 font-mono text-dark-gray text-xl font-bold bg-yellow">Bryan Lee
       </a></div></div></nav>
 
 <ul class="flex w-full max-w-screen-md mx-4 md:mx-auto mt-6 space-x-4 font-mono underline"><li><a href="#projects">projects</a></li>
+  <li><a href="#competitions">competitions</a></li>
   <li><a href="#skills">skills</a></li>
   <li><a href="#experience">experience</a></li>
   <li><a href="#contact">contact</a></li>
 </ul>
-<main class="z-0 max-w-screen-md mx-auto">
+<main class="z-0 max-w-screen-md mx-auto"><p class="mx-4 md:mx-0 mt-12 font-mono text-3xl">I am a <pre class="font-bold text-cyan inline-block"></pre></p>
 
-<p class="mx-4 md:mx-0 mt-12 font-mono text-3xl">I am a <pre class="font-bold text-cyan inline-block"></pre></p>
-
-<section class="mt-12 bg-dark-gray-lighter relative p-8 space-y-8"><h1 class="font-mono text-4xl font-bold text-yellow">Bryan Lee (bryanmylee)</h1>
+  <section class="mt-12 bg-dark-gray-lighter relative p-8 space-y-8"><h1 class="font-mono text-4xl font-bold text-yellow">Bryan Lee (bryanmylee)</h1>
   <p>I am a computer geek with a passion for software development.</p>
   <p>I build tools and scripts that solve real-world problems.</p>
   <a href="#projects" class="block font-mono text-2xl font-bold text-cyan hover:underline">Check them out here.</a>
   <img src="profile.png" alt="profile" class="absolute right-0 bottom-0 w-[300px] hidden md:block"></section>
 
-<h1 id="projects" class="svelte-19jd6vw">Projects</h1>
+  <h1 id="projects" class="svelte-19jd6vw">Projects</h1>
 
-<ul class="grid mx-4 md:mx-0 md:grid-cols-2 gap-8"><li><a href="https://github.com/bryanmylee/svelte-popperjs" class="flex space-x-6 transition transform hover:-translate-y-4"><div class="flex-shrink-0 w-32 h-32 p-2 bg-dark-gray-lighter"><img src="projects/svelte-popperjs.png" alt="svelte-popperjs" class="w-full h-full"></div>
+  <ul class="grid mx-4 md:mx-0 md:grid-cols-2 gap-8"><li><a href="https://github.com/bryanmylee/svelte-popperjs" class="flex space-x-6 transition transform hover:-translate-y-4"><div class="flex-shrink-0 w-32 h-32 p-2 bg-dark-gray-lighter"><img src="projects/svelte-popperjs.png" alt="svelte-popperjs" class="w-full h-full"></div>
     <div class="space-y-2"><h2 class="font-mono text-xl font-bold">svelte-popperjs</h2>
       <p class="leading-7">Popper for Svelte with actions, no wrapper components or component bindings required!</p></div></a>
 </li><li><a href="https://github.com/bryanmylee/svelte-previous" class="flex space-x-6 transition transform hover:-translate-y-4"><div class="flex-shrink-0 w-32 h-32 p-2 bg-dark-gray-lighter"><img src="projects/svelte-previous.png" alt="svelte-previous" class="w-full h-full"></div>
@@ -88,9 +88,9 @@
       <p class="leading-7">A custom Tailwind CSS plugin for an extruded style.</p></div></a>
 </li></ul>
 
-<h1 id="competitions" class="svelte-19jd6vw">Competitions</h1>
+  <h1 id="competitions" class="svelte-19jd6vw">Competitions</h1>
 
-<ul class="block space-y-4"><li class="p-6 space-y-6 bg-dark-gray-lighter"><div class="flex items-center space-x-6"><img src="competitions/code_exp.png" alt="CODE_EXP" class="flex-shrink-0 w-16 h-16">
+  <ul class="block space-y-4"><li class="p-6 space-y-6 bg-dark-gray-lighter"><div class="flex items-center space-x-6"><img src="competitions/code_exp.png" alt="CODE_EXP" class="flex-shrink-0 w-16 h-16">
       <div><h2 class="font-mono text-2xl font-bold">CODE_EXP</h2>
         <p><span class="font-mono text-xl font-bold text-yellow">1st</span>
           ·
@@ -100,11 +100,11 @@
       <ul><li class="ml-4 mb-2 list-disc">Our team designed <strong>HelloWorld</strong>, an application that leverages AR technology to let you relive and reminiscence your travel adventures in the face of border restrictions.</li>
       </ul></li></ul>
 
-<h1 id="skills" class="svelte-19jd6vw"><div class="flex items-center justify-center md:justify-between"><div class="w-8 hidden md:block"></div>
-    <div>Skills</div>
-    <button class="w-8 hidden md:block text-white"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-list "><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg></button></div></h1>
+  <h1 id="skills" class="svelte-19jd6vw"><div class="flex items-center justify-center md:justify-between"><div class="w-8 hidden md:block"></div>
+      <div>Skills</div>
+      <button class="w-8 hidden md:block text-white"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-list "><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg></button></div></h1>
 
-<section class="flex flex-col items-end min-h-[400px]"><ul class="grid sm:grid-cols-2 sm:px-4 md:px-0 gap-4"><li class="p-6 space-y-4 bg-dark-gray-lighter"><div class="flex items-center space-x-4"><img src="skills/typescript.svg" alt="TypeScript" class="w-16 h-16">
+  <section class="flex flex-col items-end min-h-[400px]"><ul class="grid sm:grid-cols-2 sm:px-4 md:px-0 gap-4"><li class="p-6 space-y-4 bg-dark-gray-lighter"><div class="flex items-center space-x-4"><img src="skills/typescript.svg" alt="TypeScript" class="w-16 h-16">
     <h2 class="font-mono text-xl font-bold">TypeScript</h2></div>
   <p class="leading-7">Probably my favourite and most proficient language. I love the powerful type system, and always use TypeScript for web development as much as possible.</p></li><li class="p-6 space-y-4 bg-dark-gray-lighter"><div class="flex items-center space-x-4"><img src="skills/javascript.svg" alt="JavaScript" class="w-16 h-16">
     <h2 class="font-mono text-xl font-bold">JavaScript</h2></div>
@@ -134,9 +134,9 @@
     <h2 class="font-mono text-xl font-bold">Spring</h2></div>
   <p class="leading-7">One of my favourite software design frameworks. I use Spring Boot extensively and have applied the dependency injection principle to other projects.</p></li></ul></section>
 
-<h1 id="experience" class="svelte-19jd6vw">Experience</h1>
+  <h1 id="experience" class="svelte-19jd6vw">Experience</h1>
 
-<ul class="block space-y-4"><li class="p-6 space-y-6 bg-dark-gray-lighter"><div class="flex items-center space-x-6"><img src="experiences/smu.png" alt="Singapore Management University" class="flex-shrink-0 w-16 h-16">
+  <ul class="block space-y-4"><li class="p-6 space-y-6 bg-dark-gray-lighter"><div class="flex items-center space-x-6"><img src="experiences/smu.png" alt="Singapore Management University" class="flex-shrink-0 w-16 h-16">
       <div><h2 class="font-mono text-xl font-bold">Singapore Management University</h2>
         <p class="font-mono italic text-gray-400 text-sm">aug 2019 – today</p></div></div>
     <p>I am currently pursuing a degree in computer science and will graduate in the Summer of 2023.</p>
@@ -158,14 +158,14 @@
     <p>I was an Engineering Intern that worked on a warning system for autonomous drones and a React/Redux application with OpenStreetMap integration.</p>
     </li></ul>
 
-<h1 id="contact" class="svelte-19jd6vw">Contact</h1>
-<section class="flex flex-col sm:flex-row items-stretch justify-stretch space-y-4 sm:space-y-0 sm:space-x-4"><a href="https://github.com/bryanmylee" class="flex flex-col items-center justify-center flex-1 p-4 sm:py-10 transition transform bg-dark-gray-lighter hover:-translate-y-6"><h2 class="font-mono text-xl font-bold text-cyan">github</h2>
+  <h1 id="contact" class="svelte-19jd6vw">Contact</h1>
+  <section class="flex flex-col sm:flex-row items-stretch justify-stretch space-y-4 sm:space-y-0 sm:space-x-4"><a href="https://github.com/bryanmylee" class="flex flex-col items-center justify-center flex-1 p-4 sm:py-10 transition transform bg-dark-gray-lighter hover:-translate-y-6"><h2 class="font-mono text-xl font-bold text-cyan">github</h2>
   <p class="font-mono">bryanmylee</p></a>
-  <a href="mailto:bryanmylee@gmail.com" class="flex flex-col items-center justify-center flex-1 p-4 sm:py-10 transition transform bg-dark-gray-lighter hover:-translate-y-6"><h2 class="font-mono text-xl font-bold text-cyan">email</h2>
+    <a href="mailto:bryanmylee@gmail.com" class="flex flex-col items-center justify-center flex-1 p-4 sm:py-10 transition transform bg-dark-gray-lighter hover:-translate-y-6"><h2 class="font-mono text-xl font-bold text-cyan">email</h2>
   <p class="font-mono">bryanmylee@gmail.com</p></a>
-  <a href="https://www.linkedin.com/in/bryan-lee-min-yuan/" class="flex flex-col items-center justify-center flex-1 p-4 sm:py-10 transition transform bg-dark-gray-lighter hover:-translate-y-6"><h2 class="font-mono text-xl font-bold text-cyan">linkedin</h2>
-  <p class="font-mono">bryan-lee-min-yuan</p></a>
-</section></main>
+    <a href="https://www.linkedin.com/in/bryan-lee-min-yuan/" class="flex flex-col items-center justify-center flex-1 p-4 sm:py-10 transition transform bg-dark-gray-lighter hover:-translate-y-6"><h2 class="font-mono text-xl font-bold text-cyan">linkedin</h2>
+  <p class="font-mono">bryan-lee-min-yuan</p></a></section>
+</main>
 
 
 
