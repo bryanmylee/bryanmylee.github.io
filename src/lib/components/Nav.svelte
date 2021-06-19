@@ -32,11 +32,11 @@
             on:click={() => (isOpen = false)}
             class="absolute right-0 flex flex-col max-w-screen-md gap-4 p-2 font-mono underline md:py-2 md:h-full md:static md:items-center md:flex-row md:mx-auto bg-yellow text-dark-gray"
           >
-            <li><a href="#projects">projects</a></li>
-            <li><a href="#competitions">competitions</a></li>
-            <li><a href="#skills">skills</a></li>
-            <li><a href="#experience">experience</a></li>
-            <li><a href="#contact">contact</a></li>
+            <li><a href="/#projects">projects</a></li>
+            <li><a href="/#competitions">competitions</a></li>
+            <li><a href="/#skills">skills</a></li>
+            <li><a href="/#experience">experience</a></li>
+            <li><a href="/#contact">contact</a></li>
           </ul>
         {/if}
       </div>
