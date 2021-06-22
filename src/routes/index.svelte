@@ -82,14 +82,13 @@
 
   <h1 id="contact">Contact</h1>
 
-  <MountAtIntersection
-    percent={90}
+  <footer
     class="flex flex-col items-stretch space-y-4 sm:flex-row justify-stretch sm:space-y-0 sm:space-x-4"
   >
     {#each contacts as { type, id, href }, index}
       <ContactCard title={type} subtitle={id} {href} {index} />
     {/each}
-  </MountAtIntersection>
+  </footer>
 </main>
 
 <style lang="postcss">
