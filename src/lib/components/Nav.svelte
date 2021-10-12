@@ -32,7 +32,7 @@
             transition:slide={{ duration: $media.md ? 0 : 200 }}
             on:click={() => (isOpen = false)}
             use:clickOutside={() => (isOpen = false)}
-            class="absolute right-0 flex flex-col max-w-screen-md gap-4 p-2 font-mono underline md:py-2 md:h-full md:static md:items-center md:flex-row md:mx-auto bg-yellow text-dark-gray"
+            class="absolute right-0 flex flex-col max-w-screen-md gap-4 p-2 font-mono font-medium md:py-2 md:h-full md:static md:items-center md:flex-row md:mx-auto bg-yellow text-dark-gray"
           >
             <li><a href="/#projects">projects</a></li>
             <li><a href="/#competitions">competitions</a></li>
