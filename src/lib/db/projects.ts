@@ -25,7 +25,7 @@ export const projects: Project[] = [
     name: 'meetwhen.io',
     description: 'A group scheduling web application built on Svelte.',
     imageSrc: 'projects/meetwhen.png',
-    href: 'https://github.com/bryanmylee/meetwhen'
+    href: 'https://meetwhen.io'
   },
   {
     name: 'zoo-ids',
