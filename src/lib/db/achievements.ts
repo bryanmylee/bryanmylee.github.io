@@ -1,6 +1,6 @@
-import type { Competition } from '$lib/models/Competition';
+import type { Achievement } from '$lib/models/Achievement';
 
-export const competitions: Competition[] = [
+export const achievements: Achievement[] = [
   {
     name: 'CODE_EXP',
     description:

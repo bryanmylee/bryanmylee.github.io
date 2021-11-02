@@ -1,4 +1,4 @@
-export interface Competition {
+export interface Achievement {
   name: string;
   description: string;
   organizer: string;

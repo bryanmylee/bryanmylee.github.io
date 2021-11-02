@@ -1,4 +1,4 @@
-import type { Action } from 'svelte';
+import type { Action } from '$lib/typings/svelte';
 
 const blockGlyphs = ['░', '▒', '▓', '█'];
 

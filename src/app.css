@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,400;1,700&family=JetBrains+Mono:wght@400;700&display=swap');
+
+/* Write your global styles here, in PostCSS syntax */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  p {
+    @apply leading-relaxed tracking-wide;
+  }
+
+  code {
+    @apply rounded-md bg-dark-gray-lighter border-4 border-dark-gray-lighter;
+  }
+}
+
+@layer components {
+  .header {
+    @apply font-mono font-bold text-yellow text-3xl text-center my-10;
+    &::before {
+      display: block;
+      content: '';
+      height: 80px;
+      margin-top: -80px;
+    }
+  }
+  
+  .text-link {
+    @apply font-bold text-cyan hover:underline;
+  }
+  
+  .timestamp {
+    @apply font-mono text-sm text-gray-400;
+  }
+}

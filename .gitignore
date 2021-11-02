@@ -1,6 +1,5 @@
-.vscode
 .DS_Store
-node_modules
-/.svelte-kit
-/build
-/functions
+node_modules/
+build/
+.svelte-kit/
+package/

@@ -1,4 +1,4 @@
-import type { Action } from 'svelte';
+import type { Action } from '$lib/typings/svelte';
 
 export const clickOutside: Action<() => void> = (node, callback) => {
   const click = (event: MouseEvent) => {
