@@ -1,25 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bryan Lee</title>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="/favicon.ico" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Bryan Lee</title>
 
 		
 
-		<link rel="modulepreload" href="/./app/start-b01335bd.js">
-		<link rel="modulepreload" href="/./app/chunks/vendor-6e5193ce.js">
-		<link rel="modulepreload" href="/./app/layout.svelte-0b0f4f5f.js">
-		<link rel="modulepreload" href="/./app/pages/index.svelte-42ac7b59.js">
-		<link rel="stylesheet" href="/./app/assets/start-0826e215.css">
-		<link rel="stylesheet" href="/./app/assets/pages/index.svelte-afc6d18e.css">
+		<link rel="modulepreload" href="/app/start-988e7463.js">
+		<link rel="modulepreload" href="/app/chunks/vendor-fd5ec229.js">
+		<link rel="modulepreload" href="/app/pages/__layout.svelte-17877a8e.js">
+		<link rel="modulepreload" href="/app/chunks/media-74d6b192.js">
+		<link rel="modulepreload" href="/app/pages/index.svelte-65e93f31.js">
+		<link rel="stylesheet" href="/app/assets/start-464e9d0a.css">
+		<link rel="stylesheet" href="/app/assets/pages/__layout.svelte-7eb8a15a.css">
+		<link rel="stylesheet" href="/app/assets/pages/index.svelte-4c6f271b.css">
 
 		<script type="module">
-			import { start } from "/./app/start-b01335bd.js";
+			import { start } from "/app/start-988e7463.js";
 			start({
 				target: document.querySelector("#svelte"),
-				paths: {"base":"","assets":"/."},
+				paths: {"base":"","assets":""},
 				session: {},
 				host: location.host,
 				route: true,
@@ -29,120 +31,105 @@
 					status: 200,
 					error: null,
 					nodes: [
-						import("/./app/layout.svelte-0b0f4f5f.js"),
-						import("/./app/pages/index.svelte-42ac7b59.js")
+						import("/app/pages/__layout.svelte-17877a8e.js"),
+						import("/app/pages/index.svelte-65e93f31.js")
 					],
 					page: {
 						host: location.host, // TODO this is redundant
-						path: "/",
+						path: "\u002F",
 						query: new URLSearchParams(""),
 						params: {}
 					}
 				}
 			});
 		</script>
-  </head>
-  <body class="text-white bg-dark-gray">
-    <div id="svelte">
+	</head>
+	<body class="text-white bg-dark-gray">
+		<div id="svelte">
 
 
-
-
-<nav class="sticky top-0 z-10 bg-opacity-60 bg-dark-gray"><div class="relative"><div class="absolute inset-0 bg-yellow -z-1 nav-bg svelte-1o40to3"></div>
-    <div class="flex items-stretch justify-between w-full max-w-screen-md mx-auto"><a href="/" class="flex items-center px-2 py-1 font-mono text-xl font-bold border-transparent border-3 text-dark-gray bg-yellow hover:bg-dark-gray hover:border-yellow hover:text-yellow">Bryan Lee
-      </a>
-      <div class="relative"><button class="h-full px-2 border-transparent rounded-none border-3 bg-yellow text-dark-gray hover:bg-dark-gray hover:border-yellow hover:text-yellow focus:outline-none"><svg viewBox="0 0 384 384" class="w-6 h-6" fill="currentColor"><rect x="0" y="277.333" width="384" height="42.667"></rect><rect x="0" y="170.667" width="384" height="42.667"></rect><rect x="0" y="64" width="384" height="42.667"></rect></svg></button>
-        </div></div></div>
+<nav class="sticky top-0 z-10 bg-opacity-60 bg-dark-gray"><div class="relative"><div class="absolute inset-0 bg-yellow z-[-1] nav-bg svelte-1ml7024"></div>
+		<div class="flex items-stretch justify-between w-full max-w-screen-md mx-auto"><a href="/#home" class="flex items-center p-4 text-xl nav-item svelte-1ml7024">Bryan Lee </a>
+			<div class="relative"><button class="h-full border-transparent rounded-none nav-item focus:outline-none svelte-1ml7024"><svg viewBox="0 0 384 384" class="w-6 h-6" fill="currentColor"><rect x="0" y="277.333" width="384" height="42.667"></rect><rect x="0" y="170.667" width="384" height="42.667"></rect><rect x="0" y="64" width="384" height="42.667"></rect></svg></button>
+				</div></div></div>
 </nav>
 
-<main class="z-0 max-w-screen-md mx-auto"><p class="mx-4 mt-12 font-mono text-3xl md:mx-0">I am a <pre class="inline-block font-bold text-cyan svelte-tcswag"></pre></p>
 
-  <section class="mt-12 bg-dark-gray-lighter relative p-8"><h1 class="font-mono text-4xl font-bold text-yellow mb-8">Bryan Lee (bryanmylee)</h1>
-  <p class="text-xl leading-relaxed tracking-wide mb-8">I am a software developer with a passion for <br> building solutions and tools to solve <br>
-    your problems.
-  </p>
-  <a href="#projects" class="block font-mono text-2xl font-bold text-cyan hover:underline">Check them out here.</a>
-  <img src="profile.png" alt="profile" class="absolute right-0 bottom-0 w-[300px] hidden md:block"></section>
+<main class="z-0"><p id="home" aria-hidden class="text-dark-gray">.</p>
+	<header class="max-w-screen-md mx-auto mt-12"><p class="mx-4 font-mono text-3xl md:mx-0">I am a <pre class="inline-block font-bold text-cyan svelte-tcswag"></pre></p>
+	<section class="relative p-8 mt-12 bg-dark-gray-lighter"><h1 class="mb-8 font-mono text-4xl font-bold text-yellow">Bryan Lee (bryanmylee)</h1>
+		<p class="mb-8 text-xl w-96">I am a software developer with a passion for building solutions and tools to solve your
+			problems.
+		</p>
+		<a href="#projects" class="block font-mono text-2xl text-link">Check them out here.</a>
+		<img src="profile.png" alt="profile" class="absolute right-0 bottom-0 w-[300px] hidden md:block"></section></header>
+	<section class="max-w-screen-md mx-auto mt-4"><div class="flex flex-col items-stretch space-y-4 sm:flex-row justify-stretch sm:space-y-0 sm:space-x-4"><a href="https://github.com/bryanmylee" class="flex flex-col items-center justify-center flex-1 p-4 transition-colors border-transparent sm:py-10 border-3 bg-dark-gray-lighter hover:border-cyan hover:text-cyan"><h2 class="font-mono text-xl font-bold text-cyan">github</h2>
+	<p class="font-mono">bryanmylee</p></a><a href="mailto:bryanmylee@gmail.com" class="flex flex-col items-center justify-center flex-1 p-4 transition-colors border-transparent sm:py-10 border-3 bg-dark-gray-lighter hover:border-cyan hover:text-cyan"><h2 class="font-mono text-xl font-bold text-cyan">email</h2>
+	<p class="font-mono">bryanmylee@gmail.com</p></a><a href="https://www.linkedin.com/in/bryan-lee-min-yuan/" class="flex flex-col items-center justify-center flex-1 p-4 transition-colors border-transparent sm:py-10 border-3 bg-dark-gray-lighter hover:border-cyan hover:text-cyan"><h2 class="font-mono text-xl font-bold text-cyan">linkedin</h2>
+	<p class="font-mono">bryan-lee-min-yuan</p></a></div></section>
+	<h1 id="projects" class="header">Projects</h1>
 
-  <h1 id="projects" class="svelte-19jd6vw">Projects</h1>
+<ul class="grid max-w-screen-md gap-8 pr-4 mx-auto lg:pr-0 lg:max-w-screen-lg lg:grid-cols-2"><li><a href="https://github.com/bryanmylee/svelte-popperjs" class="flex space-x-6 group"><div class="flex-shrink-0 w-32 h-32 p-2 transition-colors border-transparent border-3 bg-dark-gray-lighter group-hover:border-cyan"><img src="projects/svelte-popperjs.png" alt="svelte-popperjs" class="w-full h-full"></div>
+		<div class="space-y-2 transition-colors group-hover:text-cyan"><h2 class="font-mono text-xl font-bold">svelte-popperjs</h2>
+			<p class="leading-7"><!-- HTML_TAG_START -->Popper for Svelte with actions, no wrapper components or component bindings required!<!-- HTML_TAG_END --></p></div></a></li><li><a href="https://github.com/bryanmylee/svelte-previous" class="flex space-x-6 group"><div class="flex-shrink-0 w-32 h-32 p-2 transition-colors border-transparent border-3 bg-dark-gray-lighter group-hover:border-cyan"><img src="projects/svelte-previous.png" alt="svelte-previous" class="w-full h-full"></div>
+		<div class="space-y-2 transition-colors group-hover:text-cyan"><h2 class="font-mono text-xl font-bold">svelte-previous</h2>
+			<p class="leading-7"><!-- HTML_TAG_START -->A Svelte store that remembers previous values.<!-- HTML_TAG_END --></p></div></a></li><li><a href="https://github.com/bryanmylee/vim-colorscheme-icons" class="flex space-x-6 group"><div class="flex-shrink-0 w-32 h-32 p-2 transition-colors border-transparent border-3 bg-dark-gray-lighter group-hover:border-cyan"><img src="projects/vim-colorscheme-icons.png" alt="vim-colorscheme-icons" class="w-full h-full"></div>
+		<div class="space-y-2 transition-colors group-hover:text-cyan"><h2 class="font-mono text-xl font-bold">vim-colorscheme-icons</h2>
+			<p class="leading-7"><!-- HTML_TAG_START -->A simple plug-and-play Vim plugin to colorize <code>vim-devicons</code> with the current colorscheme.<!-- HTML_TAG_END --></p></div></a></li><li><a href="https://meetwhen.io" class="flex space-x-6 group"><div class="flex-shrink-0 w-32 h-32 p-2 transition-colors border-transparent border-3 bg-dark-gray-lighter group-hover:border-cyan"><img src="projects/meetwhen.png" alt="meetwhen.io" class="w-full h-full"></div>
+		<div class="space-y-2 transition-colors group-hover:text-cyan"><h2 class="font-mono text-xl font-bold">meetwhen.io</h2>
+			<p class="leading-7"><!-- HTML_TAG_START -->A group scheduling web application built on Svelte.<!-- HTML_TAG_END --></p></div></a></li><li><a href="https://github.com/bryanmylee/zoo-ids" class="flex space-x-6 group"><div class="flex-shrink-0 w-32 h-32 p-2 transition-colors border-transparent border-3 bg-dark-gray-lighter group-hover:border-cyan"><img src="projects/zoo-ids.png" alt="zoo-ids" class="w-full h-full"></div>
+		<div class="space-y-2 transition-colors group-hover:text-cyan"><h2 class="font-mono text-xl font-bold">zoo-ids</h2>
+			<p class="leading-7"><!-- HTML_TAG_START -->A seedable and predictable ID generator that uses adjectives and animal names.<!-- HTML_TAG_END --></p></div></a></li><li><a href="https://github.com/bryanmylee/tailwindcss-extrude" class="flex space-x-6 group"><div class="flex-shrink-0 w-32 h-32 p-2 transition-colors border-transparent border-3 bg-dark-gray-lighter group-hover:border-cyan"><img src="projects/tailwindcss-extrude.png" alt="tailwindcss-extrude" class="w-full h-full"></div>
+		<div class="space-y-2 transition-colors group-hover:text-cyan"><h2 class="font-mono text-xl font-bold">tailwindcss-extrude</h2>
+			<p class="leading-7"><!-- HTML_TAG_START -->A custom Tailwind CSS plugin for an extruded style.<!-- HTML_TAG_END --></p></div></a></li></ul>
+	<h1 id="achievements" class="header">Achievements</h1>
 
-  <ul class="grid gap-8 mr-4 md:mr-0 md:grid-cols-2"><li><a href="https://github.com/bryanmylee/svelte-popperjs" class="flex space-x-6 group"><div class="flex-shrink-0 w-32 h-32 p-2 transition-colors border-transparent border-3 bg-dark-gray-lighter group-hover:border-cyan"><img src="projects/svelte-popperjs.png" alt="svelte-popperjs" class="w-full h-full"></div>
-    <div class="space-y-2 transition-colors group-hover:text-cyan"><h2 class="font-mono text-xl font-bold">svelte-popperjs</h2>
-      <p class="leading-7">Popper for Svelte with actions, no wrapper components or component bindings required!</p></div></a>
-</li><li><a href="https://github.com/bryanmylee/svelte-previous" class="flex space-x-6 group"><div class="flex-shrink-0 w-32 h-32 p-2 transition-colors border-transparent border-3 bg-dark-gray-lighter group-hover:border-cyan"><img src="projects/svelte-previous.png" alt="svelte-previous" class="w-full h-full"></div>
-    <div class="space-y-2 transition-colors group-hover:text-cyan"><h2 class="font-mono text-xl font-bold">svelte-previous</h2>
-      <p class="leading-7">A Svelte store that remembers previous values.</p></div></a>
-</li><li><a href="https://github.com/bryanmylee/vim-colorscheme-icons" class="flex space-x-6 group"><div class="flex-shrink-0 w-32 h-32 p-2 transition-colors border-transparent border-3 bg-dark-gray-lighter group-hover:border-cyan"><img src="projects/vim-colorscheme-icons.png" alt="vim-colorscheme-icons" class="w-full h-full"></div>
-    <div class="space-y-2 transition-colors group-hover:text-cyan"><h2 class="font-mono text-xl font-bold">vim-colorscheme-icons</h2>
-      <p class="leading-7">A simple plug-and-play Vim plugin to colorize <code>vim-devicons</code> with the current colorscheme.</p></div></a>
-</li><li><a href="https://meetwhen.io" class="flex space-x-6 group"><div class="flex-shrink-0 w-32 h-32 p-2 transition-colors border-transparent border-3 bg-dark-gray-lighter group-hover:border-cyan"><img src="projects/meetwhen.png" alt="meetwhen.io" class="w-full h-full"></div>
-    <div class="space-y-2 transition-colors group-hover:text-cyan"><h2 class="font-mono text-xl font-bold">meetwhen.io</h2>
-      <p class="leading-7">A group scheduling web application built on Svelte.</p></div></a>
-</li><li><a href="https://github.com/bryanmylee/zoo-ids" class="flex space-x-6 group"><div class="flex-shrink-0 w-32 h-32 p-2 transition-colors border-transparent border-3 bg-dark-gray-lighter group-hover:border-cyan"><img src="projects/zoo-ids.png" alt="zoo-ids" class="w-full h-full"></div>
-    <div class="space-y-2 transition-colors group-hover:text-cyan"><h2 class="font-mono text-xl font-bold">zoo-ids</h2>
-      <p class="leading-7">A seedable and predictable ID generator that uses adjectives and animal names.</p></div></a>
-</li><li><a href="https://github.com/bryanmylee/tailwindcss-extrude" class="flex space-x-6 group"><div class="flex-shrink-0 w-32 h-32 p-2 transition-colors border-transparent border-3 bg-dark-gray-lighter group-hover:border-cyan"><img src="projects/tailwindcss-extrude.png" alt="tailwindcss-extrude" class="w-full h-full"></div>
-    <div class="space-y-2 transition-colors group-hover:text-cyan"><h2 class="font-mono text-xl font-bold">tailwindcss-extrude</h2>
-      <p class="leading-7">A custom Tailwind CSS plugin for an extruded style.</p></div></a>
-</li></ul>
+<ul class="block max-w-screen-md gap-8 pr-4 mx-auto lg:pr-0 lg:max-w-screen-lg lg:grid-cols-2"><li class="p-6 space-y-6 bg-dark-gray-lighter"><div class="flex items-center space-x-6"><img src="competitions/code_exp.png" alt="CODE_EXP" class="flex-shrink-0 w-16 h-16">
+			<div><h2 class="font-mono text-2xl font-bold">CODE_EXP</h2>
+				<p><span class="font-mono text-xl font-bold text-yellow">1st</span>
+					·
+					<span class="timestamp">2021</span></p></div></div>
+		<p>A hackathon that focuses on harnessing the power of mobile app technologies to tackle some of the biggest challenges we face today!</p>
+		<h3 class="font-mono text-xl font-bold text-yellow">HelloWorld</h3>
+			<ul><li class="mb-2 ml-4 list-disc"><!-- HTML_TAG_START -->Our team designed <strong>HelloWorld</strong>, an application that leverages AR technology to let you relive and reminiscence your travel adventures in the face of border restrictions.<!-- HTML_TAG_END --></li>
+			</ul></li></ul>
+	<h1 id="skills" class="header">Skills</h1>
 
-  <h1 id="competitions" class="svelte-19jd6vw">Competitions</h1>
+<section class="max-w-screen-md mx-auto space-y-8"><h2 class="font-mono text-xl font-bold text-center">Web Technologies</h2>
+		<div class=""></div><h2 class="font-mono text-xl font-bold text-center">Mobile Technologies</h2>
+		<div class=""></div><h2 class="font-mono text-xl font-bold text-center">Service Frameworks</h2>
+		<div class=""></div><h2 class="font-mono text-xl font-bold text-center">Database Technologies</h2>
+		<div class=""></div><h2 class="font-mono text-xl font-bold text-center">System Administration</h2>
+		<div class=""></div><h2 class="font-mono text-xl font-bold text-center">Programming Languages</h2>
+		<div class=""></div></section>
+	<h1 id="experience" class="header">Experience</h1>
 
-  <ul class="block space-y-4"><li class="p-6 space-y-6 bg-dark-gray-lighter"><div class="flex items-center space-x-6"><img src="competitions/code_exp.png" alt="CODE_EXP" class="flex-shrink-0 w-16 h-16">
-      <div><h2 class="font-mono text-2xl font-bold">CODE_EXP</h2>
-        <p><span class="font-mono text-xl font-bold text-yellow">1st</span>
-          ·
-          <span class="font-mono italic text-gray-400 text-sm">2021</span></p></div></div>
-    <p>A hackathon that focuses on harnessing the power of mobile app technologies to tackle some of the biggest challenges we face today!</p>
-    <h3 class="font-mono text-xl font-bold text-yellow">HelloWorld</h3>
-      <ul><li class="ml-4 mb-2 list-disc">Our team designed <strong>HelloWorld</strong>, an application that leverages AR technology to let you relive and reminiscence your travel adventures in the face of border restrictions.</li>
-      </ul></li></ul>
-
-  <h1 id="skills" class="svelte-19jd6vw">Skills</h1>
-
-  <section class="space-y-4"><h2 class="font-mono text-xl font-bold text-center">Web Technologies</h2>
-      <div class=""></div><h2 class="font-mono text-xl font-bold text-center">Mobile Technologies</h2>
-      <div class=""></div><h2 class="font-mono text-xl font-bold text-center">Service Frameworks</h2>
-      <div class=""></div><h2 class="font-mono text-xl font-bold text-center">Database Technologies</h2>
-      <div class=""></div><h2 class="font-mono text-xl font-bold text-center">System Administration</h2>
-      <div class=""></div><h2 class="font-mono text-xl font-bold text-center">Programming Languages</h2>
-      <div class=""></div></section>
-
-  <h1 id="experience" class="svelte-19jd6vw">Experience</h1>
-
-  <ul class="block space-y-4"><li class="p-6 space-y-6 bg-dark-gray-lighter"><div class="flex items-center space-x-6"><img src="experiences/smu.png" alt="Singapore Management University" class="flex-shrink-0 w-16 h-16">
-      <div><h2 class="font-mono text-xl font-bold">Singapore Management University</h2>
-        <p class="font-mono italic text-gray-400 text-sm">aug 2019 – today</p></div></div>
-    <p>I am currently pursuing a degree in computer science and will graduate in the Summer of 2023.</p>
-    <h3 class="font-mono text-xl font-bold text-yellow">Achievements</h3>
-      <ul><li class="ml-4 mb-2 list-disc">AY2019/2020 SIS Outstanding First Year Computer Science Student Award</li><li class="ml-4 mb-2 list-disc">AY2019/2020 Dean's List</li>
-      </ul></li><li class="p-6 space-y-6 bg-dark-gray-lighter"><div class="flex items-center space-x-6"><img src="experiences/dso.png" alt="DSO National Laboratories" class="flex-shrink-0 w-16 h-16">
-      <div><h2 class="font-mono text-xl font-bold">DSO National Laboratories</h2>
-        <p class="font-mono italic text-gray-400 text-sm">may 2021 – jul 2021</p></div></div>
-    <p>I am a Research Intern working on Javascript-engine fuzzers.</p>
-    </li><li class="p-6 space-y-6 bg-dark-gray-lighter"><div class="flex items-center space-x-6"><img src="experiences/whitehats.png" alt="Whitehat Society" class="flex-shrink-0 w-16 h-16">
-      <div><h2 class="font-mono text-xl font-bold">Whitehat Society</h2>
-        <p class="font-mono italic text-gray-400 text-sm">aug 2020 – jul 2021</p></div></div>
-    <p>I am the President of the Whitehat Society. We are a cybersecurity interest group with a mission to advocate for and educate on information security.</p>
-    <h3 class="font-mono text-xl font-bold text-yellow">Projects</h3>
-      <ul><li class="ml-4 mb-2 list-disc">Initiated and conducted <strong>Cyber Hacking Fundamentals</strong>, a beginner-oriented workshop on the basics of cybersecurity.</li><li class="ml-4 mb-2 list-disc">Directed <strong>Whitehacks 2021</strong>, a Junior College cybersecurity outreach program comprising training workshops, a CTF competition, and networking opportunities with industry partners such as GovTech, CSA, and CSIT.</li>
-      </ul></li><li class="p-6 space-y-6 bg-dark-gray-lighter"><div class="flex items-center space-x-6"><img src="experiences/garuda-robotics.png" alt="Garuda Robotics" class="flex-shrink-0 w-16 h-16">
-      <div><h2 class="font-mono text-xl font-bold">Garuda Robotics</h2>
-        <p class="font-mono italic text-gray-400 text-sm">may 2020 – aug 2020</p></div></div>
-    <p>I was an Engineering Intern that worked on a warning system for autonomous drones and a React/Redux application with OpenStreetMap integration.</p>
-    </li></ul>
-
-  <h1 id="contact" class="svelte-19jd6vw">Contact</h1>
-
-  <footer class="flex flex-col items-stretch space-y-4 sm:flex-row justify-stretch sm:space-y-0 sm:space-x-4"><a href="https://github.com/bryanmylee" class="flex flex-col items-center justify-center flex-1 p-4 transition-colors border-transparent sm:py-10 border-3 bg-dark-gray-lighter hover:border-cyan hover:text-cyan"><h2 class="font-mono text-xl font-bold text-cyan">github</h2>
-  <p class="font-mono">bryanmylee</p></a><a href="mailto:bryanmylee@gmail.com" class="flex flex-col items-center justify-center flex-1 p-4 transition-colors border-transparent sm:py-10 border-3 bg-dark-gray-lighter hover:border-cyan hover:text-cyan"><h2 class="font-mono text-xl font-bold text-cyan">email</h2>
-  <p class="font-mono">bryanmylee@gmail.com</p></a><a href="https://www.linkedin.com/in/bryan-lee-min-yuan/" class="flex flex-col items-center justify-center flex-1 p-4 transition-colors border-transparent sm:py-10 border-3 bg-dark-gray-lighter hover:border-cyan hover:text-cyan"><h2 class="font-mono text-xl font-bold text-cyan">linkedin</h2>
-  <p class="font-mono">bryan-lee-min-yuan</p></a></footer>
-</main>
+<ul class="block max-w-screen-lg mx-auto space-y-4"><li class="p-6 space-y-6 bg-dark-gray-lighter"><div class="flex items-center space-x-6"><img src="experiences/smu.png" alt="Singapore Management University" class="flex-shrink-0 w-16 h-16">
+			<div><h2 class="font-mono text-xl font-bold">Singapore Management University</h2>
+				<p class="timestamp">aug 2019 – today</p></div></div>
+		<p>I am currently pursuing a degree in computer science and will graduate in the Summer of 2023.</p>
+		<h3 class="font-mono text-xl font-bold text-yellow">Achievements</h3>
+			<ul><li class="mb-2 ml-4 list-disc"><!-- HTML_TAG_START -->AY2019/2020 SIS Outstanding First Year Computer Science Student Award<!-- HTML_TAG_END --></li><li class="mb-2 ml-4 list-disc"><!-- HTML_TAG_START -->AY2019/2020 Dean's List<!-- HTML_TAG_END --></li>
+			</ul></li><li class="p-6 space-y-6 bg-dark-gray-lighter"><div class="flex items-center space-x-6"><img src="experiences/dso.png" alt="DSO National Laboratories" class="flex-shrink-0 w-16 h-16">
+			<div><h2 class="font-mono text-xl font-bold">DSO National Laboratories</h2>
+				<p class="timestamp">may 2021 – jul 2021</p></div></div>
+		<p>I am a Research Intern working on Javascript-engine fuzzers.</p>
+		</li><li class="p-6 space-y-6 bg-dark-gray-lighter"><div class="flex items-center space-x-6"><img src="experiences/whitehats.png" alt="Whitehat Society" class="flex-shrink-0 w-16 h-16">
+			<div><h2 class="font-mono text-xl font-bold">Whitehat Society</h2>
+				<p class="timestamp">aug 2020 – jul 2021</p></div></div>
+		<p>I am the President of the Whitehat Society. We are a cybersecurity interest group with a mission to advocate for and educate on information security.</p>
+		<h3 class="font-mono text-xl font-bold text-yellow">Projects</h3>
+			<ul><li class="mb-2 ml-4 list-disc"><!-- HTML_TAG_START -->Initiated and conducted <strong>Cyber Hacking Fundamentals</strong>, a beginner-oriented workshop on the basics of cybersecurity.<!-- HTML_TAG_END --></li><li class="mb-2 ml-4 list-disc"><!-- HTML_TAG_START -->Directed <strong>Whitehacks 2021</strong>, a Junior College cybersecurity outreach program comprising training workshops, a CTF competition, and networking opportunities with industry partners such as GovTech, CSA, and CSIT.<!-- HTML_TAG_END --></li>
+			</ul></li><li class="p-6 space-y-6 bg-dark-gray-lighter"><div class="flex items-center space-x-6"><img src="experiences/garuda-robotics.png" alt="Garuda Robotics" class="flex-shrink-0 w-16 h-16">
+			<div><h2 class="font-mono text-xl font-bold">Garuda Robotics</h2>
+				<p class="timestamp">may 2020 – aug 2020</p></div></div>
+		<p>I was an Engineering Intern that worked on a warning system for autonomous drones and a React/Redux application with OpenStreetMap integration.</p>
+		</li></ul>
+	<footer class="text-xl text-center my-52">Proudly developed by <a href="/#home" class="text-link">me.</a></footer></main>
 
 
 
-	
-</div>
-  </body>
+			
+		</div>
+	</body>
 </html>
