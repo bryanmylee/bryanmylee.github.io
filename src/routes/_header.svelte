@@ -20,7 +20,7 @@
 	</p>
 	<section class="relative p-8 mt-12 bg-dark-gray-lighter">
 		<h1 class="mb-8 font-mono text-4xl font-bold text-yellow">Bryan Lee (bryanmylee)</h1>
-		<p class="mb-8 text-xl w-96">
+		<p class="mb-8 text-xl max-w-96">
 			I am a software developer with a passion for building solutions and tools to solve your
 			problems.
 		</p>
