@@ -12,9 +12,6 @@
 	import ProjectItem from './ProjectItem.svelte';
 	import Toggle from '$lib/components/util/Toggle.svelte';
 
-	const description =
-		'Popper for Svelte with actions, no wrapper components or component bindings required!';
-
 	let boundaryElement: HTMLDivElement;
 
 	let popperOptions: PopperOptions<Partial<FlipModifier | EventListenersModifier>>;

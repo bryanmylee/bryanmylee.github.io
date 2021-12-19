@@ -8,8 +8,6 @@
 	import { writable } from 'svelte/store';
 	import { spring } from 'svelte/motion';
 
-	const description = 'A Svelte store that remembers previous values.';
-
 	const exampleCode = `<script lang="ts">
 	const [current, previous] = withPrevious(0);
 <\/script>

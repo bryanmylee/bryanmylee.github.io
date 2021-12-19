@@ -5,8 +5,6 @@
 	import ProjectItem from './ProjectItem.svelte';
 	import Toggle from '$lib/components/util/Toggle.svelte';
 
-	const description = 'A custom Tailwind CSS plugin for an extruded style.';
-
 	const exampleCode = `<button class="...extrude-cyan-darker extrude-y-4 hover:extrude-y-2"
 `;
 </script>
