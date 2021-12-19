@@ -45,7 +45,7 @@
 		<div class="relative flex flex-col w-full h-40 example-area justify-evenly">
 			<h3 class="font-bold">Current value</h3>
 			<div class="flex items-center justify-between gap-4">
-				<span class="w-8">{$current}</span>
+				<span class="w-8">{$live}</span>
 				<input type="range" bind:value={$live} class="w-full" />
 			</div>
 
