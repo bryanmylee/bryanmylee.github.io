@@ -2,11 +2,11 @@
 	import GlitchMarquee from '$lib/components/GlitchMarquee.svelte';
 
 	let descriptions = [
-		'computer science student.',
 		'software developer.',
-		'tech geek.',
+		'computer science student.',
 		'vim enthusiast.',
 		'cybersecurity researcher.',
+		'tech geek.',
 	];
 </script>
 
