@@ -1,8 +1,12 @@
 <script lang="ts">
+	import type { SkillID } from '$lib/db/skills';
+	import SkillChip from '../skill/SkillChip.svelte';
+
 	export let name = '';
 	export let description = '';
 	export let imageSrc = '';
 	export let href = '';
+	export let skills: SkillID[] = [];
 </script>
 
 <a {href} class="flex space-x-6 group">
@@ -20,3 +24,8 @@
 		</p>
 	</div>
 </a>
+<ul class="flex gap-2 mt-4">
+	{#each skills as skill}
+		<SkillChip {skill} />
+	{/each}
+</ul>

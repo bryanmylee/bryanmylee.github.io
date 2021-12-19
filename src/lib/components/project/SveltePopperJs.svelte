@@ -59,6 +59,7 @@
 			{description}
 			imageSrc="projects/svelte-popperjs.png"
 			href="https://github.com/bryanmylee/svelte-popperjs"
+			skills={['svelte', 'typescript']}
 		/>
 	</div>
 
