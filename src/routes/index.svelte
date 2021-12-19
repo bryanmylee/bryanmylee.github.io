@@ -7,7 +7,6 @@
 	import Header from './_header.svelte';
 	import Nav from './_nav.svelte';
 	import Projects from './_projects.svelte';
-	import Skills from './_skills.svelte';
 </script>
 
 <svelte:head>
@@ -16,12 +15,11 @@
 
 <Nav />
 <main class="z-0">
-	<p id="home" aria-hidden class="text-dark-gray">.</p>
+	<p id="home" aria-hidden class="text-shade-dark">.</p>
 	<Header />
 	<Contact />
 	<Projects />
 	<Achievements />
-	<Skills />
 	<Experiences />
 	<Footer />
 </main>

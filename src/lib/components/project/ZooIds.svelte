@@ -3,12 +3,8 @@
 	import { typescript } from 'svelte-highlight/src/languages';
 	import github from 'svelte-highlight/src/styles/github-dark';
 	import { generateId } from 'zoo-ids';
-
 	import ProjectItem from './ProjectItem.svelte';
 	import Toggle from '$lib/components/util/Toggle.svelte';
-
-	const description =
-		'A seedable and predictable ID generator that uses adjectives and animal names.';
 
 	const exampleCode = `const id = generateId(seed, {
   delimiter: '🍑',
@@ -27,12 +23,7 @@
 
 <section class="flex flex-col max-w-screen-lg gap-4 p-4 mx-auto md:flex-row md:items-center">
 	<div class="flex-1">
-		<ProjectItem
-			name="zoo-ids"
-			{description}
-			imageSrc="projects/zoo-ids.png"
-			href="https://github.com/bryanmylee/zoo-ids"
-		/>
+		<ProjectItem projectId="zoo-ids" />
 	</div>
 
 	<Toggle class="flex-1 w-full md:w-1/2">

@@ -1,5 +1,4 @@
 export interface Skill {
-  name: string;
-  description: string;
-  imageSrc: string;
+	name: string;
+	imageSrc: string;
 }

@@ -46,11 +46,4 @@
 		mask-repeat: repeat;
 		mask-image: url(/nav-bg.svg);
 	}
-
-	.nav-item {
-		@apply p-3 font-mono font-bold text-dark-gray bg-yellow;
-		&:hover {
-			@apply text-yellow bg-dark-gray ring-4 ring-inset ring-yellow;
-		}
-	}
 </style>

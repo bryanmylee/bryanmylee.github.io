@@ -10,7 +10,7 @@
 </script>
 
 {#if $media.md}
-	<li class="flex p-6 space-x-6 bg-dark-gray-lighter">
+	<li class="flex p-6 space-x-6 bg-shade">
 		<img src={imageSrc} alt={name} class="flex-shrink-0 w-32 h-32" />
 		<div class="space-y-4 leading-7">
 			<div>
@@ -29,7 +29,7 @@
 		</div>
 	</li>
 {:else}
-	<li class="p-6 space-y-6 bg-dark-gray-lighter">
+	<li class="p-6 space-y-6 bg-shade">
 		<div class="flex items-center space-x-6">
 			<img src={imageSrc} alt={name} class="flex-shrink-0 w-16 h-16" />
 			<div>

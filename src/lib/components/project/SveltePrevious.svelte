@@ -8,8 +8,6 @@
 	import { writable } from 'svelte/store';
 	import { spring } from 'svelte/motion';
 
-	const description = 'A Svelte store that remembers previous values.';
-
 	const exampleCode = `<script lang="ts">
 	const [current, previous] = withPrevious(0);
 <\/script>
@@ -32,19 +30,14 @@
 
 <section class="flex flex-col max-w-screen-lg gap-4 p-4 mx-auto md:flex-row md:items-center">
 	<div class="flex-1">
-		<ProjectItem
-			name="svelte-previous"
-			{description}
-			imageSrc="projects/svelte-previous.png"
-			href="https://github.com/bryanmylee/svelte-previous"
-		/>
+		<ProjectItem projectId="svelte-previous" />
 	</div>
 
 	<Toggle class="flex-1 w-full md:w-1/2">
 		<div class="relative flex flex-col w-full h-40 example-area justify-evenly">
 			<h3 class="font-bold">Current value</h3>
 			<div class="flex items-center justify-between gap-4">
-				<span class="w-8">{$current}</span>
+				<span class="w-8">{$live}</span>
 				<input type="range" bind:value={$live} class="w-full" />
 			</div>
 

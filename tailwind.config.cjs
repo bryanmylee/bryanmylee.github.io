@@ -1,16 +1,22 @@
 const defaultTheme = require('tailwindcss/defaultTheme');
 
-const config = {
+module.exports = {
 	content: ['./src/**/*.{html,js,svelte,ts}'],
 
 	theme: {
 		extend: {
 			colors: {
-				cyan: '#61BFCD',
-				yellow: '#EBAE89',
-				'dark-gray': {
-					DEFAULT: '#1C1E25',
-					lighter: '#242730',
+				cyan: {
+					DEFAULT: '#61bfcd',
+					dark: '#305d63',
+				},
+				yellow: {
+					DEFAULT: '#ebae89',
+				},
+				shade: {
+					dark: '#1c1e25',
+					DEFAULT: '#242730',
+					light: '#3f424d',
 				},
 			},
 			fontFamily: {
@@ -21,7 +27,5 @@ const config = {
 		},
 	},
 
-	plugins: [],
+	plugins: [require('tailwindcss-extrude')],
 };
-
-module.exports = config;

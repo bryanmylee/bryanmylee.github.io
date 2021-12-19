@@ -12,9 +12,6 @@
 	import ProjectItem from './ProjectItem.svelte';
 	import Toggle from '$lib/components/util/Toggle.svelte';
 
-	const description =
-		'Popper for Svelte with actions, no wrapper components or component bindings required!';
-
 	let boundaryElement: HTMLDivElement;
 
 	let popperOptions: PopperOptions<Partial<FlipModifier | EventListenersModifier>>;
@@ -54,12 +51,7 @@
 
 <section class="flex flex-col max-w-screen-lg gap-4 p-4 mx-auto md:flex-row md:items-center">
 	<div class="flex-1">
-		<ProjectItem
-			name="svelte-popperjs"
-			{description}
-			imageSrc="projects/svelte-popperjs.png"
-			href="https://github.com/bryanmylee/svelte-popperjs"
-		/>
+		<ProjectItem projectId="svelte-popperjs" />
 	</div>
 
 	<Toggle class="flex-1 w-full md:w-1/2">
@@ -71,7 +63,7 @@
 			<div use:ref class="absolute" style="left: {$position.x}px; top: {$position.y}px" />
 			<div
 				use:content={popperOptions}
-				class="p-4 font-bold rounded-lg pointer-events-none bg-cyan text-dark-gray"
+				class="p-4 font-bold rounded-lg pointer-events-none bg-cyan text-shade-dark"
 			>
 				This tooltip will not overflow!
 			</div>

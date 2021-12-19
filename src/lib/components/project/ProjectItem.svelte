@@ -1,13 +1,17 @@
 <script lang="ts">
-	export let name = '';
-	export let description = '';
-	export let imageSrc = '';
-	export let href = '';
+	import type { ProjectID } from '$lib/db/projects';
+	import { projects } from '$lib/db/projects';
+	import { projectSkills } from '$lib/db/project-skills';
+	import SkillChip from '../skill/SkillChip.svelte';
+
+	export let projectId: ProjectID;
+	$: ({ description, href, imageSrc, name } = projects[projectId]);
+	$: skills = projectSkills.filter(([p]) => p === projectId).map(([, s]) => s);
 </script>
 
 <a {href} class="flex space-x-6 group">
 	<div
-		class="flex-shrink-0 w-24 h-24 p-2 transition-colors border-transparent border-3 bg-dark-gray-lighter group-hover:border-cyan"
+		class="flex-shrink-0 w-24 h-24 p-2 transition-colors border-transparent border-3 bg-shade group-hover:border-cyan"
 	>
 		<img src={imageSrc} alt={name} class="w-full h-full" />
 	</div>
@@ -20,3 +24,8 @@
 		</p>
 	</div>
 </a>
+<ul class="flex gap-2 mt-4">
+	{#each skills as skill}
+		<SkillChip {skill} />
+	{/each}
+</ul>
