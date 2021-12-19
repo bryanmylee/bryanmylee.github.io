@@ -15,7 +15,7 @@
 				transition="fly"
 				flyY={50}
 				duration={600}
-				delay={index * 50 + 100}
+				delay={index * 100 + 100}
 				class="flex-1"
 			>
 				<ContactCard title={type} subtitle={id} {href} {index} />
