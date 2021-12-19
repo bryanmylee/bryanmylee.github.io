@@ -13,7 +13,7 @@
 		"ghpages": "node scripts/deploy.js"
 	},
 	"devDependencies": {
-		"@popperjs/core": "^2.10.2",
+		"@popperjs/core": "^2.11.0",
 		"@sveltejs/adapter-static": "^1.0.0-next.21",
 		"@sveltejs/kit": "next",
 		"@typescript-eslint/eslint-plugin": "^4.31.1",
@@ -24,6 +24,7 @@
 		"eslint-config-prettier": "^8.3.0",
 		"eslint-plugin-svelte3": "^3.2.1",
 		"gh-pages": "^3.2.3",
+		"highlight.js": "^11.3.1",
 		"postcss": "^8.3.9",
 		"postcss-load-config": "^3.1.0",
 		"prettier": "^2.4.1",
@@ -31,10 +32,11 @@
 		"replace-in-file": "^6.3.2",
 		"svelte": "^3.42.6",
 		"svelte-check": "^2.2.6",
+		"svelte-highlight": "^5.1.4",
 		"svelte-media": "^0.1.5",
 		"svelte-popperjs": "^1.2.6",
 		"svelte-preprocess": "^4.9.8",
-		"tailwindcss": "next",
+		"tailwindcss": "^3.0.7",
 		"tslib": "^2.3.1",
 		"typescript": "^4.4.3"
 	},

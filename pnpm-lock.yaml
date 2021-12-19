@@ -1,7 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@popperjs/core': ^2.10.2
+  '@popperjs/core': ^2.11.0
   '@sveltejs/adapter-static': ^1.0.0-next.21
   '@sveltejs/kit': next
   '@typescript-eslint/eslint-plugin': ^4.31.1
@@ -12,6 +12,7 @@ specifiers:
   eslint-config-prettier: ^8.3.0
   eslint-plugin-svelte3: ^3.2.1
   gh-pages: ^3.2.3
+  highlight.js: ^11.3.1
   postcss: ^8.3.9
   postcss-load-config: ^3.1.0
   prettier: ^2.4.1
@@ -19,17 +20,18 @@ specifiers:
   replace-in-file: ^6.3.2
   svelte: ^3.42.6
   svelte-check: ^2.2.6
+  svelte-highlight: ^5.1.4
   svelte-media: ^0.1.5
   svelte-popperjs: ^1.2.6
   svelte-preprocess: ^4.9.8
-  tailwindcss: next
+  tailwindcss: ^3.0.7
   tslib: ^2.3.1
   typescript: ^4.4.3
 
 devDependencies:
-  '@popperjs/core': 2.10.2
+  '@popperjs/core': 2.11.0
   '@sveltejs/adapter-static': 1.0.0-next.21
-  '@sveltejs/kit': 1.0.0-next.193_svelte@3.44.1
+  '@sveltejs/kit': 1.0.0-next.202_svelte@3.44.1
   '@typescript-eslint/eslint-plugin': 4.33.0_cc617358c89d3f38c52462f6d809db4c
   '@typescript-eslint/parser': 4.33.0_eslint@7.32.0+typescript@4.4.4
   autoprefixer: 10.4.0_postcss@8.3.11
@@ -38,6 +40,7 @@ devDependencies:
   eslint-config-prettier: 8.3.0_eslint@7.32.0
   eslint-plugin-svelte3: 3.2.1_eslint@7.32.0+svelte@3.44.1
   gh-pages: 3.2.3
+  highlight.js: 11.3.1
   postcss: 8.3.11
   postcss-load-config: 3.1.0
   prettier: 2.4.1
@@ -45,10 +48,11 @@ devDependencies:
   replace-in-file: 6.3.2
   svelte: 3.44.1
   svelte-check: 2.2.8_12c78e77d52b6508fc8705d47f1a4eb4
+  svelte-highlight: 5.1.4
   svelte-media: 0.1.5_svelte@3.44.1
-  svelte-popperjs: 1.2.6_@popperjs+core@2.10.2
+  svelte-popperjs: 1.2.6_@popperjs+core@2.11.0
   svelte-preprocess: 4.9.8_1efe055846dc052112d100fb64c56a4d
-  tailwindcss: 3.0.0-alpha.1_0c54bdadaf9d9c9c6c134cb2c6c061a3
+  tailwindcss: 3.0.7_0c54bdadaf9d9c9c6c134cb2c6c061a3
   tslib: 2.3.1
   typescript: 4.4.4
 
@@ -138,8 +142,8 @@ packages:
       fastq: 1.13.0
     dev: true
 
-  /@popperjs/core/2.10.2:
-    resolution: {integrity: sha512-IXf3XA7+XyN7CP9gGh/XB0UxVMlvARGEgGXLubFICsUMGz6Q+DU+i4gGlpOxTjKvXjkJDJC8YdqdKkDj9qZHEQ==}
+  /@popperjs/core/2.11.0:
+    resolution: {integrity: sha512-zrsUxjLOKAzdewIDRWy9nsV1GQsKBCWaGwsZQlCgr6/q+vjyZhFgqedLfFBuI9anTPEUT4APq9Mu0SZBTzIcGQ==}
     dev: true
 
   /@rollup/pluginutils/4.1.1:
@@ -154,18 +158,18 @@ packages:
     resolution: {integrity: sha512-B4+QoUVAaANKx+mHntG8SqF45zbj3Ct4Akg/cGauo6COyfKZRhO5OsMa+wPuT2TKJBZC4eEDK0p+p9nyQBkxKQ==}
     dev: true
 
-  /@sveltejs/kit/1.0.0-next.193_svelte@3.44.1:
-    resolution: {integrity: sha512-JRe7ZTZONNL2t+uFUkrT6HDWajD/Dp0lDMiB4FODZAtQLx94PKit0I699/dHrQR0qpzE3gYipqtxInTWasFpBg==}
+  /@sveltejs/kit/1.0.0-next.202_svelte@3.44.1:
+    resolution: {integrity: sha512-rXmJ0FplkWvD1CaeCfejRYhOJYrlmeUm5Fkw7gIKDdWPQev5rqOhd9B9ZvRpq35oMqCAwaOfK+e5S6k+83feEQ==}
     engines: {node: '>=14.13'}
     hasBin: true
     peerDependencies:
       svelte: ^3.44.0
     dependencies:
-      '@sveltejs/vite-plugin-svelte': 1.0.0-next.30_svelte@3.44.1+vite@2.6.13
+      '@sveltejs/vite-plugin-svelte': 1.0.0-next.30_svelte@3.44.1+vite@2.7.3
       cheap-watch: 1.0.4
       sade: 1.7.4
       svelte: 3.44.1
-      vite: 2.6.13
+      vite: 2.7.3
     transitivePeerDependencies:
       - diff-match-patch
       - less
@@ -174,7 +178,7 @@ packages:
       - supports-color
     dev: true
 
-  /@sveltejs/vite-plugin-svelte/1.0.0-next.30_svelte@3.44.1+vite@2.6.13:
+  /@sveltejs/vite-plugin-svelte/1.0.0-next.30_svelte@3.44.1+vite@2.7.3:
     resolution: {integrity: sha512-YQqdMxjL1VgSFk4/+IY3yLwuRRapPafPiZTiaGEq1psbJYSNYUWx9F1zMm32GMsnogg3zn99mGJOqe3ld3HZSg==}
     engines: {node: ^14.13.1 || >= 16}
     peerDependencies:
@@ -192,7 +196,7 @@ packages:
       require-relative: 0.8.7
       svelte: 3.44.1
       svelte-hmr: 0.14.7_svelte@3.44.1
-      vite: 2.6.13
+      vite: 2.7.3
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -1432,6 +1436,11 @@ packages:
       function-bind: 1.1.1
     dev: true
 
+  /highlight.js/11.3.1:
+    resolution: {integrity: sha512-PUhCRnPjLtiLHZAQ5A/Dt5F8cWZeMyj9KRsACsWT+OD6OP0x6dp5OmT5jdx0JgEyPxPZZIPQpRN2TciUT7occw==}
+    engines: {node: '>=12.0.0'}
+    dev: true
+
   /ignore/4.0.6:
     resolution: {integrity: sha512-cyFDKrqc/YdcWFniJhzI42+AzS+gNwmUzOSFcRCQYwySuBBBy/KjuxWLZ/FHEH6Moq1NizMOBWyTcv8O4OZIMg==}
     engines: {node: '>= 4'}
@@ -2032,7 +2041,7 @@ packages:
       postcss: ^8.2.14
     dependencies:
       postcss: 8.3.11
-      postcss-selector-parser: 6.0.6
+      postcss-selector-parser: 6.0.7
     dev: true
 
   /postcss-normalize-charset/5.0.1_postcss@8.3.11:
@@ -2171,6 +2180,14 @@ packages:
       util-deprecate: 1.0.2
     dev: true
 
+  /postcss-selector-parser/6.0.7:
+    resolution: {integrity: sha512-U+b/Deoi4I/UmE6KOVPpnhS7I7AYdKbhGcat+qTQ27gycvaACvNEw11ba6RrkwVmDVRW7sigWgLj4/KbbJjeDA==}
+    engines: {node: '>=4'}
+    dependencies:
+      cssesc: 3.0.0
+      util-deprecate: 1.0.2
+    dev: true
+
   /postcss-svgo/5.0.3_postcss@8.3.11:
     resolution: {integrity: sha512-41XZUA1wNDAZrQ3XgWREL/M2zSw8LJPvb5ZWivljBsUQAGoEKMYm6okHsTjJxKYI4M75RQEH4KYlEM52VwdXVA==}
     engines: {node: ^10 || ^12 || >=14.0}
@@ -2196,6 +2213,10 @@ packages:
 
   /postcss-value-parser/4.1.0:
     resolution: {integrity: sha512-97DXOFbQJhk71ne5/Mt6cOu6yxsSfM0QGQyl0L25Gca4yGWEGJaig7l7gbCX623VqTBNGLRLaVUCnNkcedlRSQ==}
+    dev: true
+
+  /postcss-value-parser/4.2.0:
+    resolution: {integrity: sha512-1NNCs6uurfkVbeXG4S8JFT9t19m45ICnif8zWLd5oPSZ50QnwMfK+H3jv408d4jw/7Bttv5axS5IiHoLaVNHeQ==}
     dev: true
 
   /postcss/8.3.11:
@@ -2514,6 +2535,12 @@ packages:
       - sugarss
     dev: true
 
+  /svelte-highlight/5.1.4:
+    resolution: {integrity: sha512-MNnhc6qEkp/JgAHaieUBivzUd2i195kC592Fqh0dF2kmd5x6WpBykLFUQ9KmIbYr8/QKYeI2Qp1cNWoGiqBrBA==}
+    dependencies:
+      highlight.js: 11.3.1
+    dev: true
+
   /svelte-hmr/0.14.7_svelte@3.44.1:
     resolution: {integrity: sha512-pDrzgcWSoMaK6AJkBWkmgIsecW0GChxYZSZieIYfCP0v2oPyx2CYU/zm7TBIcjLVUPP714WxmViE9Thht4etog==}
     peerDependencies:
@@ -2538,12 +2565,12 @@ packages:
       tiny-glob: 0.2.9
     dev: true
 
-  /svelte-popperjs/1.2.6_@popperjs+core@2.10.2:
+  /svelte-popperjs/1.2.6_@popperjs+core@2.11.0:
     resolution: {integrity: sha512-xSCAZZgSbjVVfN3GtvWxUypP7jELAdKW6r7PS6bxRN23pCnJPcbPlOjmk8pK5uiMdYWSaib/oy/+EgthrzI1Hw==}
     peerDependencies:
       '@popperjs/core': 2.9.x
     dependencies:
-      '@popperjs/core': 2.10.2
+      '@popperjs/core': 2.11.0
     dev: true
 
   /svelte-preprocess/4.9.8_1efe055846dc052112d100fb64c56a4d:
@@ -2630,8 +2657,8 @@ packages:
       strip-ansi: 6.0.1
     dev: true
 
-  /tailwindcss/3.0.0-alpha.1_0c54bdadaf9d9c9c6c134cb2c6c061a3:
-    resolution: {integrity: sha512-VweVLyu1tpo/i2MnoyDIunToZHYhHRZLGuKDt9I+nnjFoW07NhDwwHWsUyRHKowP5MZaHduhV+AVlM6Auy7m3A==}
+  /tailwindcss/3.0.7_0c54bdadaf9d9c9c6c134cb2c6c061a3:
+    resolution: {integrity: sha512-rZdKNHtC64jcQncLoWOuCzj4lQDTAgLtgK3WmQS88tTdpHh9OwLqULTQxI3tw9AMJsqSpCKlmcjW/8CSnni6zQ==}
     engines: {node: '>=12.13.0'}
     hasBin: true
     peerDependencies:
@@ -2656,8 +2683,8 @@ packages:
       postcss-js: 3.0.3
       postcss-load-config: 3.1.0
       postcss-nested: 5.0.6_postcss@8.3.11
-      postcss-selector-parser: 6.0.6
-      postcss-value-parser: 4.1.0
+      postcss-selector-parser: 6.0.7
+      postcss-value-parser: 4.2.0
       quick-lru: 5.1.1
       resolve: 1.20.0
       tmp: 0.2.1
@@ -2764,8 +2791,8 @@ packages:
     resolution: {integrity: sha512-/juG65kTL4Cy2su4P8HjtkTxk6VmJDiOPBufWniqQ6wknac6jNiXS9vU+hO3wgusiyqWlzTbVHi0dyJqRONg3w==}
     dev: true
 
-  /vite/2.6.13:
-    resolution: {integrity: sha512-+tGZ1OxozRirTudl4M3N3UTNJOlxdVo/qBl2IlDEy/ZpTFcskp+k5ncNjayR3bRYTCbqSOFz2JWGN1UmuDMScA==}
+  /vite/2.7.3:
+    resolution: {integrity: sha512-GAY1P+9fLJOju1SRm8+hykVnEXog+E+KXuqqyMBQDriKCUIKzWnPn142yNNhSdf/ixYGYdUa5ce3A8WaEajzGw==}
     engines: {node: '>=12.2.0'}
     hasBin: true
     peerDependencies:
