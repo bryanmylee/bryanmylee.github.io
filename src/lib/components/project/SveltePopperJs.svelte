@@ -66,13 +66,17 @@
 		<div
 			bind:this={boundaryElement}
 			use:trackMouse={position}
-			class="relative w-full h-40 border-4 border-dashed border-cyan rounded-xl"
+			class="relative w-full h-40 example-area"
 		>
 			<div use:ref class="absolute" style="left: {$position.x}px; top: {$position.y}px" />
-			<div use:content={popperOptions} class="p-4 rounded-lg pointer-events-none bg-cyan">
+			<div
+				use:content={popperOptions}
+				class="p-4 font-bold rounded-lg pointer-events-none bg-cyan text-dark-gray"
+			>
 				This tooltip will not overflow!
 			</div>
 		</div>
+		<p class="example-hint">Hover over the example area to try it out!</p>
 		<HighlightSvelte code={exampleCode} slot="alt" />
 	</Toggle>
 </section>

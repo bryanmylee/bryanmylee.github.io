@@ -41,9 +41,7 @@
 	</div>
 
 	<Toggle class="flex-1 w-full md:w-1/2">
-		<div
-			class="relative flex flex-col w-full h-40 p-4 border-4 border-dashed justify-evenly border-cyan rounded-xl"
-		>
+		<div class="relative flex flex-col w-full h-40 example-area justify-evenly">
 			<h3 class="font-bold">Current value</h3>
 			<div class="flex items-center justify-between gap-4">
 				<span class="w-8">{$current}</span>
@@ -56,6 +54,7 @@
 				<input type="range" disabled bind:value={$springPrevious} class="w-full" />
 			</div>
 		</div>
+		<p class="example-hint">Change the current value to try it out!</p>
 		<HighlightSvelte code={exampleCode} slot="alt" />
 	</Toggle>
 </section>

@@ -37,6 +37,14 @@
 	.timestamp {
 		@apply font-mono text-sm text-gray-400;
 	}
+
+	.example-area {
+		@apply p-4 border-4 border-dashed border-cyan rounded-xl;
+	}
+
+	.example-hint {
+		@apply pt-2 italic text-gray-400;
+	}
 }
 
 @layer utilities {

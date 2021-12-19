@@ -36,13 +36,14 @@
 	</div>
 
 	<Toggle class="flex-1 w-full md:w-1/2">
-		<div class="p-4 border-4 border-dashed border-cyan rounded-xl">
+		<div class="example-area">
 			<div class="flex items-center gap-4">
 				<label for="seed" class="text-lg font-bold">Seed</label>
-				<input type="text" id="seed" bind:value={seed} />
+				<input type="text" id="seed" bind:value={seed} class="w-full" />
 			</div>
 			<p class="mt-4 font-mono text-lg">{id}</p>
 		</div>
+		<p class="example-hint">Pick any seed to try it out!</p>
 		<Highlight code={exampleCode} language={typescript} slot="alt" />
 	</Toggle>
 </section>
