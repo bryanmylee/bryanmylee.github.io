@@ -12,6 +12,7 @@ export const projectSkills: [ProjectID, SkillID][] = [
 	['tailwindcss-extrude', 'tailwindcss'],
 	['tailwindcss-extrude', 'javascript'],
 	['tailwindcss-extrude', 'npm'],
+	['tailwindcss-extrude', 'gh_actions'],
 	['tailwindcss-extrude', 'prettier'],
 	// svelte-previous
 	['svelte-previous', 'svelte'],
