@@ -1,6 +1,6 @@
 import type { Skill } from '$lib/models/Skill';
 
-export type SkillID = 'svelte' | 'typescript';
+export type SkillID = 'svelte' | 'typescript' | 'npm' | 'eslint' | 'prettier' | 'gh_actions';
 
 export const skills: Record<SkillID, Skill> = {
 	typescript: {
@@ -10,5 +10,21 @@ export const skills: Record<SkillID, Skill> = {
 	svelte: {
 		name: 'Svelte',
 		imageSrc: 'skills/svelte.svg',
+	},
+	npm: {
+		name: 'npm.js',
+		imageSrc: 'skills/npm.svg',
+	},
+	eslint: {
+		name: 'ESLint',
+		imageSrc: 'skills/eslint.svg',
+	},
+	prettier: {
+		name: 'Prettier',
+		imageSrc: 'skills/prettier.svg',
+	},
+	gh_actions: {
+		name: 'Github Actions',
+		imageSrc: 'skills/gh_actions.png',
 	},
 };
