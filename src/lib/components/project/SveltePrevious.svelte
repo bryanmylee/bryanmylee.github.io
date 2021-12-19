@@ -28,7 +28,7 @@
 	{@html github}
 </svelte:head>
 
-<svelte:body on:mouseup={() => ($current = $live)} />
+<svelte:body on:mouseup={() => ($current = $live)} on:touchend={() => ($current = $live)} />
 
 <section class="max-w-screen-lg gap-4 mx-auto md:flex md:items-center">
 	<div class="flex-1">
