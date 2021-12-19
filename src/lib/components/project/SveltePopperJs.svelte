@@ -72,7 +72,7 @@
 			<div use:ref class="absolute" style="left: {$position.x}px; top: {$position.y}px" />
 			<div
 				use:content={popperOptions}
-				class="p-4 font-bold rounded-lg pointer-events-none bg-cyan text-dark-gray"
+				class="p-4 font-bold rounded-lg pointer-events-none bg-cyan text-shade-dark"
 			>
 				This tooltip will not overflow!
 			</div>

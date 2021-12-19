@@ -8,14 +8,15 @@ module.exports = {
 			colors: {
 				cyan: {
 					DEFAULT: '#61bfcd',
-					darker: '#305d63',
+					dark: '#305d63',
 				},
 				yellow: {
-					DEFAULT: '#EBAE89',
+					DEFAULT: '#ebae89',
 				},
-				'dark-gray': {
-					DEFAULT: '#1C1E25',
-					lighter: '#242730',
+				shade: {
+					dark: '#1c1e25',
+					DEFAULT: '#242730',
+					light: '#3f424d',
 				},
 			},
 			fontFamily: {

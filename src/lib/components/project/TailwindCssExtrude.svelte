@@ -29,7 +29,7 @@
 	<Toggle class="flex-1 w-full md:w-1/2">
 		<div class="flex items-center justify-center example-area">
 			<button
-				class="px-4 py-2 font-bold transition border-4 rounded-full border-cyan-darker bg-cyan extrude-y-4 hover:extrude-y-2 extrude-cyan-darker text-dark-gray"
+				class="px-4 py-2 font-bold transition border-4 rounded-full border-cyan-darker bg-cyan extrude-y-4 hover:extrude-y-2 extrude-cyan-darker text-shade-dark"
 			>
 				Press me
 			</button>

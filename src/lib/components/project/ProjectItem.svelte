@@ -11,7 +11,7 @@
 
 <a {href} class="flex space-x-6 group">
 	<div
-		class="flex-shrink-0 w-24 h-24 p-2 transition-colors border-transparent border-3 bg-dark-gray-lighter group-hover:border-cyan"
+		class="flex-shrink-0 w-24 h-24 p-2 transition-colors border-transparent border-3 bg-shade group-hover:border-cyan"
 	>
 		<img src={imageSrc} alt={name} class="w-full h-full" />
 	</div>
