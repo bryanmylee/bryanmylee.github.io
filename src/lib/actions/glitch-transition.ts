@@ -37,7 +37,7 @@ type GlitchTransitionParams = { text: string; maxLength: number };
 
 export const glitchTransition: Action<GlitchTransitionParams> = (
 	node,
-	{ text: initText, maxLength }
+	{ text: initText, maxLength } = { text: '', maxLength: 0 }
 ) => {
 	node.innerHTML = initText.padEnd(maxLength, ' ').concat(linebreakMarker);
 	return {

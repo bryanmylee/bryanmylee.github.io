@@ -16,7 +16,7 @@
 	export { className as class };
 </script>
 
-<pre use:glitchTransition={{ text, maxLength }} class={className} />
+<pre use:glitchTransition={{ text, maxLength }} class={className}>{text}</pre>
 
 <style lang="postcss">
 	pre {

@@ -11,13 +11,13 @@
 </script>
 
 <header class="max-w-screen-md mx-auto mt-12">
-	<p class="mx-4 font-mono text-3xl md:mx-0">
+	<div class="mx-4 font-mono text-3xl md:mx-0">
 		I am a <GlitchMarquee
 			interval={5000}
 			texts={descriptions}
 			class="inline-block font-bold text-cyan"
 		/>
-	</p>
+	</div>
 	<section class="relative p-8 mt-12 bg-shade">
 		<h1 class="mb-8 font-mono text-4xl font-bold text-yellow">Bryan Lee (bryanmylee)</h1>
 		<p class="mb-8 text-xl max-w-96">
