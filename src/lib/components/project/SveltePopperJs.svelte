@@ -38,7 +38,7 @@
 	const position = spring<Position>({ x: 0, y: 0 });
 	$: $position && getInstance()?.update();
 	const exampleCode = `<script lang="ts">
-	const [ref, content, getInstance] = createPopperActions();
+	const [ref, content] = createPopperActions();
 <\/script>
 
 <div use:ref use:followMouse/>
