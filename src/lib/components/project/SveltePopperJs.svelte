@@ -50,7 +50,7 @@
 </svelte:head>
 
 <section class="flex flex-col max-w-screen-lg gap-4 p-4 mx-auto md:flex-row md:items-center">
-	<div class="flex-1">
+	<div class="z-10 flex-1">
 		<ProjectItem projectId="svelte-popperjs" />
 	</div>
 
