@@ -17,13 +17,7 @@
 
 <section class="flex flex-col max-w-screen-lg gap-4 p-4 mx-auto md:flex-row md:items-center">
 	<div class="flex-1">
-		<ProjectItem
-			name="tailwindcss-extrude"
-			{description}
-			imageSrc="projects/tailwindcss-extrude.png"
-			href="https://github.com/bryanmylee/tailwindcss-extrude"
-			skills={['tailwindcss', 'javascript', 'prettier']}
-		/>
+		<ProjectItem projectId="tailwindcss-extrude" />
 	</div>
 
 	<Toggle class="flex-1 w-full md:w-1/2">

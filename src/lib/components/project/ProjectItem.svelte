@@ -1,12 +1,12 @@
 <script lang="ts">
-	import type { SkillID } from '$lib/db/skills';
+	import type { ProjectID } from '$lib/db/projects';
+	import { projects } from '$lib/db/projects';
+	import { projectSkills } from '$lib/db/project-skills';
 	import SkillChip from '../skill/SkillChip.svelte';
 
-	export let name = '';
-	export let description = '';
-	export let imageSrc = '';
-	export let href = '';
-	export let skills: SkillID[] = [];
+	export let projectId: ProjectID;
+	$: ({ description, href, imageSrc, name } = projects[projectId]);
+	$: skills = projectSkills.filter(([p]) => p === projectId).map(([, s]) => s);
 </script>
 
 <a {href} class="flex space-x-6 group">

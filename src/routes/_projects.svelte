@@ -15,9 +15,3 @@
 <SveltePrevious />
 <ZooIds />
 <TailwindCssExtrude />
-
-<ul class="grid max-w-screen-md gap-8 pr-4 mx-auto lg:pr-0 lg:max-w-screen-lg lg:grid-cols-2">
-	{#each projects as project}
-		<ProjectItem {...project} />
-	{/each}
-</ul>

@@ -32,13 +32,7 @@
 
 <section class="flex flex-col max-w-screen-lg gap-4 p-4 mx-auto md:flex-row md:items-center">
 	<div class="flex-1">
-		<ProjectItem
-			name="svelte-previous"
-			{description}
-			imageSrc="projects/svelte-previous.png"
-			href="https://github.com/bryanmylee/svelte-previous"
-			skills={['svelte', 'typescript', 'rxjs', 'npm', 'gh_actions', 'eslint', 'prettier']}
-		/>
+		<ProjectItem projectId="svelte-previous" />
 	</div>
 
 	<Toggle class="flex-1 w-full md:w-1/2">
