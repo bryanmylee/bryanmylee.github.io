@@ -9,9 +9,12 @@
 	export let repeat = false;
 	export let transition: TransitionType = 'fade';
 	export let duration = 500;
-	export let delay = 150;
+	export let delay = 0;
 	export let flyX = 0;
 	export let flyY = 100;
+
+	let className = '';
+	export { className as class };
 
 	let node: HTMLElement;
 	let jsEnabled = false;
@@ -56,6 +59,7 @@
 
 <div
 	bind:this={node}
+	class={className}
 	class:hide={jsEnabled && !visible}
 	class:fadeIn={transition === 'fade' && visible}
 	class:cssFadeIn={transition === 'fade' && !jsEnabled}

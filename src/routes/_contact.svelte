@@ -1,4 +1,5 @@
 <script lang="ts">
+	import MountOnIntersection from '$lib/components/util/MountOnIntersection.svelte';
 	import ContactCard from '$lib/components/contact/ContactCard.svelte';
 
 	import { contacts } from '$lib/db/contacts';
@@ -9,7 +10,16 @@
 		class="flex flex-col items-stretch space-y-4 sm:flex-row justify-stretch sm:space-y-0 sm:space-x-4"
 	>
 		{#each contacts as { type, id, href }, index}
-			<ContactCard title={type} subtitle={id} {href} {index} />
+			<MountOnIntersection
+				percent={50}
+				transition="fly"
+				flyY={50}
+				duration={600}
+				delay={index * 50 + 100}
+				class="flex-1"
+			>
+				<ContactCard title={type} subtitle={id} {href} {index} />
+			</MountOnIntersection>
 		{/each}
 	</div>
 </section>

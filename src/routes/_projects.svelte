@@ -1,8 +1,8 @@
 <script lang="ts">
 	import { projects } from '$lib/db/projects';
+	import MountOnIntersection from '$lib/components/util/MountOnIntersection.svelte';
 	import SveltePopperJs from '$lib/components/project/SveltePopperJs.svelte';
 	import SveltePrevious from '$lib/components/project/SveltePrevious.svelte';
-	import ProjectItem from '$lib/components/project/ProjectItem.svelte';
 	import ZooIds from '$lib/components/project/ZooIds.svelte';
 	import TailwindCssExtrude from '$lib/components/project/TailwindCssExtrude.svelte';
 </script>
@@ -11,9 +11,17 @@
 
 <h2 class="header-2">Developer Tools</h2>
 
-<SveltePopperJs />
-<SveltePrevious />
-<ZooIds />
-<TailwindCssExtrude />
+<MountOnIntersection percent={50} transition="fly" flyY={50} duration={600} delay={50}>
+	<SveltePopperJs />
+</MountOnIntersection>
+<MountOnIntersection percent={50} transition="fly" flyY={50} duration={600} delay={50}>
+	<SveltePrevious />
+</MountOnIntersection>
+<MountOnIntersection percent={50} transition="fly" flyY={50} duration={600} delay={50}>
+	<ZooIds />
+</MountOnIntersection>
+<MountOnIntersection percent={50} transition="fly" flyY={50} duration={600} delay={50}>
+	<TailwindCssExtrude />
+</MountOnIntersection>
 
 <h2 class="header-2">Apps</h2>
