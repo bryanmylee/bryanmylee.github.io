@@ -1,13 +1,18 @@
 const defaultTheme = require('tailwindcss/defaultTheme');
 
-const config = {
+module.exports = {
 	content: ['./src/**/*.{html,js,svelte,ts}'],
 
 	theme: {
 		extend: {
 			colors: {
-				cyan: '#61BFCD',
-				yellow: '#EBAE89',
+				cyan: {
+					DEFAULT: '#61bfcd',
+					darker: '#305d63',
+				},
+				yellow: {
+					DEFAULT: '#EBAE89',
+				},
 				'dark-gray': {
 					DEFAULT: '#1C1E25',
 					lighter: '#242730',
@@ -21,7 +26,5 @@ const config = {
 		},
 	},
 
-	plugins: [],
+	plugins: [require('tailwindcss-extrude')],
 };
-
-module.exports = config;
