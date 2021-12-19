@@ -11,5 +11,10 @@ jobs:
         uses: actions/checkout@master
       - name: Install dependencies
         run: npm install
-      - name: Build and deploy
+      - name: Build and transform
         run: npm run deploy
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@latest
+        with:
+          branch: gh-pages
+          folder: build
