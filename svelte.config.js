@@ -7,14 +7,19 @@ const config = {
 	// for more information about preprocessors
 	preprocess: [
 		preprocess({
-			postcss: true
-		})
+			postcss: true,
+		}),
 	],
 
 	kit: {
 		adapter: adapter(),
 		// hydrate the <div id="svelte"> element in src/app.html
 		target: '#svelte',
+		vite: {
+			optimizeDeps: {
+				include: ['highlight.js/lib/core'],
+			},
+		},
 	},
 };
 
