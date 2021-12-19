@@ -52,7 +52,7 @@
 	{@html github}
 </svelte:head>
 
-<section class="max-w-screen-lg gap-4 mx-auto md:flex md:items-center">
+<section class="flex flex-col max-w-screen-lg gap-4 p-4 mx-auto md:flex-row md:items-center">
 	<div class="flex-1">
 		<ProjectItem
 			name="svelte-popperjs"
@@ -62,7 +62,7 @@
 		/>
 	</div>
 
-	<Toggle class="flex-1 w-full p-4 md:w-1/2">
+	<Toggle class="flex-1 w-full md:w-1/2">
 		<div
 			bind:this={boundaryElement}
 			use:trackMouse={position}

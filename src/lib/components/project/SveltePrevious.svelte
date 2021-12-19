@@ -30,7 +30,7 @@
 
 <svelte:body on:mouseup={() => ($current = $live)} on:touchend={() => ($current = $live)} />
 
-<section class="max-w-screen-lg gap-4 mx-auto md:flex md:items-center">
+<section class="flex flex-col max-w-screen-lg gap-4 p-4 mx-auto md:flex-row md:items-center">
 	<div class="flex-1">
 		<ProjectItem
 			name="svelte-previous"
@@ -40,15 +40,17 @@
 		/>
 	</div>
 
-	<Toggle class="flex-1 w-full p-4 md:w-1/2">
-		<div class="relative w-full h-40 p-4 border-4 border-dashed border-cyan rounded-xl">
-			<h3 class="mt-2 font-bold">Current value</h3>
+	<Toggle class="flex-1 w-full md:w-1/2">
+		<div
+			class="relative flex flex-col w-full h-40 p-4 border-4 border-dashed justify-evenly border-cyan rounded-xl"
+		>
+			<h3 class="font-bold">Current value</h3>
 			<div class="flex items-center justify-between gap-4">
 				<span class="w-8">{$current}</span>
 				<input type="range" bind:value={$live} class="w-full" />
 			</div>
 
-			<h3 class="mt-4 font-bold">Previous value</h3>
+			<h3 class="font-bold">Previous value</h3>
 			<div class="flex items-center justify-between gap-4">
 				<span class="w-8">{$springPrevious.toFixed(0)}</span>
 				<input type="range" disabled bind:value={$springPrevious} class="w-full" />
