@@ -1,6 +1,13 @@
 import type { Skill } from '$lib/models/Skill';
 
-export type SkillID = 'svelte' | 'typescript' | 'npm' | 'eslint' | 'prettier' | 'gh_actions';
+export type SkillID =
+	| 'svelte'
+	| 'typescript'
+	| 'npm'
+	| 'eslint'
+	| 'prettier'
+	| 'gh_actions'
+	| 'rxjs';
 
 export const skills: Record<SkillID, Skill> = {
 	typescript: {
@@ -26,5 +33,9 @@ export const skills: Record<SkillID, Skill> = {
 	gh_actions: {
 		name: 'Github Actions',
 		imageSrc: 'skills/gh_actions.png',
+	},
+	rxjs: {
+		name: 'RxJS',
+		imageSrc: 'skills/rxjs.svg',
 	},
 };

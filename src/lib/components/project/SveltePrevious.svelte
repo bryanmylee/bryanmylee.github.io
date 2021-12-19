@@ -37,6 +37,7 @@
 			{description}
 			imageSrc="projects/svelte-previous.png"
 			href="https://github.com/bryanmylee/svelte-previous"
+			skills={['svelte', 'typescript', 'rxjs', 'npm', 'gh_actions', 'eslint', 'prettier']}
 		/>
 	</div>
 

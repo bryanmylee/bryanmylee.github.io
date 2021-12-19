@@ -15,9 +15,9 @@ const config = {
 		autoprefixer(),
 		!dev &&
 			cssnano({
-				preset: 'default'
-			})
-	]
+				preset: 'default',
+			}),
+	],
 };
 
 module.exports = config;

@@ -32,6 +32,7 @@
 			{description}
 			imageSrc="projects/zoo-ids.png"
 			href="https://github.com/bryanmylee/zoo-ids"
+			skills={['typescript', 'npm', 'gh_actions', 'eslint', 'prettier']}
 		/>
 	</div>
 
