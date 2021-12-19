@@ -22,7 +22,7 @@
 				<h3 class="font-mono text-xl font-bold text-yellow">{header}</h3>
 				<ul>
 					{#each items as item}
-						<li class="mb-2 ml-4 list-disc">{@html item}</li>
+						<li class="mb-2 ml-4 list-disc auto-html">{@html item}</li>
 					{/each}
 				</ul>
 			{/each}
@@ -42,7 +42,7 @@
 			<h3 class="font-mono text-xl font-bold text-yellow">{header}</h3>
 			<ul>
 				{#each items as item}
-					<li class="mb-2 ml-4 list-disc">{@html item}</li>
+					<li class="mb-2 ml-4 list-disc auto-html">{@html item}</li>
 				{/each}
 			</ul>
 		{/each}

@@ -6,7 +6,7 @@
 
 <h1 id="experience" class="header">Experience</h1>
 
-<ul class="block max-w-screen-lg mx-auto space-y-4">
+<ul class="block max-w-screen-md mx-auto space-y-4">
 	{#each experiences as experience}
 		<ExperienceItem {...experience} />
 	{/each}

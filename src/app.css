@@ -6,31 +6,39 @@
 @tailwind utilities;
 
 @layer base {
-  p {
-    @apply leading-relaxed tracking-wide;
-  }
+	p {
+		@apply leading-relaxed tracking-wide;
+	}
 
-  code {
-    @apply rounded-md bg-dark-gray-lighter border-4 border-dark-gray-lighter;
-  }
+	code {
+		@apply rounded-md bg-dark-gray-lighter border-4 border-dark-gray-lighter;
+	}
 }
 
 @layer components {
-  .header {
-    @apply font-mono font-bold text-yellow text-3xl text-center my-10;
-    &::before {
-      display: block;
-      content: '';
-      height: 80px;
-      margin-top: -80px;
-    }
-  }
-  
-  .text-link {
-    @apply font-bold text-cyan hover:underline;
-  }
-  
-  .timestamp {
-    @apply font-mono text-sm text-gray-400;
-  }
+	.header {
+		@apply font-mono font-bold text-yellow text-3xl text-center my-10;
+		&::before {
+			display: block;
+			content: '';
+			height: 80px;
+			margin-top: -80px;
+		}
+	}
+
+	.text-link {
+		@apply font-bold text-cyan hover:underline;
+	}
+
+	.timestamp {
+		@apply font-mono text-sm text-gray-400;
+	}
+}
+
+@layer utilities {
+	.auto-html {
+		a {
+			@apply text-link;
+		}
+	}
 }
