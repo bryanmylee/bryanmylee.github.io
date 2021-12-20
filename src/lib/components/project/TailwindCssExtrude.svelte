@@ -45,7 +45,7 @@
 					<div
 						in:scale={{ duration: 80 }}
 						out:fly={{ y: -50 }}
-						class="absolute left-0 right-0 p-2 mb-4 border-4 rounded bottom-full bg-cyan border-cyan-dark"
+						class="absolute left-0 right-0 p-2 mx-4 mb-4 border-4 rounded bottom-full bg-cyan border-cyan-dark"
 					>
 						pop!
 					</div>
