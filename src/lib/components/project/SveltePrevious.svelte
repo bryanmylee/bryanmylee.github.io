@@ -17,7 +17,8 @@
 `;
 
 	const live = writable(0);
-	const [current, previous] = withPrevious(0);
+	const [current, previous] = withPrevious(50);
+	$current = 0;
 	const springPrevious = spring(0);
 	$: $springPrevious = $previous ?? 0;
 </script>

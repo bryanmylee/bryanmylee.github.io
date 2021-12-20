@@ -60,7 +60,11 @@
 			use:trackMouse={position}
 			class="relative w-full h-40 example-area"
 		>
-			<div use:ref class="absolute" style="left: {$position.x}px; top: {$position.y}px" />
+			<div
+				use:ref
+				class="absolute w-6 h-6 rounded-full pointer-events-none bg-shade-light"
+				style="left: {$position.x - 12}px; top: {$position.y - 12}px"
+			/>
 			<div
 				use:content={popperOptions}
 				class="p-4 font-bold rounded-lg pointer-events-none bg-cyan text-shade-dark"

@@ -5,7 +5,8 @@
 	import ProjectItem from './ProjectItem.svelte';
 	import Toggle from '$lib/components/util/Toggle.svelte';
 
-	const exampleCode = `<button class="...extrude-cyan-darker extrude-y-4 hover:extrude-y-2"
+	const exampleCode = `<button class="...extrude-cyan-darker
+	extrude-y-4 hover:extrude-y-2 active:extrude-y"
 `;
 </script>
 
@@ -23,7 +24,7 @@
 	<Toggle class="flex-1 w-full md:w-1/2">
 		<div class="flex items-center justify-center example-area">
 			<button
-				class="px-4 py-2 font-bold transition border-4 rounded-full border-cyan-dark bg-cyan extrude-y-4 hover:extrude-y-2 extrude-cyan-dark text-shade-dark"
+				class="px-4 py-2 font-bold transition border-4 rounded-full border-cyan-dark bg-cyan active:opacity-50 extrude-y-4 hover:extrude-y-2 active:extrude-y extrude-cyan-dark text-shade-dark"
 			>
 				Press me
 			</button>

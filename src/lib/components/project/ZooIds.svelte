@@ -11,7 +11,7 @@
 });
 `;
 
-	let seed = '';
+	let seed = new Date().getUTCMilliseconds();
 	$: id = generateId(seed, {
 		delimiter: '🍑',
 	});
