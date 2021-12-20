@@ -24,11 +24,10 @@
 		</RevealOnIntersection>
 	</div>
 	<RevealOnIntersection percent={50} transition="fly" flyY={50} duration={600} delay={450}>
-		<a
-			href="https://meetwhen.io"
-			class="flex items-center justify-center mt-4 transition hover:text-cyan"
-		>
-			<p class="p-4 bg-shade">Find the best time for everyone.</p>
-		</a>
+		<div class="flex items-center justify-center mt-4">
+			<a href="https://meetwhen.io" class="p-4 transition bg-shade hover:text-cyan">
+				Find the best time for everyone.
+			</a>
+		</div>
 	</RevealOnIntersection>
 </section>
