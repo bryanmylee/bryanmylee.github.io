@@ -29,7 +29,12 @@
 				and algorithm to enable batch operations.
 			</p>
 			<p>
-				Our final presentation can be found <a href="/projects/crdt/cs201-final-pres.pdf">here</a>.
+				Our final presentation can be found <a
+					href="/projects/crdt/cs201-final-pres.pdf"
+					target="_blank"
+				>
+					here</a
+				>.
 			</p>
 			<p>
 				Consequently, I re-implemented the algorithm in C as

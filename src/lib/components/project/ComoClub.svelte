@@ -32,7 +32,7 @@
 			</p>
 			<p>
 				Our final report can be found
-				<a href="/projects/como-club/cs301-final-report.pdf">here</a>.
+				<a href="/projects/como-club/cs301-final-report.pdf" target="_blank">here</a>.
 			</p>
 			<div class="relative mt-4 aspect-square">
 				<RevealOnIntersection

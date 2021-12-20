@@ -3,18 +3,26 @@
 	import ProjectItem from './ProjectItem.svelte';
 </script>
 
-<section class="max-w-screen-md gap-4 p-4 mx-auto">
+<section class="max-w-screen-md gap-4 p-4 mx-auto space-y-4">
 	<div class="z-10">
 		<ProjectItem projectId="helloworld" />
 	</div>
-	<p class="mt-4 font-mono text-xl font-bold">
+	<p class="font-mono text-xl font-bold">
 		CODE_EXP 2021 ·
 		<span class="text-yellow">1st Place</span>
 	</p>
-	<p class="mt-4">
+	<p>
 		<strong>HelloWorld</strong> was developed in a week for the CODE_EXP 2021 Hackathon.
 	</p>
-	<div class="relative z-0 mt-8 aspect-square">
+	<p>
+		<a
+			href="https://news.smu.edu.sg/news/2021/07/02/smus-computing-and-information-systems-team-emerged-champions-dsta-hackathon"
+			class="text-link"
+		>
+			Read more about us</a
+		>.
+	</p>
+	<div class="relative z-0 aspect-square">
 		<RevealOnIntersection
 			percent={100}
 			transition="fly"

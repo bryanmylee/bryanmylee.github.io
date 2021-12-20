@@ -24,7 +24,10 @@
 				hotel booking based on pre-existing features.
 			</p>
 			<p>
-				Our full report can be found <a href="/projects/hotel-bookings/cs421-final-report.pdf">
+				Our full report can be found <a
+					href="/projects/hotel-bookings/cs421-final-report.pdf"
+					target="_blank"
+				>
 					here</a
 				>.
 			</p>

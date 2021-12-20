@@ -18,7 +18,7 @@
 
 <div class="w-full overflow-x-clip">
 	<section class="max-w-screen-md gap-4 p-4 mx-auto mb-8">
-		<div class="z-10 space-y-2">
+		<div class="z-10 space-y-2 auto-html">
 			<h3 class="font-mono text-xl font-bold">Wok N Roll</h3>
 			<h4 class="text-gray-400">CS206 Software Product Management</h4>
 			<ul class="flex flex-wrap gap-2 mt-4">
@@ -36,7 +36,7 @@
 			</p>
 			<p>
 				Our final presentation slides can be found
-				<a href="/projects/woknroll/cs206-final-pres.pdf" class="text-link">here</a>.
+				<a href="/projects/woknroll/cs206-final-pres.pdf" target="_blank">here</a>.
 			</p>
 			<div class="relative z-0 mt-8 aspect-square">
 				<RevealOnIntersection

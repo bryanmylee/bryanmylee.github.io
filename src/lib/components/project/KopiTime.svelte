@@ -8,7 +8,7 @@
 
 <div class="w-full overflow-x-clip">
 	<section class="max-w-screen-md gap-4 p-4 mx-auto mb-8">
-		<div class="z-10 space-y-2">
+		<div class="z-10 space-y-2 auto-html">
 			<h3 class="font-mono text-xl font-bold">Kopi Time</h3>
 			<h4 class="text-gray-400">CS302 IT Solution Lifecycle Management</h4>
 			<ul class="flex flex-wrap gap-2 mt-4">
@@ -25,7 +25,7 @@
 			</ul>
 			<p>
 				The full report on our architectural decisions can be viewed
-				<a href="/projects/kopi-time/cs302-final-report.pdf" class="text-link">here</a>.
+				<a href="/projects/kopi-time/cs302-final-report.pdf" target="_blank">here</a>.
 			</p>
 			<div class="relative aspect-[16/7] mt-4">
 				<RevealOnIntersection
