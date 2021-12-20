@@ -1,6 +1,5 @@
 <script>
 	import '../app.css';
-	import Achievements from './_achievements.svelte';
 	import Contact from './_contact.svelte';
 	import Experiences from './_experiences.svelte';
 	import Footer from './_footer.svelte';
@@ -19,7 +18,6 @@
 	<Header />
 	<Contact />
 	<Projects />
-	<Achievements />
 	<Experiences />
 	<Footer />
 </main>

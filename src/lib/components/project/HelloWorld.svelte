@@ -42,4 +42,10 @@
 			<img src="/projects/helloworld/ar-landscape-flat-rotated.png" alt="helloworld ar portrait" />
 		</RevealOnIntersection>
 	</div>
+	<p class="font-mono font-bold">
+		<span class="text-3xl">CODE_EXP 2021</span>
+		<span class="text-3xl">·</span>
+		<span class="text-2xl text-yellow">1st Place</span>
+	</p>
+	<p>HelloWorld was developed in a week for the CODE_EXP 2021 Hackathon.</p>
 </section>
