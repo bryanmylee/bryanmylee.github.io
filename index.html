@@ -44,16 +44,16 @@
 
 		
 
-		<link rel="modulepreload" href="/app/start-7ef9753d.js">
-		<link rel="modulepreload" href="/app/chunks/vendor-79499c0c.js">
-		<link rel="modulepreload" href="/app/layout.svelte-40066bd7.js">
-		<link rel="modulepreload" href="/app/pages/index.svelte-406f1a65.js">
+		<link rel="modulepreload" href="/app/start-765bf879.js">
+		<link rel="modulepreload" href="/app/chunks/vendor-9095087f.js">
+		<link rel="modulepreload" href="/app/layout.svelte-7a517be5.js">
+		<link rel="modulepreload" href="/app/pages/index.svelte-8df2010c.js">
 		<link rel="stylesheet" href="/app/assets/start-464e9d0a.css">
 		<link rel="stylesheet" href="/app/assets/vendor-3474b9c0.css">
-		<link rel="stylesheet" href="/app/assets/pages/index.svelte-c3448a26.css">
+		<link rel="stylesheet" href="/app/assets/pages/index.svelte-c5df32f2.css">
 
 		<script type="module">
-			import { start } from "/app/start-7ef9753d.js";
+			import { start } from "/app/start-765bf879.js";
 			start({
 				target: document.querySelector("#svelte"),
 				paths: {"base":"","assets":""},
@@ -66,8 +66,8 @@
 					status: 200,
 					error: null,
 					nodes: [
-						import("/app/layout.svelte-40066bd7.js"),
-						import("/app/pages/index.svelte-406f1a65.js")
+						import("/app/layout.svelte-7a517be5.js"),
+						import("/app/pages/index.svelte-8df2010c.js")
 					],
 					page: {
 						host: location.host, // TODO this is redundant
@@ -119,15 +119,15 @@
 	<div class="space-y-2 transition-colors group-hover:text-cyan"><h2 class="font-mono text-xl font-bold">svelte-popperjs</h2>
 		<p class="leading-7"><!-- HTML_TAG_START -->Popper for Svelte with actions, no wrapper components or component bindings required!<!-- HTML_TAG_END --></p></div></a>
 <ul class="flex gap-2 mt-4"><li class="relative group"><img src="skills/svelte.svg" alt="Svelte" class="w-6 h-6">
-		<div class="absolute hidden p-2 mb-2 text-sm border border-white bottom-full group-hover:block bg-shade">Svelte</div></li><li class="relative group"><img src="skills/typescript.svg" alt="TypeScript" class="w-6 h-6">
-		<div class="absolute hidden p-2 mb-2 text-sm border border-white bottom-full group-hover:block bg-shade">TypeScript</div></li><li class="relative group"><img src="skills/npm.svg" alt="npm.js" class="w-6 h-6">
-		<div class="absolute hidden p-2 mb-2 text-sm border border-white bottom-full group-hover:block bg-shade">npm.js</div></li><li class="relative group"><img src="skills/gh_actions.png" alt="Github Actions" class="w-6 h-6">
-		<div class="absolute hidden p-2 mb-2 text-sm border border-white bottom-full group-hover:block bg-shade">Github Actions</div></li><li class="relative group"><img src="skills/eslint.svg" alt="ESLint" class="w-6 h-6">
-		<div class="absolute hidden p-2 mb-2 text-sm border border-white bottom-full group-hover:block bg-shade">ESLint</div></li><li class="relative group"><img src="skills/prettier.svg" alt="Prettier" class="w-6 h-6">
-		<div class="absolute hidden p-2 mb-2 text-sm border border-white bottom-full group-hover:block bg-shade">Prettier</div></li></ul></div>
+		<div class="absolute p-2 mb-2 text-sm border border-white opacity-0 pointer-events-none bottom-full group-hover:opacity-100 bg-shade whitespace-nowrap">Svelte</div></li><li class="relative group"><img src="skills/typescript.svg" alt="TypeScript" class="w-6 h-6">
+		<div class="absolute p-2 mb-2 text-sm border border-white opacity-0 pointer-events-none bottom-full group-hover:opacity-100 bg-shade whitespace-nowrap">TypeScript</div></li><li class="relative group"><img src="skills/npm.svg" alt="npm.js" class="w-6 h-6">
+		<div class="absolute p-2 mb-2 text-sm border border-white opacity-0 pointer-events-none bottom-full group-hover:opacity-100 bg-shade whitespace-nowrap">npm.js</div></li><li class="relative group"><img src="skills/gh_actions.png" alt="Github Actions" class="w-6 h-6">
+		<div class="absolute p-2 mb-2 text-sm border border-white opacity-0 pointer-events-none bottom-full group-hover:opacity-100 bg-shade whitespace-nowrap">Github Actions</div></li><li class="relative group"><img src="skills/eslint.svg" alt="ESLint" class="w-6 h-6">
+		<div class="absolute p-2 mb-2 text-sm border border-white opacity-0 pointer-events-none bottom-full group-hover:opacity-100 bg-shade whitespace-nowrap">ESLint</div></li><li class="relative group"><img src="skills/prettier.svg" alt="Prettier" class="w-6 h-6">
+		<div class="absolute p-2 mb-2 text-sm border border-white opacity-0 pointer-events-none bottom-full group-hover:opacity-100 bg-shade whitespace-nowrap">Prettier</div></li></ul></div>
 
 	<div class="relative flex-1 w-full md:w-1/2 svelte-1oddu7s"><button class="absolute z-10 p-2 font-mono text-sm font-bold rounded-lg top-4 right-4 svelte-1oddu7s">&lt;/&gt;</button>
-	<div class="relative w-full h-40 example-area"><div class="absolute w-6 h-6 rounded-full pointer-events-none bg-shade-light" style="left: -12px; top: -12px"></div>
+	<div class="relative w-full h-40 example-area overflow-clip"><div class="absolute w-6 h-6 rounded-full pointer-events-none bg-shade-light" style="left: -12px; top: -12px"></div>
 			<div class="p-4 font-bold rounded-lg pointer-events-none bg-cyan text-shade-dark">This tooltip will not overflow!
 			</div></div>
 		<p class="example-hint">Hover over the example area to try it out!</p>
@@ -141,13 +141,13 @@
 	<div class="space-y-2 transition-colors group-hover:text-cyan"><h2 class="font-mono text-xl font-bold">svelte-previous</h2>
 		<p class="leading-7"><!-- HTML_TAG_START -->A Svelte store that remembers previous values.<!-- HTML_TAG_END --></p></div></a>
 <ul class="flex gap-2 mt-4"><li class="relative group"><img src="skills/svelte.svg" alt="Svelte" class="w-6 h-6">
-		<div class="absolute hidden p-2 mb-2 text-sm border border-white bottom-full group-hover:block bg-shade">Svelte</div></li><li class="relative group"><img src="skills/typescript.svg" alt="TypeScript" class="w-6 h-6">
-		<div class="absolute hidden p-2 mb-2 text-sm border border-white bottom-full group-hover:block bg-shade">TypeScript</div></li><li class="relative group"><img src="skills/rxjs.svg" alt="RxJS" class="w-6 h-6">
-		<div class="absolute hidden p-2 mb-2 text-sm border border-white bottom-full group-hover:block bg-shade">RxJS</div></li><li class="relative group"><img src="skills/npm.svg" alt="npm.js" class="w-6 h-6">
-		<div class="absolute hidden p-2 mb-2 text-sm border border-white bottom-full group-hover:block bg-shade">npm.js</div></li><li class="relative group"><img src="skills/gh_actions.png" alt="Github Actions" class="w-6 h-6">
-		<div class="absolute hidden p-2 mb-2 text-sm border border-white bottom-full group-hover:block bg-shade">Github Actions</div></li><li class="relative group"><img src="skills/eslint.svg" alt="ESLint" class="w-6 h-6">
-		<div class="absolute hidden p-2 mb-2 text-sm border border-white bottom-full group-hover:block bg-shade">ESLint</div></li><li class="relative group"><img src="skills/prettier.svg" alt="Prettier" class="w-6 h-6">
-		<div class="absolute hidden p-2 mb-2 text-sm border border-white bottom-full group-hover:block bg-shade">Prettier</div></li></ul></div>
+		<div class="absolute p-2 mb-2 text-sm border border-white opacity-0 pointer-events-none bottom-full group-hover:opacity-100 bg-shade whitespace-nowrap">Svelte</div></li><li class="relative group"><img src="skills/typescript.svg" alt="TypeScript" class="w-6 h-6">
+		<div class="absolute p-2 mb-2 text-sm border border-white opacity-0 pointer-events-none bottom-full group-hover:opacity-100 bg-shade whitespace-nowrap">TypeScript</div></li><li class="relative group"><img src="skills/rxjs.svg" alt="RxJS" class="w-6 h-6">
+		<div class="absolute p-2 mb-2 text-sm border border-white opacity-0 pointer-events-none bottom-full group-hover:opacity-100 bg-shade whitespace-nowrap">RxJS</div></li><li class="relative group"><img src="skills/npm.svg" alt="npm.js" class="w-6 h-6">
+		<div class="absolute p-2 mb-2 text-sm border border-white opacity-0 pointer-events-none bottom-full group-hover:opacity-100 bg-shade whitespace-nowrap">npm.js</div></li><li class="relative group"><img src="skills/gh_actions.png" alt="Github Actions" class="w-6 h-6">
+		<div class="absolute p-2 mb-2 text-sm border border-white opacity-0 pointer-events-none bottom-full group-hover:opacity-100 bg-shade whitespace-nowrap">Github Actions</div></li><li class="relative group"><img src="skills/eslint.svg" alt="ESLint" class="w-6 h-6">
+		<div class="absolute p-2 mb-2 text-sm border border-white opacity-0 pointer-events-none bottom-full group-hover:opacity-100 bg-shade whitespace-nowrap">ESLint</div></li><li class="relative group"><img src="skills/prettier.svg" alt="Prettier" class="w-6 h-6">
+		<div class="absolute p-2 mb-2 text-sm border border-white opacity-0 pointer-events-none bottom-full group-hover:opacity-100 bg-shade whitespace-nowrap">Prettier</div></li></ul></div>
 
 	<div class="relative flex-1 w-full md:w-1/2 svelte-1oddu7s"><button class="absolute z-10 p-2 font-mono text-sm font-bold rounded-lg top-4 right-4 svelte-1oddu7s">&lt;/&gt;</button>
 	<div class="relative flex flex-col w-full h-40 example-area justify-evenly"><h3 class="font-bold">Current value</h3>
@@ -166,16 +166,16 @@
 	<div class="space-y-2 transition-colors group-hover:text-cyan"><h2 class="font-mono text-xl font-bold">zoo-ids</h2>
 		<p class="leading-7"><!-- HTML_TAG_START -->A seedable and predictable ID generator that uses adjectives and animal names.<!-- HTML_TAG_END --></p></div></a>
 <ul class="flex gap-2 mt-4"><li class="relative group"><img src="skills/typescript.svg" alt="TypeScript" class="w-6 h-6">
-		<div class="absolute hidden p-2 mb-2 text-sm border border-white bottom-full group-hover:block bg-shade">TypeScript</div></li><li class="relative group"><img src="skills/npm.svg" alt="npm.js" class="w-6 h-6">
-		<div class="absolute hidden p-2 mb-2 text-sm border border-white bottom-full group-hover:block bg-shade">npm.js</div></li><li class="relative group"><img src="skills/gh_actions.png" alt="Github Actions" class="w-6 h-6">
-		<div class="absolute hidden p-2 mb-2 text-sm border border-white bottom-full group-hover:block bg-shade">Github Actions</div></li><li class="relative group"><img src="skills/eslint.svg" alt="ESLint" class="w-6 h-6">
-		<div class="absolute hidden p-2 mb-2 text-sm border border-white bottom-full group-hover:block bg-shade">ESLint</div></li><li class="relative group"><img src="skills/prettier.svg" alt="Prettier" class="w-6 h-6">
-		<div class="absolute hidden p-2 mb-2 text-sm border border-white bottom-full group-hover:block bg-shade">Prettier</div></li></ul></div>
+		<div class="absolute p-2 mb-2 text-sm border border-white opacity-0 pointer-events-none bottom-full group-hover:opacity-100 bg-shade whitespace-nowrap">TypeScript</div></li><li class="relative group"><img src="skills/npm.svg" alt="npm.js" class="w-6 h-6">
+		<div class="absolute p-2 mb-2 text-sm border border-white opacity-0 pointer-events-none bottom-full group-hover:opacity-100 bg-shade whitespace-nowrap">npm.js</div></li><li class="relative group"><img src="skills/gh_actions.png" alt="Github Actions" class="w-6 h-6">
+		<div class="absolute p-2 mb-2 text-sm border border-white opacity-0 pointer-events-none bottom-full group-hover:opacity-100 bg-shade whitespace-nowrap">Github Actions</div></li><li class="relative group"><img src="skills/eslint.svg" alt="ESLint" class="w-6 h-6">
+		<div class="absolute p-2 mb-2 text-sm border border-white opacity-0 pointer-events-none bottom-full group-hover:opacity-100 bg-shade whitespace-nowrap">ESLint</div></li><li class="relative group"><img src="skills/prettier.svg" alt="Prettier" class="w-6 h-6">
+		<div class="absolute p-2 mb-2 text-sm border border-white opacity-0 pointer-events-none bottom-full group-hover:opacity-100 bg-shade whitespace-nowrap">Prettier</div></li></ul></div>
 
 	<div class="relative flex-1 w-full md:w-1/2 svelte-1oddu7s"><button class="absolute z-10 p-2 font-mono text-sm font-bold rounded-lg top-4 right-4 svelte-1oddu7s">&lt;/&gt;</button>
 	<div class="example-area"><div class="flex items-center gap-4"><label for="seed" class="text-lg font-bold">Seed</label>
-				<input type="text" id="seed" class="w-full" value="413"></div>
-			<p class="mt-4 font-mono text-lg">Excellent🍑Bewitched🍑Human</p></div>
+				<input type="text" id="seed" class="w-full" value="3"></div>
+			<p class="mt-4 font-mono text-lg">Homely🍑Humiliating🍑Beaver</p></div>
 		<p class="example-hint">Pick any seed to try it out!</p>
 </div></section>
 </div>
@@ -185,11 +185,11 @@
 	<div class="space-y-2 transition-colors group-hover:text-cyan"><h2 class="font-mono text-xl font-bold">tailwindcss-extrude</h2>
 		<p class="leading-7"><!-- HTML_TAG_START -->A custom Tailwind CSS plugin for an extruded style.<!-- HTML_TAG_END --></p></div></a>
 <ul class="flex gap-2 mt-4"><li class="relative group"><img src="skills/tailwindcss.svg" alt="Tailwind CSS" class="w-6 h-6">
-		<div class="absolute hidden p-2 mb-2 text-sm border border-white bottom-full group-hover:block bg-shade">Tailwind CSS</div></li><li class="relative group"><img src="skills/javascript.svg" alt="JavaScript" class="w-6 h-6">
-		<div class="absolute hidden p-2 mb-2 text-sm border border-white bottom-full group-hover:block bg-shade">JavaScript</div></li><li class="relative group"><img src="skills/npm.svg" alt="npm.js" class="w-6 h-6">
-		<div class="absolute hidden p-2 mb-2 text-sm border border-white bottom-full group-hover:block bg-shade">npm.js</div></li><li class="relative group"><img src="skills/gh_actions.png" alt="Github Actions" class="w-6 h-6">
-		<div class="absolute hidden p-2 mb-2 text-sm border border-white bottom-full group-hover:block bg-shade">Github Actions</div></li><li class="relative group"><img src="skills/prettier.svg" alt="Prettier" class="w-6 h-6">
-		<div class="absolute hidden p-2 mb-2 text-sm border border-white bottom-full group-hover:block bg-shade">Prettier</div></li></ul></div>
+		<div class="absolute p-2 mb-2 text-sm border border-white opacity-0 pointer-events-none bottom-full group-hover:opacity-100 bg-shade whitespace-nowrap">Tailwind CSS</div></li><li class="relative group"><img src="skills/javascript.svg" alt="JavaScript" class="w-6 h-6">
+		<div class="absolute p-2 mb-2 text-sm border border-white opacity-0 pointer-events-none bottom-full group-hover:opacity-100 bg-shade whitespace-nowrap">JavaScript</div></li><li class="relative group"><img src="skills/npm.svg" alt="npm.js" class="w-6 h-6">
+		<div class="absolute p-2 mb-2 text-sm border border-white opacity-0 pointer-events-none bottom-full group-hover:opacity-100 bg-shade whitespace-nowrap">npm.js</div></li><li class="relative group"><img src="skills/gh_actions.png" alt="Github Actions" class="w-6 h-6">
+		<div class="absolute p-2 mb-2 text-sm border border-white opacity-0 pointer-events-none bottom-full group-hover:opacity-100 bg-shade whitespace-nowrap">Github Actions</div></li><li class="relative group"><img src="skills/prettier.svg" alt="Prettier" class="w-6 h-6">
+		<div class="absolute p-2 mb-2 text-sm border border-white opacity-0 pointer-events-none bottom-full group-hover:opacity-100 bg-shade whitespace-nowrap">Prettier</div></li></ul></div>
 
 	<div class="relative flex-1 w-full md:w-1/2 svelte-1oddu7s"><button class="absolute z-10 p-2 font-mono text-sm font-bold rounded-lg top-4 right-4 svelte-1oddu7s">&lt;/&gt;</button>
 	<div class="flex items-center justify-center example-area"><button class="px-4 py-2 font-bold transition border-4 rounded-full border-cyan-dark bg-cyan active:opacity-50 extrude-y-4 hover:extrude-y-2 active:extrude-y extrude-cyan-dark text-shade-dark">Press me
@@ -201,42 +201,42 @@
 	<div class="space-y-2 transition-colors group-hover:text-cyan"><h2 class="font-mono text-xl font-bold">vim-colorscheme-icons</h2>
 		<p class="leading-7"><!-- HTML_TAG_START -->A plug-and-play Vim plugin to colorize <code>vim-devicons</code>.<!-- HTML_TAG_END --></p></div></a>
 <ul class="flex gap-2 mt-4"><li class="relative group"><img src="skills/vim.svg" alt="Vim" class="w-6 h-6">
-		<div class="absolute hidden p-2 mb-2 text-sm border border-white bottom-full group-hover:block bg-shade">Vim</div></li></ul></div>
+		<div class="absolute p-2 mb-2 text-sm border border-white opacity-0 pointer-events-none bottom-full group-hover:opacity-100 bg-shade whitespace-nowrap">Vim</div></li></ul></div>
 	<div class="flex gap-4 basis-1/2"><div><img src="projects/vim-colorscheme-icons/light.png" alt="vim-colorscheme-icons light" class="w-full rounded-xl"></div>
 		<div><img src="projects/vim-colorscheme-icons/dark.png" alt="vim-colorscheme-icons dark" class="w-full rounded-xl"></div></div></section>
 </div>
 
 <h2 class="header-2">Apps</h2>
 
-<div class="svelte-3rs1z5     cssFlyIn" style="--duration:600ms; --delay:50ms; --flyX:0px; --flyY:50px"><section class="max-w-screen-md gap-4 p-4 mx-auto mb-8"><div class="z-10"><a href="https://meetwhen.io" class="flex space-x-6 group"><div class="flex-shrink-0 w-24 h-24 p-2 transition-colors border-transparent border-3 bg-shade group-hover:border-cyan"><img src="projects/meetwhen.png" alt="meetwhen.io" class="w-full h-full"></div>
+<div class="svelte-3rs1z5     cssFlyIn" style="--duration:600ms; --delay:50ms; --flyX:0px; --flyY:50px"><div class="w-full overflow-x-clip"><section class="max-w-screen-md gap-4 p-4 mx-auto mb-8"><div class="z-10"><a href="https://meetwhen.io" class="flex space-x-6 group"><div class="flex-shrink-0 w-24 h-24 p-2 transition-colors border-transparent border-3 bg-shade group-hover:border-cyan"><img src="projects/meetwhen.png" alt="meetwhen.io" class="w-full h-full"></div>
 	<div class="space-y-2 transition-colors group-hover:text-cyan"><h2 class="font-mono text-xl font-bold">meetwhen.io</h2>
 		<p class="leading-7"><!-- HTML_TAG_START -->A beautiful and mobile-friendly group scheduling application.<!-- HTML_TAG_END --></p></div></a>
 <ul class="flex gap-2 mt-4"><li class="relative group"><img src="skills/svelte.svg" alt="Svelte" class="w-6 h-6">
-		<div class="absolute hidden p-2 mb-2 text-sm border border-white bottom-full group-hover:block bg-shade">Svelte</div></li><li class="relative group"><img src="skills/sveltekit.png" alt="SvelteKit" class="w-6 h-6">
-		<div class="absolute hidden p-2 mb-2 text-sm border border-white bottom-full group-hover:block bg-shade">SvelteKit</div></li><li class="relative group"><img src="skills/typescript.svg" alt="TypeScript" class="w-6 h-6">
-		<div class="absolute hidden p-2 mb-2 text-sm border border-white bottom-full group-hover:block bg-shade">TypeScript</div></li><li class="relative group"><img src="skills/tailwindcss.svg" alt="Tailwind CSS" class="w-6 h-6">
-		<div class="absolute hidden p-2 mb-2 text-sm border border-white bottom-full group-hover:block bg-shade">Tailwind CSS</div></li><li class="relative group"><img src="skills/nodejs.svg" alt="Node.js" class="w-6 h-6">
-		<div class="absolute hidden p-2 mb-2 text-sm border border-white bottom-full group-hover:block bg-shade">Node.js</div></li><li class="relative group"><img src="skills/firebase.svg" alt="Firebase" class="w-6 h-6">
-		<div class="absolute hidden p-2 mb-2 text-sm border border-white bottom-full group-hover:block bg-shade">Firebase</div></li><li class="relative group"><img src="skills/graphql.svg" alt="GraphQL" class="w-6 h-6">
-		<div class="absolute hidden p-2 mb-2 text-sm border border-white bottom-full group-hover:block bg-shade">GraphQL</div></li><li class="relative group"><img src="skills/gh_actions.png" alt="Github Actions" class="w-6 h-6">
-		<div class="absolute hidden p-2 mb-2 text-sm border border-white bottom-full group-hover:block bg-shade">Github Actions</div></li><li class="relative group"><img src="skills/vercel.svg" alt="Vercel" class="w-6 h-6">
-		<div class="absolute hidden p-2 mb-2 text-sm border border-white bottom-full group-hover:block bg-shade">Vercel</div></li><li class="relative group"><img src="skills/eslint.svg" alt="ESLint" class="w-6 h-6">
-		<div class="absolute hidden p-2 mb-2 text-sm border border-white bottom-full group-hover:block bg-shade">ESLint</div></li><li class="relative group"><img src="skills/prettier.svg" alt="Prettier" class="w-6 h-6">
-		<div class="absolute hidden p-2 mb-2 text-sm border border-white bottom-full group-hover:block bg-shade">Prettier</div></li></ul></div>
-	<div class="relative h-[400px] z-0"><div class="svelte-3rs1z5     cssFlyIn" style="--duration:600ms; --delay:250ms; --flyX:0px; --flyY:50px"><img src="/projects/meetwhen/desktop-left-light.png" alt="meetwhen.io desktop preview" class="object-cover h-[400px] absolute inset-0 left-auto">
+		<div class="absolute p-2 mb-2 text-sm border border-white opacity-0 pointer-events-none bottom-full group-hover:opacity-100 bg-shade whitespace-nowrap">Svelte</div></li><li class="relative group"><img src="skills/sveltekit.png" alt="SvelteKit" class="w-6 h-6">
+		<div class="absolute p-2 mb-2 text-sm border border-white opacity-0 pointer-events-none bottom-full group-hover:opacity-100 bg-shade whitespace-nowrap">SvelteKit</div></li><li class="relative group"><img src="skills/typescript.svg" alt="TypeScript" class="w-6 h-6">
+		<div class="absolute p-2 mb-2 text-sm border border-white opacity-0 pointer-events-none bottom-full group-hover:opacity-100 bg-shade whitespace-nowrap">TypeScript</div></li><li class="relative group"><img src="skills/tailwindcss.svg" alt="Tailwind CSS" class="w-6 h-6">
+		<div class="absolute p-2 mb-2 text-sm border border-white opacity-0 pointer-events-none bottom-full group-hover:opacity-100 bg-shade whitespace-nowrap">Tailwind CSS</div></li><li class="relative group"><img src="skills/nodejs.svg" alt="Node.js" class="w-6 h-6">
+		<div class="absolute p-2 mb-2 text-sm border border-white opacity-0 pointer-events-none bottom-full group-hover:opacity-100 bg-shade whitespace-nowrap">Node.js</div></li><li class="relative group"><img src="skills/firebase.svg" alt="Firebase" class="w-6 h-6">
+		<div class="absolute p-2 mb-2 text-sm border border-white opacity-0 pointer-events-none bottom-full group-hover:opacity-100 bg-shade whitespace-nowrap">Firebase</div></li><li class="relative group"><img src="skills/graphql.svg" alt="GraphQL" class="w-6 h-6">
+		<div class="absolute p-2 mb-2 text-sm border border-white opacity-0 pointer-events-none bottom-full group-hover:opacity-100 bg-shade whitespace-nowrap">GraphQL</div></li><li class="relative group"><img src="skills/gh_actions.png" alt="Github Actions" class="w-6 h-6">
+		<div class="absolute p-2 mb-2 text-sm border border-white opacity-0 pointer-events-none bottom-full group-hover:opacity-100 bg-shade whitespace-nowrap">Github Actions</div></li><li class="relative group"><img src="skills/vercel.svg" alt="Vercel" class="w-6 h-6">
+		<div class="absolute p-2 mb-2 text-sm border border-white opacity-0 pointer-events-none bottom-full group-hover:opacity-100 bg-shade whitespace-nowrap">Vercel</div></li><li class="relative group"><img src="skills/eslint.svg" alt="ESLint" class="w-6 h-6">
+		<div class="absolute p-2 mb-2 text-sm border border-white opacity-0 pointer-events-none bottom-full group-hover:opacity-100 bg-shade whitespace-nowrap">ESLint</div></li><li class="relative group"><img src="skills/prettier.svg" alt="Prettier" class="w-6 h-6">
+		<div class="absolute p-2 mb-2 text-sm border border-white opacity-0 pointer-events-none bottom-full group-hover:opacity-100 bg-shade whitespace-nowrap">Prettier</div></li></ul></div>
+		<div class="relative h-[400px] z-0"><div class="absolute inset-0 left-auto -mx-4 svelte-3rs1z5     cssFlyIn" style="--duration:600ms; --delay:250ms; --flyX:0px; --flyY:50px"><img src="/projects/meetwhen/desktop-left-light.png" alt="meetwhen.io desktop preview" class="object-cover w-full h-full">
 </div>
-		<div class="svelte-3rs1z5     cssFlyIn" style="--duration:600ms; --delay:50ms; --flyX:0px; --flyY:50px"><img src="/projects/meetwhen/mobile-right-dark.png" alt="meetwhen.io desktop preview" class="object-cover h-[400px] absolute inset-0 right-auto">
+			<div class="absolute inset-0 right-auto svelte-3rs1z5     cssFlyIn" style="--duration:600ms; --delay:50ms; --flyX:0px; --flyY:50px"><img src="/projects/meetwhen/mobile-right-dark.png" alt="meetwhen.io desktop preview" class="object-cover w-full h-full">
 </div></div>
-	<div class="svelte-3rs1z5     cssFlyIn" style="--duration:600ms; --delay:450ms; --flyX:0px; --flyY:50px"><div class="flex items-center justify-center mt-4"><a href="https://meetwhen.io" class="p-4 transition bg-shade hover:text-cyan">Find the best time for everyone.
-			</a></div>
-</div></section>
+		<div class="svelte-3rs1z5     cssFlyIn" style="--duration:600ms; --delay:450ms; --flyX:0px; --flyY:50px"><div class="flex items-center justify-center mt-4"><a href="https://meetwhen.io" class="p-4 transition bg-shade hover:text-cyan">Find the best time for everyone.
+				</a></div>
+</div></section></div>
 </div>
 <div class="svelte-3rs1z5     cssFlyIn" style="--duration:600ms; --delay:50ms; --flyX:0px; --flyY:50px"><section class="max-w-screen-md gap-4 p-4 mx-auto"><div class="z-10"><a href="https://news.smu.edu.sg/news/2021/07/02/smus-computing-and-information-systems-team-emerged-champions-dsta-hackathon" class="flex space-x-6 group"><div class="flex-shrink-0 w-24 h-24 p-2 transition-colors border-transparent border-3 bg-shade group-hover:border-cyan"><img src="projects/helloworld.png" alt="HelloWorld" class="w-full h-full"></div>
 	<div class="space-y-2 transition-colors group-hover:text-cyan"><h2 class="font-mono text-xl font-bold">HelloWorld</h2>
 		<p class="leading-7"><!-- HTML_TAG_START -->An AR application to relive and reminiscence your travel adventures in the face of border restrictions.<!-- HTML_TAG_END --></p></div></a>
 <ul class="flex gap-2 mt-4"><li class="relative group"><img src="skills/reactjs.svg" alt="React" class="w-6 h-6">
-		<div class="absolute hidden p-2 mb-2 text-sm border border-white bottom-full group-hover:block bg-shade">React</div></li><li class="relative group"><img src="skills/react_native.png" alt="React Native" class="w-6 h-6">
-		<div class="absolute hidden p-2 mb-2 text-sm border border-white bottom-full group-hover:block bg-shade">React Native</div></li></ul></div>
+		<div class="absolute p-2 mb-2 text-sm border border-white opacity-0 pointer-events-none bottom-full group-hover:opacity-100 bg-shade whitespace-nowrap">React</div></li><li class="relative group"><img src="skills/react_native.png" alt="React Native" class="w-6 h-6">
+		<div class="absolute p-2 mb-2 text-sm border border-white opacity-0 pointer-events-none bottom-full group-hover:opacity-100 bg-shade whitespace-nowrap">React Native</div></li></ul></div>
 	<p class="mt-4 font-mono text-xl font-bold">CODE_EXP 2021 ·
 		<span class="text-yellow">1st Place</span></p>
 	<p class="mt-4"><strong>HelloWorld</strong> was developed in a week for the CODE_EXP 2021 Hackathon.
@@ -245,38 +245,132 @@
 </div>
 		<div class="absolute top-[10%] left-[52%] right-0 svelte-3rs1z5     cssFlyIn" style="--duration:600ms; --delay:200ms; --flyX:30px; --flyY:50px"><img src="/projects/helloworld/ar-portrait-flat.png" alt="helloworld ar portrait">
 </div>
-		<div class="absolute top-[45%] left-[15%] right-[25%] svelte-3rs1z5     cssFlyIn" style="--duration:600ms; --delay:350ms; --flyX:-30px; --flyY:50px"><img src="/projects/helloworld/ar-landscape-flat-rotated.png" alt="helloworld ar portrait">
+		<div class="absolute top-[45%] left-[15%] right-[25%] svelte-3rs1z5     cssFlyIn" style="--duration:600ms; --delay:350ms; --flyX:-50px; --flyY:30px"><img src="/projects/helloworld/ar-landscape-flat-rotated.png" alt="helloworld ar portrait">
 </div></div></section>
 </div>
 	<h1 id="experience" class="header">Experience</h1>
 
-<ul class="block max-w-screen-md mx-auto space-y-4"><li class="p-6 space-y-6 bg-shade"><div class="flex items-center space-x-6"><img src="experiences/smu.png" alt="Singapore Management University" class="flex-shrink-0 w-16 h-16">
-			<div><h2 class="font-mono text-xl font-bold">Singapore Management University</h2>
-				<p class="timestamp">aug 2019 – today</p></div></div>
-		<p>I am currently pursuing a degree in computer science and will graduate in the Summer of 2023.</p>
-		<h3 class="font-mono text-xl font-bold text-yellow">Achievements</h3>
-			<ul><li class="mb-2 ml-4 list-disc auto-html"><!-- HTML_TAG_START -->AY2019/2020 SIS Outstanding First Year Computer Science Student Award<!-- HTML_TAG_END --></li><li class="mb-2 ml-4 list-disc auto-html"><!-- HTML_TAG_START -->AY2019/2020 Dean's List<!-- HTML_TAG_END --></li><li class="mb-2 ml-4 list-disc auto-html"><!-- HTML_TAG_START -->AY2020/2021 Dean's List<!-- HTML_TAG_END --></li>
-			</ul></li><li class="p-6 space-y-6 bg-shade"><div class="flex items-center space-x-6"><img src="experiences/dso.png" alt="DSO National Laboratories" class="flex-shrink-0 w-16 h-16">
-			<div><h2 class="font-mono text-xl font-bold">DSO National Laboratories</h2>
-				<p class="timestamp">may 2021 – jul 2021</p></div></div>
-		<p>I was a Research Intern working on JavaScript engine fuzzers.</p>
-		<h3 class="font-mono text-xl font-bold text-yellow">Tasks</h3>
-			<ul><li class="mb-2 ml-4 list-disc auto-html"><!-- HTML_TAG_START -->Explored the effectiveness and efficiency of ensemble fuzzing for discovering vulnerabilities within JavaScript engines.<!-- HTML_TAG_END --></li><li class="mb-2 ml-4 list-disc auto-html"><!-- HTML_TAG_START -->Developed an automation pipeline to configure and test multiple fuzzer configurations.<!-- HTML_TAG_END --></li>
-			</ul></li><li class="p-6 space-y-6 bg-shade"><div class="flex items-center space-x-6"><img src="experiences/whitehats.png" alt="Whitehat Society" class="flex-shrink-0 w-16 h-16">
-			<div><h2 class="font-mono text-xl font-bold">Whitehat Society</h2>
-				<p class="timestamp">aug 2020 – jul 2021</p></div></div>
-		<p>I was the President of the Whitehat Society. We are a cybersecurity interest group with a mission to advocate for and educate on information security.</p>
-		<h3 class="font-mono text-xl font-bold text-yellow">Projects</h3>
-			<ul><li class="mb-2 ml-4 list-disc auto-html"><!-- HTML_TAG_START -->Initiated and conducted <strong>Cyber Hacking Fundamentals</strong>, a beginner-oriented workshop on the basics of cybersecurity.<!-- HTML_TAG_END --></li><li class="mb-2 ml-4 list-disc auto-html"><!-- HTML_TAG_START -->Directed <strong>Whitehacks 2021</strong>, a Junior College cybersecurity outreach program comprising training workshops, a CTF competition, and networking opportunities with industry partners such as GovTech, CSA, and CSIT.<!-- HTML_TAG_END --></li>
-			</ul><h3 class="font-mono text-xl font-bold text-yellow">Awards</h3>
-			<ul><li class="mb-2 ml-4 list-disc auto-html"><!-- HTML_TAG_START -->AiSP Student Volunteer Recognition Programme <a href="https://www.aisp.sg/svrp_winners_2021.html">Silver Award</a>.<!-- HTML_TAG_END --></li>
-			</ul></li><li class="p-6 space-y-6 bg-shade"><div class="flex items-center space-x-6"><img src="experiences/garuda-robotics.png" alt="Garuda Robotics" class="flex-shrink-0 w-16 h-16">
-			<div><h2 class="font-mono text-xl font-bold">Garuda Robotics</h2>
-				<p class="timestamp">may 2020 – aug 2020</p></div></div>
-		<p>I was an Engineering Intern for front-end development and drone software.</p>
-		<h3 class="font-mono text-xl font-bold text-yellow">Projects</h3>
-			<ul><li class="mb-2 ml-4 list-disc auto-html"><!-- HTML_TAG_START -->Developed a warning system for autonomous drones during beyond-visual-line-of-sight operation.<!-- HTML_TAG_END --></li><li class="mb-2 ml-4 list-disc auto-html"><!-- HTML_TAG_START -->Migrated the mapping provider of a drone operator application to OpenStreetMap.<!-- HTML_TAG_END --></li><li class="mb-2 ml-4 list-disc auto-html"><!-- HTML_TAG_START -->Re-architectured the drone operator application to improve Redux performance and maintainability.<!-- HTML_TAG_END --></li>
-			</ul></li></ul>
+<section class="gap-4 mb-8"><section class="max-w-screen-md mx-auto"><div class="p-6 space-y-6 bg-shade"><div class="flex items-center gap-6"><div class="flex-shrink-0 w-16 h-16"><img src="experiences/smu.png" alt="Singapore Management University" slot="icon"></div>
+		<div><h2 class="font-mono text-xl font-bold">Singapore Management University</h2>
+			<p class="timestamp">aug 2019 – today</p>
+		</div></div>
+	<div class="space-y-4"><p>I am currently pursuing a degree in computer science and will graduate in the Summer of 2023.</p>
+			<h3 class="font-mono text-xl font-bold text-yellow">Achievements</h3>
+				<ul><li class="mb-2 ml-4 list-disc auto-html"><!-- HTML_TAG_START -->AY2019/2020 SIS Outstanding First Year Computer Science Student Award<!-- HTML_TAG_END --></li><li class="mb-2 ml-4 list-disc auto-html"><!-- HTML_TAG_START -->AY2019/2020 Dean's List<!-- HTML_TAG_END --></li><li class="mb-2 ml-4 list-disc auto-html"><!-- HTML_TAG_START -->AY2020/2021 Dean's List<!-- HTML_TAG_END --></li>
+				</ul>
+		</div></div></section>
+	<h2 class="mt-8 font-mono text-xl text-center">Projects</h2>
+	<div class="w-full overflow-x-clip"><section class="max-w-screen-md gap-4 p-4 mx-auto mb-8"><div class="z-10 space-y-2"><h3 class="font-mono text-xl font-bold">Kopi Time</h3>
+			<h4 class="text-gray-400">CS302 IT Solution Lifecycle Management</h4>
+			<ul class="flex flex-wrap gap-2 mt-4"><li class="relative group"><img src="skills/typescript.svg" alt="TypeScript" class="w-6 h-6">
+		<div class="absolute p-2 mb-2 text-sm border border-white opacity-0 pointer-events-none bottom-full group-hover:opacity-100 bg-shade whitespace-nowrap">TypeScript</div></li><li class="relative group"><img src="skills/python.svg" alt="Python" class="w-6 h-6">
+		<div class="absolute p-2 mb-2 text-sm border border-white opacity-0 pointer-events-none bottom-full group-hover:opacity-100 bg-shade whitespace-nowrap">Python</div></li><li class="relative group"><img src="skills/reactjs.svg" alt="React" class="w-6 h-6">
+		<div class="absolute p-2 mb-2 text-sm border border-white opacity-0 pointer-events-none bottom-full group-hover:opacity-100 bg-shade whitespace-nowrap">React</div></li><li class="relative group"><img src="skills/nextjs.svg" alt="Next.js" class="w-6 h-6">
+		<div class="absolute p-2 mb-2 text-sm border border-white opacity-0 pointer-events-none bottom-full group-hover:opacity-100 bg-shade whitespace-nowrap">Next.js</div></li><li class="relative group"><img src="skills/nodejs.svg" alt="Node.js" class="w-6 h-6">
+		<div class="absolute p-2 mb-2 text-sm border border-white opacity-0 pointer-events-none bottom-full group-hover:opacity-100 bg-shade whitespace-nowrap">Node.js</div></li><li class="relative group"><img src="skills/flask.svg" alt="Flask" class="w-6 h-6">
+		<div class="absolute p-2 mb-2 text-sm border border-white opacity-0 pointer-events-none bottom-full group-hover:opacity-100 bg-shade whitespace-nowrap">Flask</div></li><li class="relative group"><img src="skills/graphql.svg" alt="GraphQL" class="w-6 h-6">
+		<div class="absolute p-2 mb-2 text-sm border border-white opacity-0 pointer-events-none bottom-full group-hover:opacity-100 bg-shade whitespace-nowrap">GraphQL</div></li><li class="relative group"><img src="skills/rest.png" alt="RESTful" class="w-6 h-6">
+		<div class="absolute p-2 mb-2 text-sm border border-white opacity-0 pointer-events-none bottom-full group-hover:opacity-100 bg-shade whitespace-nowrap">RESTful</div></li><li class="relative group"><img src="skills/rabbitmq.svg" alt="RabbitMQ" class="w-6 h-6">
+		<div class="absolute p-2 mb-2 text-sm border border-white opacity-0 pointer-events-none bottom-full group-hover:opacity-100 bg-shade whitespace-nowrap">RabbitMQ</div></li><li class="relative group"><img src="skills/mysql.svg" alt="MySQL" class="w-6 h-6">
+		<div class="absolute p-2 mb-2 text-sm border border-white opacity-0 pointer-events-none bottom-full group-hover:opacity-100 bg-shade whitespace-nowrap">MySQL</div></li><li class="relative group"><img src="skills/nginx.svg" alt="nginx" class="w-6 h-6">
+		<div class="absolute p-2 mb-2 text-sm border border-white opacity-0 pointer-events-none bottom-full group-hover:opacity-100 bg-shade whitespace-nowrap">nginx</div></li><li class="relative group"><img src="skills/eslint.svg" alt="ESLint" class="w-6 h-6">
+		<div class="absolute p-2 mb-2 text-sm border border-white opacity-0 pointer-events-none bottom-full group-hover:opacity-100 bg-shade whitespace-nowrap">ESLint</div></li><li class="relative group"><img src="skills/prettier.svg" alt="Prettier" class="w-6 h-6">
+		<div class="absolute p-2 mb-2 text-sm border border-white opacity-0 pointer-events-none bottom-full group-hover:opacity-100 bg-shade whitespace-nowrap">Prettier</div></li><li class="relative group"><img src="skills/gitlab.svg" alt="GitLab" class="w-6 h-6">
+		<div class="absolute p-2 mb-2 text-sm border border-white opacity-0 pointer-events-none bottom-full group-hover:opacity-100 bg-shade whitespace-nowrap">GitLab</div></li><li class="relative group"><img src="skills/docker.svg" alt="Docker" class="w-6 h-6">
+		<div class="absolute p-2 mb-2 text-sm border border-white opacity-0 pointer-events-none bottom-full group-hover:opacity-100 bg-shade whitespace-nowrap">Docker</div></li><li class="relative group"><img src="skills/aws.svg" alt="Amazon Web Services" class="w-6 h-6">
+		<div class="absolute p-2 mb-2 text-sm border border-white opacity-0 pointer-events-none bottom-full group-hover:opacity-100 bg-shade whitespace-nowrap">Amazon Web Services</div></li></ul>
+			<p>Kopi Time is a digital marketplace for coffee-related art and collectables.</p>
+			<p>We implemented a reliable and robust microservice architecture to handle:</p>
+			<ul class="list-disc list-inside"><li>market trading functionality;</li>
+				<li>listing timeouts and expirations; and</li>
+				<li>user notifications.</li></ul>
+			<p>The full report on our architectural decisions can be viewed
+				<a href="/projects/kopi-time/cs302-final-report.pdf" class="text-link">here</a>.
+			</p>
+			<div class="relative aspect-[16/7] mt-4"><div class="absolute top-[10%] left-[-20%] right-[60%] svelte-3rs1z5     cssFlyIn" style="--duration:600ms; --delay:50ms; --flyX:0px; --flyY:50px"><img src="/projects/kopi-time/home.png" alt="kopi-time home page">
+</div>
+
+				<div class="absolute top-[10%] left-[60%] right-[-20%] svelte-3rs1z5     cssFlyIn" style="--duration:600ms; --delay:150ms; --flyX:0px; --flyY:50px"><img src="/projects/kopi-time/listings.png" alt="kopi-time listings page">
+</div>
+
+				<div class="absolute left-[15%] right-[15%] svelte-3rs1z5     cssFlyIn" style="--duration:600ms; --delay:250ms; --flyX:0px; --flyY:50px"><img src="/projects/kopi-time/profile.png" alt="kopi-time profile page">
+</div></div></div></section></div>
+	<div class="w-full overflow-x-clip"><section class="max-w-screen-md gap-4 p-4 mx-auto mb-8"><div class="z-10 space-y-2"><h3 class="font-mono text-xl font-bold">COMO Club</h3>
+			<h4 class="text-gray-400">CS301 IT Solution Architecture</h4>
+			<ul class="flex flex-wrap gap-2 mt-4"><li class="relative group"><img src="skills/typescript.svg" alt="TypeScript" class="w-6 h-6">
+		<div class="absolute p-2 mb-2 text-sm border border-white opacity-0 pointer-events-none bottom-full group-hover:opacity-100 bg-shade whitespace-nowrap">TypeScript</div></li><li class="relative group"><img src="skills/python.svg" alt="Python" class="w-6 h-6">
+		<div class="absolute p-2 mb-2 text-sm border border-white opacity-0 pointer-events-none bottom-full group-hover:opacity-100 bg-shade whitespace-nowrap">Python</div></li><li class="relative group"><img src="skills/svelte.svg" alt="Svelte" class="w-6 h-6">
+		<div class="absolute p-2 mb-2 text-sm border border-white opacity-0 pointer-events-none bottom-full group-hover:opacity-100 bg-shade whitespace-nowrap">Svelte</div></li><li class="relative group"><img src="skills/sveltekit.png" alt="SvelteKit" class="w-6 h-6">
+		<div class="absolute p-2 mb-2 text-sm border border-white opacity-0 pointer-events-none bottom-full group-hover:opacity-100 bg-shade whitespace-nowrap">SvelteKit</div></li><li class="relative group"><img src="skills/flask.svg" alt="Flask" class="w-6 h-6">
+		<div class="absolute p-2 mb-2 text-sm border border-white opacity-0 pointer-events-none bottom-full group-hover:opacity-100 bg-shade whitespace-nowrap">Flask</div></li><li class="relative group"><img src="skills/rest.png" alt="RESTful" class="w-6 h-6">
+		<div class="absolute p-2 mb-2 text-sm border border-white opacity-0 pointer-events-none bottom-full group-hover:opacity-100 bg-shade whitespace-nowrap">RESTful</div></li><li class="relative group"><img src="skills/rabbitmq.svg" alt="RabbitMQ" class="w-6 h-6">
+		<div class="absolute p-2 mb-2 text-sm border border-white opacity-0 pointer-events-none bottom-full group-hover:opacity-100 bg-shade whitespace-nowrap">RabbitMQ</div></li><li class="relative group"><img src="skills/eslint.svg" alt="ESLint" class="w-6 h-6">
+		<div class="absolute p-2 mb-2 text-sm border border-white opacity-0 pointer-events-none bottom-full group-hover:opacity-100 bg-shade whitespace-nowrap">ESLint</div></li><li class="relative group"><img src="skills/prettier.svg" alt="Prettier" class="w-6 h-6">
+		<div class="absolute p-2 mb-2 text-sm border border-white opacity-0 pointer-events-none bottom-full group-hover:opacity-100 bg-shade whitespace-nowrap">Prettier</div></li><li class="relative group"><img src="skills/gh_actions.png" alt="Github Actions" class="w-6 h-6">
+		<div class="absolute p-2 mb-2 text-sm border border-white opacity-0 pointer-events-none bottom-full group-hover:opacity-100 bg-shade whitespace-nowrap">Github Actions</div></li><li class="relative group"><img src="skills/docker.svg" alt="Docker" class="w-6 h-6">
+		<div class="absolute p-2 mb-2 text-sm border border-white opacity-0 pointer-events-none bottom-full group-hover:opacity-100 bg-shade whitespace-nowrap">Docker</div></li><li class="relative group"><img src="skills/cloudformation.svg" alt="CloudFormation" class="w-6 h-6">
+		<div class="absolute p-2 mb-2 text-sm border border-white opacity-0 pointer-events-none bottom-full group-hover:opacity-100 bg-shade whitespace-nowrap">CloudFormation</div></li><li class="relative group"><img src="skills/aws.svg" alt="Amazon Web Services" class="w-6 h-6">
+		<div class="absolute p-2 mb-2 text-sm border border-white opacity-0 pointer-events-none bottom-full group-hover:opacity-100 bg-shade whitespace-nowrap">Amazon Web Services</div></li></ul>
+			<p>We designed a highly available and maintainable backend architecure for our SMU-X sponsor
+				— COMO Group.
+			</p>
+			<p>Most notably, our architecture <strong>fails gracefully</strong> when third-party external services
+				are unavailable.
+			</p>
+			<p>We continuously check the health of external services. When an external service fails a
+				healthcheck, we queue all client requests and notify users of the temporary disruption. Once
+				the external service is healthy, we automatically trigger a recovery phase and continue with
+				regular execution.
+			</p>
+			<p>Our final report can be found
+				<a href="/projects/como-club/cs301-final-report.pdf" class="text-link">here</a>.
+			</p>
+			<div class="relative mt-4 aspect-square"><div class="absolute top-[10%] left-[20%] right-[40%] svelte-3rs1z5     cssFlyIn" style="--duration:600ms; --delay:50ms; --flyX:0px; --flyY:50px"><img src="/projects/como-club/home.png" alt="como club home page">
+</div>
+
+				<div class="absolute top-0 left-[40%] right-[20%] svelte-3rs1z5     cssFlyIn" style="--duration:600ms; --delay:150ms; --flyX:0px; --flyY:50px"><img src="/projects/como-club/experiences.png" alt="como club experiences page">
+</div></div></div></section></div>
+	<div class="w-full overflow-x-clip"><section class="max-w-screen-md gap-4 p-4 mx-auto mb-8"><div class="z-10 space-y-2 auto-html"><h3 class="font-mono text-xl font-bold">Optimizing hotel bookings</h3>
+			<h4 class="text-gray-400">CS421 Introduction to Machine Learning</h4>
+			<ul class="flex flex-wrap gap-2 mt-4"><li class="relative group"><img src="skills/python.svg" alt="Python" class="w-6 h-6">
+		<div class="absolute p-2 mb-2 text-sm border border-white opacity-0 pointer-events-none bottom-full group-hover:opacity-100 bg-shade whitespace-nowrap">Python</div></li><li class="relative group"><img src="skills/scikit_learn.svg" alt="scikit-learn" class="w-6 h-6">
+		<div class="absolute p-2 mb-2 text-sm border border-white opacity-0 pointer-events-none bottom-full group-hover:opacity-100 bg-shade whitespace-nowrap">scikit-learn</div></li></ul>
+			<p>We analyzed
+				<a href="https://www.kaggle.com/jessemostipak/hotel-booking-demand">data on hotel booking demand
+				</a>
+				and explored a variety of machine learning techniques to predict the cancellation of a given
+				hotel booking based on pre-existing features.
+			</p>
+			<p>Our full report can be found <a href="/projects/hotel-bookings/cs421-final-report.pdf">here</a>.
+			</p></div></section></div>
+	<div class="w-full overflow-x-clip"><section class="max-w-screen-md gap-4 p-4 mx-auto mb-8"><div class="z-10 space-y-2"><h3 class="font-mono text-xl font-bold">Wok N Roll</h3>
+			<h4 class="text-gray-400">CS206 Software Product Management</h4>
+			<ul class="flex flex-wrap gap-2 mt-4"><li class="relative group"><img src="skills/typescript.svg" alt="TypeScript" class="w-6 h-6">
+		<div class="absolute p-2 mb-2 text-sm border border-white opacity-0 pointer-events-none bottom-full group-hover:opacity-100 bg-shade whitespace-nowrap">TypeScript</div></li><li class="relative group"><img src="skills/java.svg" alt="Java" class="w-6 h-6">
+		<div class="absolute p-2 mb-2 text-sm border border-white opacity-0 pointer-events-none bottom-full group-hover:opacity-100 bg-shade whitespace-nowrap">Java</div></li><li class="relative group"><img src="skills/svelte.svg" alt="Svelte" class="w-6 h-6">
+		<div class="absolute p-2 mb-2 text-sm border border-white opacity-0 pointer-events-none bottom-full group-hover:opacity-100 bg-shade whitespace-nowrap">Svelte</div></li><li class="relative group"><img src="skills/sveltekit.png" alt="SvelteKit" class="w-6 h-6">
+		<div class="absolute p-2 mb-2 text-sm border border-white opacity-0 pointer-events-none bottom-full group-hover:opacity-100 bg-shade whitespace-nowrap">SvelteKit</div></li><li class="relative group"><img src="skills/springio.svg" alt="Spring" class="w-6 h-6">
+		<div class="absolute p-2 mb-2 text-sm border border-white opacity-0 pointer-events-none bottom-full group-hover:opacity-100 bg-shade whitespace-nowrap">Spring</div></li><li class="relative group"><img src="skills/rest.png" alt="RESTful" class="w-6 h-6">
+		<div class="absolute p-2 mb-2 text-sm border border-white opacity-0 pointer-events-none bottom-full group-hover:opacity-100 bg-shade whitespace-nowrap">RESTful</div></li><li class="relative group"><img src="skills/eslint.svg" alt="ESLint" class="w-6 h-6">
+		<div class="absolute p-2 mb-2 text-sm border border-white opacity-0 pointer-events-none bottom-full group-hover:opacity-100 bg-shade whitespace-nowrap">ESLint</div></li><li class="relative group"><img src="skills/prettier.svg" alt="Prettier" class="w-6 h-6">
+		<div class="absolute p-2 mb-2 text-sm border border-white opacity-0 pointer-events-none bottom-full group-hover:opacity-100 bg-shade whitespace-nowrap">Prettier</div></li></ul>
+			<p>We conducted market research and discovered an unfulfilled niche for a comprehensive
+				database and search engine for hawker food in Singapore.
+			</p>
+			<p>We developed a roadmap for a product solution centered around this database and came up with
+				risk mitigation strategies.
+			</p>
+			<p>Our final presentation slides can be found
+				<a href="/projects/woknroll/cs206-final-pres.pdf" class="text-link">here</a>.
+			</p>
+			<div class="relative z-0 mt-8 aspect-square"><div class="absolute top-[5%] left-[5%] right-[45%] svelte-3rs1z5     cssFlyIn" style="--duration:600ms; --delay:50ms; --flyX:30px; --flyY:50px"><img src="/projects/woknroll/search-flat.png" alt="woknroll search page">
+</div>
+				<div class="absolute top-[15%] left-[52%] right-0 svelte-3rs1z5     cssFlyIn" style="--duration:600ms; --delay:150ms; --flyX:30px; --flyY:50px"><img src="/projects/woknroll/add-stall-flat.png" alt="woknroll add stall page">
+</div>
+				<div class="absolute top-[47%] left-0 right-[50%] svelte-3rs1z5     cssFlyIn" style="--duration:600ms; --delay:250ms; --flyX:30px; --flyY:50px"><img src="/projects/woknroll/stall-page-flat.png" alt="woknroll stall page">
+</div>
+				<div class="absolute top-[47%] left-[40%] right-[10%] svelte-3rs1z5     cssFlyIn" style="--duration:600ms; --delay:350ms; --flyX:30px; --flyY:50px"><img src="/projects/woknroll/add-review-flat.png" alt="woknroll add review page">
+</div></div></div></section></div></section>
 	<footer class="text-xl text-center my-52">Proudly developed by <a href="/#home" class="text-link">me.</a></footer></main>
 
 
