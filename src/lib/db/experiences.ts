@@ -1,7 +1,9 @@
 import type { Experience } from '$lib/models/Experience';
 
-export const experiences: Experience[] = [
-	{
+export type ExperienceId = 'smu' | 'dso' | 'whitehat' | 'garuda';
+
+export const experiences: Record<ExperienceId, Experience> = {
+	smu: {
 		name: 'Singapore Management University',
 		description:
 			'I am currently pursuing a degree in computer science and will graduate in the Summer of 2023.',
@@ -15,7 +17,7 @@ export const experiences: Experience[] = [
 			],
 		},
 	},
-	{
+	dso: {
 		name: 'DSO National Laboratories',
 		description: 'I was a Research Intern working on JavaScript engine fuzzers.',
 		start: 'may 2021',
@@ -28,7 +30,7 @@ export const experiences: Experience[] = [
 			],
 		},
 	},
-	{
+	whitehat: {
 		name: 'Whitehat Society',
 		description:
 			'I was the President of the Whitehat Society. We are a cybersecurity interest group with a mission to advocate for and educate on information security.',
@@ -45,7 +47,7 @@ export const experiences: Experience[] = [
 			],
 		},
 	},
-	{
+	garuda: {
 		name: 'Garuda Robotics',
 		description: 'I was an Engineering Intern for front-end development and drone software.',
 		start: 'may 2020',
@@ -59,4 +61,4 @@ export const experiences: Experience[] = [
 			],
 		},
 	},
-];
+};
