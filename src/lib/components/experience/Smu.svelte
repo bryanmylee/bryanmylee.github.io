@@ -6,7 +6,7 @@
 
 <section class="gap-4 mb-8">
 	<ExperienceItem experienceId="smu" />
-	<h2 class="mt-4 font-mono text-xl text-center">Projects</h2>
+	<h2 class="mt-8 font-mono text-xl text-center">Projects</h2>
 	<KopiTime />
 	<ComoClub />
 </section>
