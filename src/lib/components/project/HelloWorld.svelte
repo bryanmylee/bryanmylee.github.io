@@ -7,7 +7,14 @@
 	<div class="z-10">
 		<ProjectItem projectId="helloworld" />
 	</div>
-	<div class="relative z-0 aspect-square">
+	<p class="font-mono text-xl font-bold">
+		CODE_EXP 2021 ·
+		<span class="text-yellow">1st Place</span>
+	</p>
+	<p class="mt-4">
+		<strong>HelloWorld</strong> was developed in a week for the CODE_EXP 2021 Hackathon.
+	</p>
+	<div class="relative z-0 mt-8 aspect-square">
 		<RevealOnIntersection
 			percent={100}
 			transition="fly"
@@ -15,7 +22,7 @@
 			flyY={50}
 			duration={600}
 			delay={50}
-			class="absolute top-0 left-0 right-[50%]"
+			class="absolute top-0 left-[5%] right-[45%]"
 		>
 			<img src="/projects/helloworld/map-flat.png" alt="helloworld discover screen" />
 		</RevealOnIntersection>
@@ -26,7 +33,7 @@
 			flyY={50}
 			duration={600}
 			delay={200}
-			class="absolute top-[10%] left-[48%] right-[5%]"
+			class="absolute top-[10%] left-[52%] right-0"
 		>
 			<img src="/projects/helloworld/ar-portrait-flat.png" alt="helloworld ar portrait" />
 		</RevealOnIntersection>
@@ -37,15 +44,9 @@
 			flyY={50}
 			duration={600}
 			delay={350}
-			class="absolute top-[45%] left-[50px] right-[30%]"
+			class="absolute top-[45%] left-[15%] right-[25%]"
 		>
 			<img src="/projects/helloworld/ar-landscape-flat-rotated.png" alt="helloworld ar portrait" />
 		</RevealOnIntersection>
 	</div>
-	<p class="font-mono font-bold">
-		<span class="text-3xl">CODE_EXP 2021</span>
-		<span class="text-3xl">·</span>
-		<span class="text-2xl text-yellow">1st Place</span>
-	</p>
-	<p>HelloWorld was developed in a week for the CODE_EXP 2021 Hackathon.</p>
 </section>
