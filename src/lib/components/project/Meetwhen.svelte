@@ -34,7 +34,7 @@
 				<img
 					src="/projects/meetwhen/mobile-right-dark.png"
 					alt="meetwhen.io desktop preview"
-					class="object-cover w-full h-full"
+					class="object-contain object-left w-full h-full"
 				/>
 			</RevealOnIntersection>
 		</div>
