@@ -9,7 +9,10 @@ export type SkillID =
 	| 'prettier'
 	| 'gh_actions'
 	| 'rxjs'
-	| 'tailwindcss';
+	| 'tailwindcss'
+	| 'firebase'
+	| 'graphql'
+	| 'vercel';
 
 export const skills: Record<SkillID, Skill> = {
 	svelte: {
@@ -47,5 +50,17 @@ export const skills: Record<SkillID, Skill> = {
 	tailwindcss: {
 		name: 'Tailwind CSS',
 		imageSrc: 'skills/tailwindcss.svg',
+	},
+	firebase: {
+		name: 'Firebase',
+		imageSrc: 'skills/firebase.svg',
+	},
+	graphql: {
+		name: 'GraphQL',
+		imageSrc: 'skills/graphql.svg',
+	},
+	vercel: {
+		name: 'Vercel',
+		imageSrc: 'skills/vercel.svg',
 	},
 };

@@ -7,7 +7,7 @@
 	<div class="z-10">
 		<ProjectItem projectId="meetwhen.io" />
 	</div>
-	<div class="relative h-[400px]">
+	<div class="relative h-[400px] z-0">
 		<MountOnIntersection percent={50} transition="fly" flyY={50} duration={600} delay={250}>
 			<img
 				src="/projects/meetwhen/desktop-left-light.png"
@@ -24,8 +24,11 @@
 		</MountOnIntersection>
 	</div>
 	<MountOnIntersection percent={50} transition="fly" flyY={50} duration={600} delay={450}>
-		<div class="flex items-center justify-center mt-4">
+		<a
+			href="https://meetwhen.io"
+			class="flex items-center justify-center mt-4 transition hover:text-cyan"
+		>
 			<p class="p-4 bg-shade">Find the best time for everyone.</p>
-		</div>
+		</a>
 	</MountOnIntersection>
 </section>
