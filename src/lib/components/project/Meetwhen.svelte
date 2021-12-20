@@ -3,7 +3,7 @@
 	import ProjectItem from './ProjectItem.svelte';
 </script>
 
-<div class="w-full overflow-x-clip">
+<div class="w-full overflow-x-hidden">
 	<section class="max-w-screen-md gap-4 p-4 mx-auto mb-8">
 		<div class="z-10">
 			<ProjectItem projectId="meetwhen.io" />

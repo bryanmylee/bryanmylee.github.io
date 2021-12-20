@@ -58,7 +58,7 @@
 		<div
 			bind:this={boundaryElement}
 			use:trackMouse={position}
-			class="relative w-full h-40 example-area overflow-clip"
+			class="relative w-full h-40 overflow-hidden example-area"
 		>
 			<div
 				use:ref

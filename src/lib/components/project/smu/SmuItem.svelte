@@ -10,7 +10,7 @@
 	let skills = smuProjectSkills.filter(([p]) => p === smuProjectId).map(([, s]) => s);
 </script>
 
-<div class="w-full overflow-x-clip">
+<div class="w-full overflow-x-hidden">
 	<section class="max-w-screen-md gap-4 p-4 mx-auto mb-8">
 		<div class="z-10 space-y-2 auto-html">
 			<h3 class="font-mono text-xl font-bold">{name}</h3>
