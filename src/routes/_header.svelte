@@ -13,11 +13,12 @@
 
 <RevealOnIntersection percent={50} transition="fly" flyY={50} duration={600}>
 	<header class="max-w-screen-md mx-auto mt-12">
-		<div class="mx-4 font-mono text-3xl md:mx-0">
+		<div class="mx-4 font-mono text-2xl md:mx-0">
 			I am a <GlitchMarquee
 				interval={5000}
+				duration={1000}
 				texts={descriptions}
-				class="inline-block font-bold text-cyan"
+				class="font-bold text-cyan"
 			/>
 		</div>
 		<section class="relative p-8 mt-12 bg-shade">
