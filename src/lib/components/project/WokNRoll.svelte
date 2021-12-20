@@ -5,16 +5,7 @@
 	import type { SkillID } from '$lib/db/skills';
 	import SkillChip from '../skill/SkillChip.svelte';
 
-	let skills: SkillID[] = [
-		'typescript',
-		'java',
-		'svelte',
-		'sveltekit',
-		'spring',
-		'rest',
-		'eslint',
-		'prettier',
-	];
+	let skills: SkillID[] = ['typescript', 'java', 'svelte', 'sveltekit', 'spring', 'rest'];
 
 	const revealProps = {
 		percent: 100,
