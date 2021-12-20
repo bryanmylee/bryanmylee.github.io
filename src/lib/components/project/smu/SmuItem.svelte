@@ -16,7 +16,9 @@
 			<h3 class="font-mono text-xl font-bold">{name}</h3>
 			<h4 class="text-gray-400">{course}</h4>
 			<SkillList {skills} class="my-4" />
-			<slot />
+			<div class="space-y-4">
+				<slot />
+			</div>
 		</div>
 	</section>
 </div>

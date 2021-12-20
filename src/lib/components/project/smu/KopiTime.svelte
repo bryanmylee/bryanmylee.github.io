@@ -6,9 +6,9 @@
 <SmuItem smuProjectId="kopi-time">
 	<p>Kopi Time is a digital marketplace for coffee-related art and collectables.</p>
 	<p>We implemented a reliable and robust microservice architecture to handle:</p>
-	<ul class="list-disc list-inside">
-		<li>market trading functionality;</li>
-		<li>listing timeouts and expirations; and</li>
+	<ul class="ml-4 list-disc list-outside">
+		<li>market trading functionality,</li>
+		<li>listing timeouts and expirations, and</li>
 		<li>user notifications.</li>
 	</ul>
 	<p>

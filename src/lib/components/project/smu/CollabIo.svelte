@@ -7,9 +7,9 @@
 		<strong>collab.io</strong> aims to enable decentralized collaborative text editing. Our key objectives
 		are:
 	</p>
-	<ul class="list-disc list-inside">
-		<li>to provide concurrency control;</li>
-		<li>maintain a decentralized architecture; and</li>
+	<ul class="ml-4 list-disc list-outside">
+		<li>to provide concurrency control,</li>
+		<li>maintain a decentralized architecture, and</li>
 		<li>batch operations together to optimize for performance.</li>
 	</ul>
 	<p>
