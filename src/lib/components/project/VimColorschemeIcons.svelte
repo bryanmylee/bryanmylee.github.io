@@ -2,11 +2,11 @@
 	import ProjectItem from './ProjectItem.svelte';
 </script>
 
-<section class="max-w-screen-lg gap-4 p-4 mx-auto md:flex md:items-center">
+<section class="flex flex-col max-w-screen-lg gap-4 p-4 mx-auto md:flex-row md:items-center">
 	<div class="z-10 basis-1/2">
 		<ProjectItem projectId="vim-colorscheme-icons" />
 	</div>
-	<div class="flex gap-4 mt-4 basis-1/2">
+	<div class="flex gap-4 basis-1/2">
 		<div>
 			<img
 				src="projects/vim-colorscheme-icons/light.png"

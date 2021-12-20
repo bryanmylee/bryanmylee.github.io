@@ -28,7 +28,9 @@
 
 <svelte:body on:mouseup={() => ($current = $live)} on:touchend={() => ($current = $live)} />
 
-<section class="flex flex-col max-w-screen-lg gap-4 p-4 mx-auto md:flex-row md:items-center">
+<section
+	class="flex flex-col max-w-screen-lg gap-4 p-4 mx-auto md:flex-row-reverse md:items-center"
+>
 	<div class="z-10 flex-1">
 		<ProjectItem projectId="svelte-previous" />
 	</div>
