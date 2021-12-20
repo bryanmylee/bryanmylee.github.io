@@ -1,5 +1,5 @@
 <script lang="ts">
-	import GlitchMarquee from '$lib/components/GlitchMarquee.svelte';
+	import GlitchMarquee from '$lib/components/util/GlitchMarquee.svelte';
 	import RevealOnIntersection from '$lib/components/util/RevealOnIntersection.svelte';
 
 	let descriptions = [
