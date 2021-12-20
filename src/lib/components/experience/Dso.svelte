@@ -9,5 +9,5 @@
 
 <section class="max-w-screen-md gap-4 mx-auto mb-8">
 	<ExperienceItem experienceId="dso" />
-	<SkillList {skills} class="px-4" />
+	<SkillList {skills} class="px-4 mt-4" />
 </section>

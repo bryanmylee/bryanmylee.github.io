@@ -12,12 +12,10 @@
 
 <div class="w-full overflow-x-hidden">
 	<section class="max-w-screen-md gap-4 p-4 mx-auto mb-8">
-		<div class="z-10 space-y-2 auto-html">
+		<div class="z-10 auto-html">
 			<h3 class="font-mono text-xl font-bold">{name}</h3>
 			<h4 class="text-gray-400">{course}</h4>
-			<ul class="flex flex-wrap gap-2 mt-4">
-				<SkillList {skills} />
-			</ul>
+			<SkillList {skills} class="my-4" />
 			<slot />
 		</div>
 	</section>

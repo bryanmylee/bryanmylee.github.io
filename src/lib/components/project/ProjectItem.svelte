@@ -24,4 +24,4 @@
 		</p>
 	</div>
 </a>
-<SkillList {skills} />
+<SkillList {skills} class="mt-4" />
