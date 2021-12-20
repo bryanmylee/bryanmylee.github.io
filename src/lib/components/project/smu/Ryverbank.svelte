@@ -5,9 +5,8 @@
 <SmuItem smuProjectId="ryverbank">
 	<p>We designed a simple trading platform for our SMU-X sponsor &mdash; Credit Suisse.</p>
 	<p>
-		Given multiple core functionalities in our requirements, we developed the solution with
-		microservices to reduce the complexity of each functionality and enable each developer to work
-		semi-independently.
+		Given multiple core functionalities in the requirements, we used microservices to reduce the
+		complexity of each component and enable developers to work semi-independently.
 	</p>
 	<p>We also developed a simple ML-powered stock recommendation engine.</p>
 	<p>

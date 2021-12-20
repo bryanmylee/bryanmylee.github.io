@@ -19,8 +19,8 @@
 		and search engine for hawker food in Singapore.
 	</p>
 	<p>
-		We developed a roadmap for a product solution centered around this database and came up with
-		risk mitigation strategies.
+		Using this database, we developed a product, risk mitigation strategies, and a feature roadmap
+		for future growth.
 	</p>
 	<p>
 		Our final presentation slides can be found
