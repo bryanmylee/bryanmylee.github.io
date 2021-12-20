@@ -12,7 +12,9 @@ export type SkillID =
 	| 'tailwindcss'
 	| 'firebase'
 	| 'graphql'
-	| 'vercel';
+	| 'vercel'
+	| 'nodejs'
+	| 'sveltekit';
 
 export const skills: Record<SkillID, Skill> = {
 	svelte: {
@@ -62,5 +64,13 @@ export const skills: Record<SkillID, Skill> = {
 	vercel: {
 		name: 'Vercel',
 		imageSrc: 'skills/vercel.svg',
+	},
+	nodejs: {
+		name: 'Node.js',
+		imageSrc: 'skills/nodejs.svg',
+	},
+	sveltekit: {
+		name: 'SvelteKit',
+		imageSrc: 'skills/sveltekit.png',
 	},
 };

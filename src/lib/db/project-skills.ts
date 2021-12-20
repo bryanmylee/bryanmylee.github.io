@@ -31,10 +31,13 @@ export const projectSkills: [ProjectID, SkillID][] = [
 	['svelte-popperjs', 'prettier'],
 	// meetwhen.io
 	['meetwhen.io', 'svelte'],
+	['meetwhen.io', 'sveltekit'],
 	['meetwhen.io', 'typescript'],
 	['meetwhen.io', 'tailwindcss'],
+	['meetwhen.io', 'nodejs'],
 	['meetwhen.io', 'firebase'],
 	['meetwhen.io', 'graphql'],
+	['meetwhen.io', 'gh_actions'],
 	['meetwhen.io', 'vercel'],
 	['meetwhen.io', 'eslint'],
 	['meetwhen.io', 'prettier'],
