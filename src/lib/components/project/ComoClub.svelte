@@ -8,7 +8,7 @@
 
 <div class="w-full overflow-x-clip">
 	<section class="max-w-screen-md gap-4 p-4 mx-auto mb-8">
-		<div class="z-10 space-y-2">
+		<div class="z-10 space-y-2 auto-html">
 			<h3 class="font-mono text-xl font-bold">COMO Club</h3>
 			<h4 class="text-gray-400">CS301 IT Solution Architecture</h4>
 			<ul class="flex flex-wrap gap-2 mt-4">
@@ -32,7 +32,7 @@
 			</p>
 			<p>
 				Our final report can be found
-				<a href="/projects/como-club/cs301-final-report.pdf" class="text-link">here</a>.
+				<a href="/projects/como-club/cs301-final-report.pdf">here</a>.
 			</p>
 			<div class="relative mt-4 aspect-square">
 				<RevealOnIntersection
