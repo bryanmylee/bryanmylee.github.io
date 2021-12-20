@@ -14,7 +14,6 @@
 
 <Nav />
 <main class="z-0">
-	<p id="home" aria-hidden class="text-shade-dark">.</p>
 	<Header />
 	<Contact />
 	<Projects />
