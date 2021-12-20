@@ -23,7 +23,7 @@
 		<section class="relative p-8 mt-12 bg-shade">
 			<h1 class="mb-8 font-mono text-4xl font-bold text-yellow">Bryan Lee (bryanmylee)</h1>
 			<p class="mb-8 text-xl max-w-96">
-				I am a software developer with a passion for building solutions and tools to solve your
+				I am a software developer with a passion for building products and tools to solve your
 				problems.
 			</p>
 			<a href="#projects" class="block font-mono text-2xl text-link">Check them out here.</a>
