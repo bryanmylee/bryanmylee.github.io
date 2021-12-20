@@ -9,7 +9,7 @@
 	$: skills = projectSkills.filter(([p]) => p === projectId).map(([, s]) => s);
 </script>
 
-<a {href} class="flex space-x-6 group">
+<a {href} target="_blank" class="flex space-x-6 group">
 	<div
 		class="flex-shrink-0 w-24 h-24 p-2 transition-colors border-transparent border-3 bg-shade group-hover:border-cyan"
 	>

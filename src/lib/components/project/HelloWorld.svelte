@@ -17,6 +17,7 @@
 	<p>
 		<a
 			href="https://news.smu.edu.sg/news/2021/07/02/smus-computing-and-information-systems-team-emerged-champions-dsta-hackathon"
+			target="_blank"
 			class="text-link"
 		>
 			Read more about us</a
