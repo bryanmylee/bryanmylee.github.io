@@ -40,8 +40,8 @@
 		<RevealOnIntersection
 			percent={100}
 			transition="fly"
-			flyX={-30}
-			flyY={50}
+			flyX={-50}
+			flyY={30}
 			duration={600}
 			delay={350}
 			class="absolute top-[45%] left-[15%] right-[25%]"
