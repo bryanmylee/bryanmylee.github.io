@@ -26,6 +26,6 @@
 
 <h2 class="header-2">Apps</h2>
 
-<RevealOnIntersection>
+<RevealOnIntersection percent={50} transition="fly" flyY={50} duration={600} delay={50}>
 	<Meetwhen />
 </RevealOnIntersection>

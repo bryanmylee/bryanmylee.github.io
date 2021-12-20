@@ -8,14 +8,14 @@
 		<ProjectItem projectId="meetwhen.io" />
 	</div>
 	<div class="relative h-[400px] z-0">
-		<RevealOnIntersection percent={50} transition="fly" flyY={50} duration={600} delay={250}>
+		<RevealOnIntersection percent={100} transition="fly" flyY={50} duration={600} delay={250}>
 			<img
 				src="/projects/meetwhen/desktop-left-light.png"
 				alt="meetwhen.io desktop preview"
 				class="object-cover h-[400px] absolute inset-0 left-auto"
 			/>
 		</RevealOnIntersection>
-		<RevealOnIntersection percent={50} transition="fly" flyY={50} duration={600} delay={50}>
+		<RevealOnIntersection percent={100} transition="fly" flyY={50} duration={600} delay={50}>
 			<img
 				src="/projects/meetwhen/mobile-right-dark.png"
 				alt="meetwhen.io desktop preview"
