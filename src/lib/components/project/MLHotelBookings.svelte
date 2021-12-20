@@ -1,8 +1,8 @@
 <script lang="ts">
-	import type { SkillID } from '$lib/db/skills';
+	import { smuProjectSkills } from '$lib/db/project-skills';
 	import SkillChip from '../skill/SkillChip.svelte';
 
-	let skills: SkillID[] = ['python', 'scikit_learn'];
+	let skills = smuProjectSkills.filter(([p]) => p === 'ml_hotel_bookings').map(([, s]) => s);
 </script>
 
 <div class="w-full overflow-x-clip">

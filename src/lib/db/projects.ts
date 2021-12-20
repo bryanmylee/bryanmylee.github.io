@@ -1,5 +1,12 @@
 import type { Project } from '$lib/models/Project';
 
+export type SmuProjectID =
+	| 'kopi-time'
+	| 'como-club'
+	| 'ml_hotel_bookings'
+	| 'wok_n_roll'
+	| 'collab.io';
+
 export type ProjectID =
 	| 'svelte-popperjs'
 	| 'svelte-previous'

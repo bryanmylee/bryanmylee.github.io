@@ -1,8 +1,8 @@
 <script lang="ts">
-	import type { SkillID } from '$lib/db/skills';
+	import { smuProjectSkills } from '$lib/db/project-skills';
 	import SkillChip from '../skill/SkillChip.svelte';
 
-	let skills: SkillID[] = ['java', 'javascript', 'c'];
+	let skills = smuProjectSkills.filter(([p]) => p === 'collab.io').map(([, s]) => s);
 </script>
 
 <div class="w-full overflow-x-clip">

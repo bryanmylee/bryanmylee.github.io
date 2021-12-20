@@ -1,23 +1,9 @@
 <script lang="ts">
 	import RevealOnIntersection from '$lib/components/util/RevealOnIntersection.svelte';
-	import type { SkillID } from '$lib/db/skills';
+	import { smuProjectSkills } from '$lib/db/project-skills';
 	import SkillChip from '../skill/SkillChip.svelte';
 
-	let skills: SkillID[] = [
-		'typescript',
-		'python',
-		'svelte',
-		'sveltekit',
-		'flask',
-		'rest',
-		'rabbitmq',
-		'eslint',
-		'prettier',
-		'gh_actions',
-		'docker',
-		'cloudformation',
-		'aws',
-	];
+	let skills = smuProjectSkills.filter(([p]) => p === 'como-club').map(([, s]) => s);
 </script>
 
 <div class="w-full overflow-x-clip">

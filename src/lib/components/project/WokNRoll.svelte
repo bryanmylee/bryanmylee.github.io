@@ -2,10 +2,10 @@
 	import RevealOnIntersection, {
 		TransitionType,
 	} from '$lib/components/util/RevealOnIntersection.svelte';
-	import type { SkillID } from '$lib/db/skills';
+	import { smuProjectSkills } from '$lib/db/project-skills';
 	import SkillChip from '../skill/SkillChip.svelte';
 
-	let skills: SkillID[] = ['typescript', 'java', 'svelte', 'sveltekit', 'spring', 'rest'];
+	let skills = smuProjectSkills.filter(([p]) => p === 'wok_n_roll').map(([, s]) => s);
 
 	const revealProps = {
 		percent: 100,
