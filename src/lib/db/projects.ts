@@ -31,7 +31,7 @@ export const projects: Record<ProjectID, Project> = {
 	},
 	'meetwhen.io': {
 		name: 'meetwhen.io',
-		description: 'A group scheduling web application built on Svelte.',
+		description: 'A beautiful and mobile-friendly group scheduling application.',
 		imageSrc: 'projects/meetwhen.png',
 		href: 'https://meetwhen.io',
 	},

@@ -1,10 +1,10 @@
 <script lang="ts">
-	import { projects } from '$lib/db/projects';
 	import MountOnIntersection from '$lib/components/util/MountOnIntersection.svelte';
 	import SveltePopperJs from '$lib/components/project/SveltePopperJs.svelte';
 	import SveltePrevious from '$lib/components/project/SveltePrevious.svelte';
 	import ZooIds from '$lib/components/project/ZooIds.svelte';
 	import TailwindCssExtrude from '$lib/components/project/TailwindCssExtrude.svelte';
+	import Meetwhen from '$lib/components/project/Meetwhen.svelte';
 </script>
 
 <h1 id="projects" class="header">Projects</h1>
@@ -25,3 +25,7 @@
 </MountOnIntersection>
 
 <h2 class="header-2">Apps</h2>
+
+<MountOnIntersection>
+	<Meetwhen />
+</MountOnIntersection>
