@@ -8,7 +8,7 @@
 	export { className as class };
 </script>
 
-<ul class="flex gap-2 {className}">
+<ul class="flex gap-2 flex-wrap {className}">
 	{#each skills as skill}
 		<SkillChip {skill} />
 	{/each}
