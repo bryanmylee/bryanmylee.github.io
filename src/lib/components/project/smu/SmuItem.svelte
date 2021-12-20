@@ -2,7 +2,7 @@
 	import { smuProjectSkills } from '$lib/db/project-skills';
 
 	import { SmuProjectID, smuProjects } from '$lib/db/projects';
-	import SkillChip from '../skill/SkillChip.svelte';
+	import SkillChip from '$lib/components/skill/SkillChip.svelte';
 
 	export let smuProjectId: SmuProjectID;
 	$: ({ name, course } = smuProjects[smuProjectId]);

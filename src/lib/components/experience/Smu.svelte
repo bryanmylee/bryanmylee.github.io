@@ -1,11 +1,11 @@
 <script lang="ts">
 	import ExperienceItem from './ExperienceItem.svelte';
-	import KopiTime from '$lib/components/project/KopiTime.svelte';
-	import ComoClub from '$lib/components/project/ComoClub.svelte';
-	import MLHotelBookings from '$lib/components/project/MLHotelBookings.svelte';
-	import WokNRoll from '$lib/components/project/WokNRoll.svelte';
-	import Ryverbank from '../project/Ryverbank.svelte';
-	import CollabIo from '$lib/components/project/CollabIo.svelte';
+	import KopiTime from '$lib/components/project/smu/KopiTime.svelte';
+	import ComoClub from '$lib/components/project/smu/ComoClub.svelte';
+	import MLHotelBookings from '$lib/components/project/smu/MLHotelBookings.svelte';
+	import WokNRoll from '$lib/components/project/smu/WokNRoll.svelte';
+	import Ryverbank from '$lib/components/project/smu/Ryverbank.svelte';
+	import CollabIo from '$lib/components/project/smu/CollabIo.svelte';
 </script>
 
 <section class="gap-4 mb-8">

@@ -1,5 +1,5 @@
 <script lang="ts">
-	import SmuItem from '../experience/SmuItem.svelte';
+	import SmuItem from './SmuItem.svelte';
 </script>
 
 <SmuItem smuProjectId="collab.io">

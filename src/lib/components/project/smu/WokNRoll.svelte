@@ -2,7 +2,7 @@
 	import RevealOnIntersection, {
 		TransitionType,
 	} from '$lib/components/util/RevealOnIntersection.svelte';
-	import SmuItem from '../experience/SmuItem.svelte';
+	import SmuItem from './SmuItem.svelte';
 
 	const revealProps = {
 		percent: 100,

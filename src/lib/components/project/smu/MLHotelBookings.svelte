@@ -1,5 +1,5 @@
 <script lang="ts">
-	import SmuItem from '../experience/SmuItem.svelte';
+	import SmuItem from './SmuItem.svelte';
 </script>
 
 <SmuItem smuProjectId="ml_hotel_bookings">

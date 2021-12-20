@@ -1,6 +1,6 @@
 <script lang="ts">
 	import RevealOnIntersection from '$lib/components/util/RevealOnIntersection.svelte';
-	import SmuItem from '../experience/SmuItem.svelte';
+	import SmuItem from './SmuItem.svelte';
 </script>
 
 <SmuItem smuProjectId="como-club">
