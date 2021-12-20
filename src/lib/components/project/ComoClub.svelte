@@ -48,7 +48,7 @@
 				Our final report can be found
 				<a href="/projects/como-club/cs301-final-report.pdf" class="text-link">here</a>.
 			</p>
-			<div class="relative h-[450px] mt-4">
+			<div class="relative mt-4 aspect-square">
 				<RevealOnIntersection
 					percent={50}
 					transition="fly"
