@@ -1,9 +1,10 @@
 <script lang="ts">
+	import ExperienceItem from './ExperienceItem.svelte';
 	import KopiTime from '$lib/components/project/KopiTime.svelte';
 	import ComoClub from '$lib/components/project/ComoClub.svelte';
 	import MLHotelBookings from '$lib/components/project/MLHotelBookings.svelte';
 	import WokNRoll from '$lib/components/project/WokNRoll.svelte';
-	import ExperienceItem from './ExperienceItem.svelte';
+	import Crdt from '$lib/components/project/Crdt.svelte';
 </script>
 
 <section class="gap-4 mb-8">
@@ -13,4 +14,5 @@
 	<ComoClub />
 	<MLHotelBookings />
 	<WokNRoll />
+	<Crdt />
 </section>

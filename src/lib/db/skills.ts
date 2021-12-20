@@ -2,6 +2,7 @@ import type { Skill } from '$lib/models/Skill';
 
 export type SkillID =
 	| 'aws'
+	| 'c'
 	| 'cloudformation'
 	| 'docker'
 	| 'eslint'
@@ -35,6 +36,7 @@ export type SkillID =
 
 export const skills: Record<SkillID, Skill> = {
 	aws: { name: 'Amazon Web Services', imageSrc: 'skills/aws.svg' },
+	c: { name: 'C', imageSrc: 'skills/c.svg' },
 	cloudformation: { name: 'CloudFormation', imageSrc: 'skills/cloudformation.svg' },
 	docker: { name: 'Docker', imageSrc: 'skills/docker.svg' },
 	eslint: { name: 'ESLint', imageSrc: 'skills/eslint.svg' },
