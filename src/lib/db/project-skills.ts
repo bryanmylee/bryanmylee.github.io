@@ -97,4 +97,13 @@ export const smuProjectSkills: [SmuProjectID, SkillID][] = [
 	['collab.io', 'java'],
 	['collab.io', 'javascript'],
 	['collab.io', 'c'],
+	// ryverbank
+	['ryverbank', 'java'],
+	['ryverbank', 'python'],
+	['ryverbank', 'spring'],
+	['ryverbank', 'flask'],
+	['ryverbank', 'scikit_learn'],
+	['ryverbank', 'rest'],
+	['ryverbank', 'mysql'],
+	['ryverbank', 'docker'],
 ];

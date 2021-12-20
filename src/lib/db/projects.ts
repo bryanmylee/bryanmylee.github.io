@@ -5,7 +5,8 @@ export type SmuProjectID =
 	| 'como-club'
 	| 'ml_hotel_bookings'
 	| 'wok_n_roll'
-	| 'collab.io';
+	| 'collab.io'
+	| 'ryverbank';
 
 export type ProjectID =
 	| 'svelte-popperjs'

@@ -4,6 +4,7 @@
 	import ComoClub from '$lib/components/project/ComoClub.svelte';
 	import MLHotelBookings from '$lib/components/project/MLHotelBookings.svelte';
 	import WokNRoll from '$lib/components/project/WokNRoll.svelte';
+	import Ryverbank from '../project/Ryverbank.svelte';
 	import Crdt from '$lib/components/project/Crdt.svelte';
 </script>
 
@@ -14,5 +15,6 @@
 	<ComoClub />
 	<MLHotelBookings />
 	<WokNRoll />
+	<Ryverbank />
 	<Crdt />
 </section>
