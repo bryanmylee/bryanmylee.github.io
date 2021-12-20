@@ -1,3 +1,4 @@
+import type { ExperienceId } from './experiences';
 import type { ProjectID, SmuProjectID } from './projects';
 import type { SkillID } from './skills';
 
@@ -106,4 +107,16 @@ export const smuProjectSkills: [SmuProjectID, SkillID][] = [
 	['ryverbank', 'rest'],
 	['ryverbank', 'mysql'],
 	['ryverbank', 'docker'],
+];
+
+export const experienceSkills: [ExperienceId, SkillID][] = [
+	// dso
+	['dso', 'ansible'],
+	['dso', 'javascript'],
+	['dso', 'swift'],
+	// garuda
+	['garuda', 'react'],
+	['garuda', 'redux'],
+	['garuda', 'python'],
+	['garuda', 'rabbitmq'],
 ];

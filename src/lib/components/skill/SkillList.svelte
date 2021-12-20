@@ -1,0 +1,12 @@
+<script lang="ts">
+	import type { SkillID } from '$lib/db/skills';
+	import SkillChip from './SkillChip.svelte';
+
+	export let skills: SkillID[];
+</script>
+
+<ul class="flex gap-2 mt-4">
+	{#each skills as skill}
+		<SkillChip {skill} />
+	{/each}
+</ul>

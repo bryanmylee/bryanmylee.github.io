@@ -2,7 +2,7 @@
 	import { smuProjectSkills } from '$lib/db/project-skills';
 
 	import { SmuProjectID, smuProjects } from '$lib/db/projects';
-	import SkillChip from '$lib/components/skill/SkillChip.svelte';
+	import SkillList from '$lib/components/skill/SkillList.svelte';
 
 	export let smuProjectId: SmuProjectID;
 	$: ({ name, course } = smuProjects[smuProjectId]);
@@ -16,9 +16,7 @@
 			<h3 class="font-mono text-xl font-bold">{name}</h3>
 			<h4 class="text-gray-400">{course}</h4>
 			<ul class="flex flex-wrap gap-2 mt-4">
-				{#each skills as skill}
-					<SkillChip {skill} />
-				{/each}
+				<SkillList {skills} />
 			</ul>
 			<slot />
 		</div>

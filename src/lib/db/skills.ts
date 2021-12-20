@@ -1,6 +1,7 @@
 import type { Skill } from '$lib/models/Skill';
 
 export type SkillID =
+	| 'ansible'
 	| 'aws'
 	| 'c'
 	| 'cloudformation'
@@ -23,18 +24,21 @@ export type SkillID =
 	| 'rabbitmq'
 	| 'react'
 	| 'react_native'
+	| 'redux'
 	| 'rest'
 	| 'rxjs'
 	| 'scikit_learn'
 	| 'spring'
 	| 'svelte'
 	| 'sveltekit'
+	| 'swift'
 	| 'tailwindcss'
 	| 'typescript'
 	| 'vercel'
 	| 'vim';
 
 export const skills: Record<SkillID, Skill> = {
+	ansible: { name: 'Ansible', imageSrc: 'skills/ansible.svg' },
 	aws: { name: 'Amazon Web Services', imageSrc: 'skills/aws.svg' },
 	c: { name: 'C', imageSrc: 'skills/c.svg' },
 	cloudformation: { name: 'CloudFormation', imageSrc: 'skills/cloudformation.svg' },
@@ -57,12 +61,14 @@ export const skills: Record<SkillID, Skill> = {
 	rabbitmq: { name: 'RabbitMQ', imageSrc: 'skills/rabbitmq.svg' },
 	react: { name: 'React', imageSrc: 'skills/reactjs.svg' },
 	react_native: { name: 'React Native', imageSrc: 'skills/react_native.png' },
+	redux: { name: 'Redux', imageSrc: 'skills/redux.svg' },
 	rest: { name: 'RESTful', imageSrc: 'skills/rest.png' },
 	rxjs: { name: 'RxJS', imageSrc: 'skills/rxjs.svg' },
 	scikit_learn: { name: 'scikit-learn', imageSrc: 'skills/scikit_learn.svg' },
 	spring: { name: 'Spring', imageSrc: 'skills/springio.svg' },
 	svelte: { name: 'Svelte', imageSrc: 'skills/svelte.svg' },
 	sveltekit: { name: 'SvelteKit', imageSrc: 'skills/sveltekit.png' },
+	swift: { name: 'Swift', imageSrc: 'skills/swift.svg' },
 	tailwindcss: { name: 'Tailwind CSS', imageSrc: 'skills/tailwindcss.svg' },
 	typescript: { name: 'TypeScript', imageSrc: 'skills/typescript.svg' },
 	vercel: { name: 'Vercel', imageSrc: 'skills/vercel.svg' },

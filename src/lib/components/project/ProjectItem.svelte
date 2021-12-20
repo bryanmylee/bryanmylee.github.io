@@ -2,7 +2,7 @@
 	import type { ProjectID } from '$lib/db/projects';
 	import { projects } from '$lib/db/projects';
 	import { projectSkills } from '$lib/db/project-skills';
-	import SkillChip from '../skill/SkillChip.svelte';
+	import SkillList from '../skill/SkillList.svelte';
 
 	export let projectId: ProjectID;
 	$: ({ description, href, imageSrc, name } = projects[projectId]);
@@ -24,8 +24,4 @@
 		</p>
 	</div>
 </a>
-<ul class="flex gap-2 mt-4">
-	{#each skills as skill}
-		<SkillChip {skill} />
-	{/each}
-</ul>
+<SkillList {skills} />
