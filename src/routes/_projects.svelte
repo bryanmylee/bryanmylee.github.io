@@ -1,5 +1,5 @@
 <script lang="ts">
-	import MountOnIntersection from '$lib/components/util/MountOnIntersection.svelte';
+	import RevealOnIntersection from '$lib/components/util/RevealOnIntersection.svelte';
 	import SveltePopperJs from '$lib/components/project/SveltePopperJs.svelte';
 	import SveltePrevious from '$lib/components/project/SveltePrevious.svelte';
 	import ZooIds from '$lib/components/project/ZooIds.svelte';
@@ -11,21 +11,21 @@
 
 <h2 class="header-2">Developer Tools</h2>
 
-<MountOnIntersection percent={50} transition="fly" flyY={50} duration={600} delay={50}>
+<RevealOnIntersection percent={50} transition="fly" flyY={50} duration={600} delay={50}>
 	<SveltePopperJs />
-</MountOnIntersection>
-<MountOnIntersection percent={50} transition="fly" flyY={50} duration={600} delay={50}>
+</RevealOnIntersection>
+<RevealOnIntersection percent={50} transition="fly" flyY={50} duration={600} delay={50}>
 	<SveltePrevious />
-</MountOnIntersection>
-<MountOnIntersection percent={50} transition="fly" flyY={50} duration={600} delay={50}>
+</RevealOnIntersection>
+<RevealOnIntersection percent={50} transition="fly" flyY={50} duration={600} delay={50}>
 	<ZooIds />
-</MountOnIntersection>
-<MountOnIntersection percent={50} transition="fly" flyY={50} duration={600} delay={50}>
+</RevealOnIntersection>
+<RevealOnIntersection percent={50} transition="fly" flyY={50} duration={600} delay={50}>
 	<TailwindCssExtrude />
-</MountOnIntersection>
+</RevealOnIntersection>
 
 <h2 class="header-2">Apps</h2>
 
-<MountOnIntersection>
+<RevealOnIntersection>
 	<Meetwhen />
-</MountOnIntersection>
+</RevealOnIntersection>

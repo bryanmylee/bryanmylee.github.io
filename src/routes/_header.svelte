@@ -1,6 +1,6 @@
 <script lang="ts">
 	import GlitchMarquee from '$lib/components/GlitchMarquee.svelte';
-	import MountOnIntersection from '$lib/components/util/MountOnIntersection.svelte';
+	import RevealOnIntersection from '$lib/components/util/RevealOnIntersection.svelte';
 
 	let descriptions = [
 		'software developer.',
@@ -11,7 +11,7 @@
 	];
 </script>
 
-<MountOnIntersection percent={50} transition="fly" flyY={50} duration={600}>
+<RevealOnIntersection percent={50} transition="fly" flyY={50} duration={600}>
 	<header class="max-w-screen-md mx-auto mt-12">
 		<div class="mx-4 font-mono text-3xl md:mx-0">
 			I am a <GlitchMarquee
@@ -34,4 +34,4 @@
 			/>
 		</section>
 	</header>
-</MountOnIntersection>
+</RevealOnIntersection>
