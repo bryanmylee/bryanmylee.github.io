@@ -28,7 +28,8 @@ export type SkillID =
 	| 'rest'
 	| 'rabbitmq'
 	| 'mysql'
-	| 'cloudformation';
+	| 'cloudformation'
+	| 'scikit_learn';
 
 export const skills: Record<SkillID, Skill> = {
 	svelte: {
@@ -142,5 +143,9 @@ export const skills: Record<SkillID, Skill> = {
 	cloudformation: {
 		name: 'CloudFormation',
 		imageSrc: 'skills/cloudformation.svg',
+	},
+	scikit_learn: {
+		name: 'scikit-learn',
+		imageSrc: 'skills/scikit_learn.svg',
 	},
 };
