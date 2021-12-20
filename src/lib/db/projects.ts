@@ -6,7 +6,8 @@ export type ProjectID =
 	| 'zoo-ids'
 	| 'tailwindcss-extrude'
 	| 'vim-colorscheme-icons'
-	| 'meetwhen.io';
+	| 'meetwhen.io'
+	| 'helloworld';
 
 export const projects: Record<ProjectID, Project> = {
 	'svelte-popperjs': {
@@ -24,8 +25,7 @@ export const projects: Record<ProjectID, Project> = {
 	},
 	'vim-colorscheme-icons': {
 		name: 'vim-colorscheme-icons',
-		description:
-			'A simple plug-and-play Vim plugin to colorize <code>vim-devicons</code> with the current colorscheme.',
+		description: 'A plug-and-play Vim plugin to colorize <code>vim-devicons</code>.',
 		imageSrc: 'projects/vim-colorscheme-icons.png',
 		href: 'https://github.com/bryanmylee/vim-colorscheme-icons',
 	},
@@ -46,5 +46,12 @@ export const projects: Record<ProjectID, Project> = {
 		description: 'A custom Tailwind CSS plugin for an extruded style.',
 		imageSrc: 'projects/tailwindcss-extrude.png',
 		href: 'https://github.com/bryanmylee/tailwindcss-extrude',
+	},
+	helloworld: {
+		name: 'HelloWorld',
+		description:
+			'An application that leverages AR technology to let you relive and reminiscence your travel adventures in the face of border restrictions.',
+		imageSrc: 'projects/helloworld.png',
+		href: 'https://news.smu.edu.sg/news/2021/07/02/smus-computing-and-information-systems-team-emerged-champions-dsta-hackathon',
 	},
 };

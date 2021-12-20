@@ -6,6 +6,7 @@
 	import TailwindCssExtrude from '$lib/components/project/TailwindCssExtrude.svelte';
 	import VimColorschemeIcons from '$lib/components/project/VimColorschemeIcons.svelte';
 	import Meetwhen from '$lib/components/project/Meetwhen.svelte';
+	import HelloWorld from '$lib/components/project/HelloWorld.svelte';
 </script>
 
 <h1 id="projects" class="header">Projects</h1>
@@ -32,4 +33,7 @@
 
 <RevealOnIntersection percent={50} transition="fly" flyY={50} duration={600} delay={50}>
 	<Meetwhen />
+</RevealOnIntersection>
+<RevealOnIntersection percent={50} transition="fly" flyY={50} duration={600} delay={50}>
+	<HelloWorld />
 </RevealOnIntersection>
