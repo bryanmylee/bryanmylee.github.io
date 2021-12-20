@@ -30,8 +30,8 @@
 						class="absolute right-0 flex flex-col h-full max-w-screen-md gap-4 md:static md:flex-row"
 					>
 						<li class="contents"><a href="/#projects" class="nav-item">projects</a></li>
-						<li class="contents"><a href="/#skills" class="nav-item">skills</a></li>
 						<li class="contents"><a href="/#experience" class="nav-item">experience</a></li>
+						<li class="contents"><a href="/#skills" class="nav-item">skills</a></li>
 					</ul>
 				{/if}
 			</div>

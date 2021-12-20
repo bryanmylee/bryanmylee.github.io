@@ -43,7 +43,7 @@ export const experiences: Record<ExperienceId, Experience> = {
 				'Directed <strong>Whitehacks 2021</strong>, a Junior College cybersecurity outreach program comprising training workshops, a CTF competition, and networking opportunities with industry partners such as GovTech, CSA, and CSIT.',
 			],
 			Awards: [
-				'AiSP Student Volunteer Recognition Programme <a href="https://www.aisp.sg/svrp_winners_2021.html">Silver Award</a>.',
+				'AiSP Student Volunteer Recognition Programme <a href="https://www.aisp.sg/svrp_winners_2021.html" target="_blank">Silver Award</a>.',
 			],
 		},
 	},

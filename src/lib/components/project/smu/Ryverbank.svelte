@@ -17,6 +17,6 @@
 		Our final presentation slides can be found
 		<a href="/projects/ryverbank/cs203-final-pres.pdf" target="_blank">here</a> and our
 		implementation is publicly available
-		<a href="https://github.com/cs203t10-ryverbank">here</a>.
+		<a href="https://github.com/cs203t10-ryverbank" target="_blank">here</a>.
 	</p>
 </SmuItem>

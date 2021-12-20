@@ -13,8 +13,12 @@
 		<li>batch operations together to optimize for performance.</li>
 	</ul>
 	<p>
-		We adapted the <a href="https://hal.archives-ouvertes.fr/hal-00921633/document"> LSEQ </a> structure
-		and algorithm to enable batch operations.
+		We extended the <a
+			href="https://hal.archives-ouvertes.fr/hal-00921633/document"
+			target="_blank"
+		>
+			LSEQ
+		</a> structure and algorithm to enable batch operations.
 	</p>
 	<p>
 		Our final presentation can be found <a
@@ -26,6 +30,6 @@
 	</p>
 	<p>
 		Consequently, I re-implemented the algorithm in C as
-		<a href="https://github.com/bryanmylee/sequence-crdt">sequence-crdt</a>.
+		<a href="https://github.com/bryanmylee/sequence-crdt" target="_blank">sequence-crdt</a>.
 	</p>
 </SmuItem>

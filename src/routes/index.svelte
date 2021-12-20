@@ -18,7 +18,7 @@
 	<Header />
 	<Contact />
 	<Projects />
-	<Skills />
 	<Experiences />
+	<Skills />
 	<Footer />
 </main>
