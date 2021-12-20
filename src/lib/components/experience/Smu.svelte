@@ -5,7 +5,7 @@
 	import MLHotelBookings from '$lib/components/project/MLHotelBookings.svelte';
 	import WokNRoll from '$lib/components/project/WokNRoll.svelte';
 	import Ryverbank from '../project/Ryverbank.svelte';
-	import Crdt from '$lib/components/project/Crdt.svelte';
+	import CollabIo from '$lib/components/project/CollabIo.svelte';
 </script>
 
 <section class="gap-4 mb-8">
@@ -16,5 +16,5 @@
 	<MLHotelBookings />
 	<WokNRoll />
 	<Ryverbank />
-	<Crdt />
+	<CollabIo />
 </section>

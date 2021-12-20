@@ -1,12 +1,5 @@
 import type { Project } from '$lib/models/Project';
-
-export type SmuProjectID =
-	| 'kopi-time'
-	| 'como-club'
-	| 'ml_hotel_bookings'
-	| 'wok_n_roll'
-	| 'collab.io'
-	| 'ryverbank';
+import type { SmuProject } from '$lib/models/SmuProject';
 
 export type ProjectID =
 	| 'svelte-popperjs'
@@ -61,5 +54,40 @@ export const projects: Record<ProjectID, Project> = {
 			'An AR application to relive and reminiscence your travel adventures in the face of border restrictions.',
 		imageSrc: 'projects/helloworld.png',
 		href: 'https://news.smu.edu.sg/news/2021/07/02/smus-computing-and-information-systems-team-emerged-champions-dsta-hackathon',
+	},
+};
+
+export type SmuProjectID =
+	| 'kopi-time'
+	| 'como-club'
+	| 'ml_hotel_bookings'
+	| 'wok_n_roll'
+	| 'collab.io'
+	| 'ryverbank';
+
+export const smuProjects: Record<SmuProjectID, SmuProject> = {
+	'kopi-time': {
+		name: 'Kopi Time',
+		course: 'CS302 IT Solution Lifecycle Management',
+	},
+	'como-club': {
+		name: 'COMO Club',
+		course: 'CS301 IT Solution Architecture',
+	},
+	ml_hotel_bookings: {
+		name: 'Optimizing hotel bookings',
+		course: 'CS421 Introduction to Machine Learning',
+	},
+	wok_n_roll: {
+		name: 'Wok N Roll',
+		course: 'CS206 Software Product Management',
+	},
+	ryverbank: {
+		name: 'Ryver Bank',
+		course: 'CS203 Collaborative Software Development',
+	},
+	'collab.io': {
+		name: 'collab.io',
+		course: 'CS201 Data Structures & Algorithms',
 	},
 };
