@@ -3,9 +3,12 @@
 	import SkillChip from './SkillChip.svelte';
 
 	export let skills: SkillID[];
+
+	let className = '';
+	export { className as class };
 </script>
 
-<ul class="flex gap-2 mt-4">
+<ul class="flex gap-2 mt-4 {className}">
 	{#each skills as skill}
 		<SkillChip {skill} />
 	{/each}
