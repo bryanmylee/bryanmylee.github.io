@@ -1,7 +1,8 @@
 <script lang="ts">
 	import KopiTime from '$lib/components/project/KopiTime.svelte';
 	import ComoClub from '$lib/components/project/ComoClub.svelte';
-	import MLHotelBookings from '../project/MLHotelBookings.svelte';
+	import MLHotelBookings from '$lib/components/project/MLHotelBookings.svelte';
+	import WokNRoll from '$lib/components/project/WokNRoll.svelte';
 	import ExperienceItem from './ExperienceItem.svelte';
 </script>
 
@@ -11,4 +12,5 @@
 	<KopiTime />
 	<ComoClub />
 	<MLHotelBookings />
+	<WokNRoll />
 </section>
