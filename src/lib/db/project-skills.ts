@@ -29,6 +29,8 @@ export const projectSkills: [ProjectID, SkillID][] = [
 	['svelte-popperjs', 'gh_actions'],
 	['svelte-popperjs', 'eslint'],
 	['svelte-popperjs', 'prettier'],
+	// vim-colorscheme-icons
+	['vim-colorscheme-icons', 'vim'],
 	// meetwhen.io
 	['meetwhen.io', 'svelte'],
 	['meetwhen.io', 'sveltekit'],

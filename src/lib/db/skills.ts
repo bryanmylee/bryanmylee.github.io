@@ -14,7 +14,8 @@ export type SkillID =
 	| 'graphql'
 	| 'vercel'
 	| 'nodejs'
-	| 'sveltekit';
+	| 'sveltekit'
+	| 'vim';
 
 export const skills: Record<SkillID, Skill> = {
 	svelte: {
@@ -72,5 +73,9 @@ export const skills: Record<SkillID, Skill> = {
 	sveltekit: {
 		name: 'SvelteKit',
 		imageSrc: 'skills/sveltekit.png',
+	},
+	vim: {
+		name: 'Vim',
+		imageSrc: 'skills/vim.svg',
 	},
 };
