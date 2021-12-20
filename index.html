@@ -44,16 +44,16 @@
 
 		
 
-		<link rel="modulepreload" href="/app/start-8d84cd53.js">
+		<link rel="modulepreload" href="/app/start-f904ecd3.js">
 		<link rel="modulepreload" href="/app/chunks/vendor-9095087f.js">
 		<link rel="modulepreload" href="/app/layout.svelte-7a517be5.js">
-		<link rel="modulepreload" href="/app/pages/index.svelte-0edbdd38.js">
+		<link rel="modulepreload" href="/app/pages/index.svelte-5ab8d18d.js">
 		<link rel="stylesheet" href="/app/assets/start-464e9d0a.css">
 		<link rel="stylesheet" href="/app/assets/vendor-3474b9c0.css">
 		<link rel="stylesheet" href="/app/assets/pages/index.svelte-c5df32f2.css">
 
 		<script type="module">
-			import { start } from "/app/start-8d84cd53.js";
+			import { start } from "/app/start-f904ecd3.js";
 			start({
 				target: document.querySelector("#svelte"),
 				paths: {"base":"","assets":""},
@@ -67,7 +67,7 @@
 					error: null,
 					nodes: [
 						import("/app/layout.svelte-7a517be5.js"),
-						import("/app/pages/index.svelte-0edbdd38.js")
+						import("/app/pages/index.svelte-5ab8d18d.js")
 					],
 					page: {
 						host: location.host, // TODO this is redundant
@@ -174,8 +174,8 @@
 
 	<div class="relative flex-1 w-full md:w-1/2 svelte-1oddu7s"><button class="absolute z-10 p-2 font-mono text-sm font-bold rounded-lg top-4 right-4 svelte-1oddu7s">&lt;/&gt;</button>
 	<div class="example-area"><div class="flex items-center gap-4"><label for="seed" class="text-lg font-bold">Seed</label>
-				<input type="text" id="seed" class="w-full" value="222"></div>
-			<p class="mt-4 font-mono text-lg">Bewitched🍑Animated🍑Wallaby</p></div>
+				<input type="text" id="seed" class="w-full" value="182"></div>
+			<p class="mt-4 font-mono text-lg">Used🍑Variable🍑Grasshopper</p></div>
 		<p class="example-hint">Pick any seed to try it out!</p>
 </div></section>
 </div>
@@ -366,7 +366,27 @@
 				<div class="absolute top-[47%] left-0 right-[50%] svelte-3rs1z5     cssFlyIn" style="--duration:600ms; --delay:250ms; --flyX:30px; --flyY:50px"><img src="/projects/woknroll/stall-page-flat.png" alt="woknroll stall page">
 </div>
 				<div class="absolute top-[47%] left-[40%] right-[10%] svelte-3rs1z5     cssFlyIn" style="--duration:600ms; --delay:350ms; --flyX:30px; --flyY:50px"><img src="/projects/woknroll/add-review-flat.png" alt="woknroll add review page">
-</div></div></div></section></div></section>
+</div></div></div></section></div>
+	<div class="w-full overflow-x-clip"><section class="max-w-screen-md gap-4 p-4 mx-auto mb-8"><div class="z-10 space-y-2 auto-html"><h3 class="font-mono text-xl font-bold">collab.io</h3>
+			<h4 class="text-gray-400">CS201 Data Structures &amp; Algorithms</h4>
+			<ul class="flex flex-wrap gap-2 mt-4"><li class="relative group"><img src="skills/java.svg" alt="Java" class="w-6 h-6">
+		<div class="absolute p-2 mb-2 text-sm border border-white opacity-0 pointer-events-none bottom-full group-hover:opacity-100 bg-shade whitespace-nowrap">Java</div></li><li class="relative group"><img src="skills/javascript.svg" alt="JavaScript" class="w-6 h-6">
+		<div class="absolute p-2 mb-2 text-sm border border-white opacity-0 pointer-events-none bottom-full group-hover:opacity-100 bg-shade whitespace-nowrap">JavaScript</div></li><li class="relative group"><img src="skills/c.svg" alt="C" class="w-6 h-6">
+		<div class="absolute p-2 mb-2 text-sm border border-white opacity-0 pointer-events-none bottom-full group-hover:opacity-100 bg-shade whitespace-nowrap">C</div></li></ul>
+			<p><strong>collab.io</strong> aims to enable decentralized collaborative text editing. Our key objectives
+				are:
+			</p>
+			<ul class="list-disc list-inside"><li>to provide concurrency control;</li>
+				<li>maintain a decentralized architecture; and</li>
+				<li>batch operations together to optimize for performance.</li></ul>
+			<p>We adapted the <a href="https://hal.archives-ouvertes.fr/hal-00921633/document">LSEQ </a> structure
+				and algorithm to enable batch operations.
+			</p>
+			<p>Our final presentation can be found <a href="/projects/crdt/cs201-final-pres.pdf">here</a>.
+			</p>
+			<p>Consequently, I re-implemented the algorithm in C as
+				<a href="https://github.com/bryanmylee/sequence-crdt">sequence-crdt</a>.
+			</p></div></section></div></section>
 	<footer class="text-xl text-center my-52">Proudly developed by <a href="/#home" class="text-link">me.</a></footer></main>
 
 
