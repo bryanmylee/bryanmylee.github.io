@@ -3,7 +3,24 @@
 	import type { SkillID } from '$lib/db/skills';
 	import SkillChip from '../skill/SkillChip.svelte';
 
-	let skills: SkillID[] = ['react'];
+	let skills: SkillID[] = [
+		'typescript',
+		'python',
+		'react',
+		'nextjs',
+		'nodejs',
+		'flask',
+		'graphql',
+		'rest',
+		'rabbitmq',
+		'mysql',
+		'nginx',
+		'eslint',
+		'prettier',
+		'gitlab',
+		'docker',
+		'aws',
+	];
 </script>
 
 <div class="w-full overflow-x-clip">
@@ -11,21 +28,21 @@
 		<div class="z-10 space-y-2">
 			<h3 class="font-mono text-xl font-bold">Kopi Time</h3>
 			<h4 class="text-gray-400">CS302 IT Solution Lifecycle Management</h4>
-			<ul class="flex gap-2 mt-4">
+			<ul class="flex flex-wrap gap-2 mt-4">
 				{#each skills as skill}
 					<SkillChip {skill} />
 				{/each}
 			</ul>
 			<p>Kopi Time is a digital marketplace for coffee-related art and collectables.</p>
-			<p>We implemented a reliable and robust microservice architecture to handle</p>
+			<p>We implemented a reliable and robust microservice architecture to handle:</p>
 			<ul class="list-disc list-inside">
 				<li>market trading functionality;</li>
 				<li>listing timeouts and expirations; and</li>
 				<li>user notifications.</li>
 			</ul>
 			<p>
-				Our full report on our architectural decisions can be viewed
-				<a href="/#" class="text-link">here</a>.
+				The full report on our architectural decisions can be viewed
+				<a href="/projects/kopi-time/cs302-final-report.pdf" class="text-link">here</a>.
 			</p>
 			<div class="relative aspect-[16/7] mt-4">
 				<RevealOnIntersection

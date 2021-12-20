@@ -4,6 +4,7 @@ export type SkillID =
 	| 'svelte'
 	| 'typescript'
 	| 'javascript'
+	| 'python'
 	| 'npm'
 	| 'eslint'
 	| 'prettier'
@@ -17,7 +18,16 @@ export type SkillID =
 	| 'sveltekit'
 	| 'vim'
 	| 'react'
-	| 'react_native';
+	| 'react_native'
+	| 'aws'
+	| 'docker'
+	| 'nextjs'
+	| 'flask'
+	| 'nginx'
+	| 'gitlab'
+	| 'rest'
+	| 'rabbitmq'
+	| 'mysql';
 
 export const skills: Record<SkillID, Skill> = {
 	svelte: {
@@ -31,6 +41,10 @@ export const skills: Record<SkillID, Skill> = {
 	javascript: {
 		name: 'JavaScript',
 		imageSrc: 'skills/javascript.svg',
+	},
+	python: {
+		name: 'Python',
+		imageSrc: 'skills/python.svg',
 	},
 	npm: {
 		name: 'npm.js',
@@ -87,5 +101,41 @@ export const skills: Record<SkillID, Skill> = {
 	react_native: {
 		name: 'React Native',
 		imageSrc: 'skills/react_native.png',
+	},
+	aws: {
+		name: 'Amazon Web Services',
+		imageSrc: 'skills/aws.svg',
+	},
+	docker: {
+		name: 'Docker',
+		imageSrc: 'skills/docker.svg',
+	},
+	nextjs: {
+		name: 'Next.js',
+		imageSrc: 'skills/nextjs.svg',
+	},
+	flask: {
+		name: 'Flask',
+		imageSrc: 'skills/flask.svg',
+	},
+	nginx: {
+		name: 'nginx',
+		imageSrc: 'skills/nginx.svg',
+	},
+	gitlab: {
+		name: 'GitLab',
+		imageSrc: 'skills/gitlab.svg',
+	},
+	rest: {
+		name: 'RESTful',
+		imageSrc: 'skills/rest.png',
+	},
+	rabbitmq: {
+		name: 'RabbitMQ',
+		imageSrc: 'skills/rabbitmq.svg',
+	},
+	mysql: {
+		name: 'MySQL',
+		imageSrc: 'skills/mysql.svg',
 	},
 };
