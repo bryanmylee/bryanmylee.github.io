@@ -52,7 +52,7 @@
 				{/if}
 			</button>
 		</div>
-		<p class="example-hint">Hover to try it out!</p>
+		<p class="example-hint">Press the button to try it out!</p>
 		<HighlightSvelte code={exampleCode} slot="alt" />
 	</Toggle>
 </section>
