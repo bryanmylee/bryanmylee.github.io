@@ -7,7 +7,7 @@
 	<div class="z-10">
 		<ProjectItem projectId="helloworld" />
 	</div>
-	<p class="font-mono text-xl font-bold">
+	<p class="mt-4 font-mono text-xl font-bold">
 		CODE_EXP 2021 ·
 		<span class="text-yellow">1st Place</span>
 	</p>

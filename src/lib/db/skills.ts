@@ -15,7 +15,9 @@ export type SkillID =
 	| 'vercel'
 	| 'nodejs'
 	| 'sveltekit'
-	| 'vim';
+	| 'vim'
+	| 'react'
+	| 'react_native';
 
 export const skills: Record<SkillID, Skill> = {
 	svelte: {
@@ -77,5 +79,13 @@ export const skills: Record<SkillID, Skill> = {
 	vim: {
 		name: 'Vim',
 		imageSrc: 'skills/vim.svg',
+	},
+	react: {
+		name: 'React',
+		imageSrc: 'skills/reactjs.svg',
+	},
+	react_native: {
+		name: 'React Native',
+		imageSrc: 'skills/react_native.png',
 	},
 };

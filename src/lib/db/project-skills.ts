@@ -43,4 +43,7 @@ export const projectSkills: [ProjectID, SkillID][] = [
 	['meetwhen.io', 'vercel'],
 	['meetwhen.io', 'eslint'],
 	['meetwhen.io', 'prettier'],
+	// helloworld
+	['helloworld', 'react'],
+	['helloworld', 'react_native'],
 ];
