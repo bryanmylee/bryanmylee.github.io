@@ -32,7 +32,7 @@
 
 	const [ref, content, getInstance] = createPopperActions();
 
-	const position = spring<Position>({ x: 0, y: 0 });
+	const position = spring<Position>({ x: 24, y: 24 });
 	$: $position && getInstance()?.update();
 	const exampleCode = `<script lang="ts">
 	const [ref, content] = createPopperActions();
