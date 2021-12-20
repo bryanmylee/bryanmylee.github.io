@@ -1,5 +1,6 @@
 <script lang="ts">
 	import KopiTime from '$lib/components/project/KopiTime.svelte';
+	import ComoClub from '$lib/components/project/ComoClub.svelte';
 	import ExperienceItem from './ExperienceItem.svelte';
 </script>
 
@@ -7,4 +8,5 @@
 	<ExperienceItem experienceId="smu" />
 	<h2 class="mt-4 font-mono text-xl text-center">Projects</h2>
 	<KopiTime />
+	<ComoClub />
 </section>

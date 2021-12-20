@@ -27,7 +27,8 @@ export type SkillID =
 	| 'gitlab'
 	| 'rest'
 	| 'rabbitmq'
-	| 'mysql';
+	| 'mysql'
+	| 'cloudformation';
 
 export const skills: Record<SkillID, Skill> = {
 	svelte: {
@@ -137,5 +138,9 @@ export const skills: Record<SkillID, Skill> = {
 	mysql: {
 		name: 'MySQL',
 		imageSrc: 'skills/mysql.svg',
+	},
+	cloudformation: {
+		name: 'CloudFormation',
+		imageSrc: 'skills/cloudformation.svg',
 	},
 };
