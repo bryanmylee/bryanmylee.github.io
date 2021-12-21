@@ -11,6 +11,7 @@
 
 	import ProjectItem from './ProjectItem.svelte';
 	import Toggle from '$lib/components/util/Toggle.svelte';
+	import RevealOnIntersection from '$lib/components/util/RevealOnIntersection.svelte';
 
 	let boundaryElement: HTMLDivElement;
 
@@ -54,25 +55,34 @@
 		<ProjectItem projectId="svelte-popperjs" />
 	</div>
 
-	<Toggle class="flex-1 w-full md:w-1/2">
-		<div
-			bind:this={boundaryElement}
-			use:trackMouse={position}
-			class="relative w-full h-40 overflow-hidden example-area"
-		>
+	<RevealOnIntersection
+		percent={50}
+		transition="fly"
+		flyY={50}
+		duration={600}
+		delay={50}
+		class="grow-0 w-full md:w-1/2"
+	>
+		<Toggle>
 			<div
-				use:ref
-				class="absolute w-6 h-6 rounded-full pointer-events-none bg-shade-light"
-				style="left: {$position.x - 12}px; top: {$position.y - 12}px"
-			/>
-			<div
-				use:content={popperOptions}
-				class="p-4 font-bold rounded-lg pointer-events-none bg-cyan text-shade-dark"
+				bind:this={boundaryElement}
+				use:trackMouse={position}
+				class="relative w-full h-40 overflow-hidden example-area"
 			>
-				This tooltip will not overflow!
+				<div
+					use:ref
+					class="absolute w-6 h-6 rounded-full pointer-events-none bg-shade-light"
+					style="left: {$position.x - 12}px; top: {$position.y - 12}px"
+				/>
+				<div
+					use:content={popperOptions}
+					class="p-4 font-bold rounded-lg pointer-events-none bg-cyan text-shade-dark"
+				>
+					This tooltip will not overflow!
+				</div>
 			</div>
-		</div>
-		<p class="example-hint">Hover over the example area to try it out!</p>
-		<HighlightSvelte code={exampleCode} slot="alt" />
-	</Toggle>
+			<p class="example-hint">Hover over the example area to try it out!</p>
+			<HighlightSvelte code={exampleCode} slot="alt" />
+		</Toggle>
+	</RevealOnIntersection>
 </section>
