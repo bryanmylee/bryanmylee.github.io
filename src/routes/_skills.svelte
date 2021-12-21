@@ -7,7 +7,7 @@
 
 <h1 id="skills" class="header">Skills</h1>
 
-<section class="max-w-screen-md p-4 mx-auto">
+<section class="max-w-screen-md mx-auto">
 	<ul class="flex flex-wrap justify-between gap-4 text-sm">
 		{#each skillItems as { imageSrc, name }}
 			<li class="flex items-center justify-center gap-4 p-2 grow last:grow-0 bg-shade">
