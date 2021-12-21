@@ -20,7 +20,7 @@
 				<img
 					src="/projects/meetwhen/desktop-left-light.png"
 					alt="meetwhen.io desktop preview"
-					class="object-cover w-full h-full"
+					class="object-cover h-[400px]"
 				/>
 			</RevealOnIntersection>
 			<RevealOnIntersection
