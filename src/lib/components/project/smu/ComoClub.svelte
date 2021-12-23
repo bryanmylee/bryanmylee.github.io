@@ -18,17 +18,13 @@
 		external service is healthy, we automatically trigger a recovery phase and continue with regular
 		execution.
 	</p>
-	<p>
-		Our final report can be found
-		<a href="/projects/como-club/cs301-final-report.pdf" target="_blank">here</a>.
-	</p>
 	<div class="relative mt-4 aspect-square">
 		<RevealOnIntersection
 			percent={50}
 			transition="fly"
 			flyY={50}
 			duration={600}
-			delay={50}
+			delay={250}
 			class="absolute top-[10%] left-[20%] right-[40%]"
 		>
 			<img src="/projects/como-club/home.png" alt="como club home page" />
@@ -39,7 +35,7 @@
 			transition="fly"
 			flyY={50}
 			duration={600}
-			delay={150}
+			delay={50}
 			class="absolute top-0 left-[40%] right-[20%]"
 		>
 			<img src="/projects/como-club/experiences.png" alt="como club experiences page" />
